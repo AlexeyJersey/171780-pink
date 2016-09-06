@@ -1,0 +1,24 @@
+{
+  "name": "171780-pink",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Личный проект «Пинк» от HTML Academy",
+  "author": "Alexey Makarov",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:htmlacademy-adaptive/171780-pink.git"
+  },
+  "bugs": {
+    "url": "https://github.com/htmlacademy-adaptive/171780-pink/issues"
+  },
+  "homepage": "https://github.com/htmlacademy-adaptive/171780-pink",
+  "devDependencies": {
+    "lintspaces-cli": "0.4.0"
+  },
+  "scripts": {
+    "test": "lintspaces -e .editorconfig -i 'js-comments' -i 'html-comments' *.html {less,sass,postcss}/*.* {less,sass,postcss}/**/*.* *.{js,json} js/*.{js,json} js/**/*.{js,json}"
+  },
+  "engines": {
+    "node": "6.5"
+  }
+}
