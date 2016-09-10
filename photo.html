@@ -18,9 +18,9 @@
           <li class="nav__item"><a href="#">HTML ACADEMY</a></li>
         </ul>
       </nav>
-      <div class="page-logo">
+      <div class="page-name"> <!-- 2) <div class="page-logo"> плохой класс //OK-->
         <img src="http://placehold.it/320x170" width="320" height="170" alt="Фотографии пользователей">
-        <span>Фотографии пользователей</span>
+        <h1>Фотографии пользователей</h1> <!-- 1) <span>Фотографии пользователей</span> скорее h1 //OK-->
       </div>
     </header>
 
@@ -28,104 +28,97 @@
 
     <section class="photo">
       <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-      <article class="photo-item">
-        <div class="photo-item__img photo-item__img--pano">
+      <article class="photo__item"> <!-- 3) почему photo-item это блок а не элемент? //OK-->
+        <div class="photo__item-img photo__item-img--pano">
           <img src="http://placehold.it/280x180"  width="280" height="180" alt="">
           <span>Панорама дня</span>
         </div>
-        <div class="photo-item__descr">
-          <a href="#">Анна</a>
-          <span class="photo-item__time">(5 минут назад)</span>
+        <div class="photo__item-descr">
+          <h1>Анна <span class="photo__item-time">(5 минут назад)</span></h1> <!-- 4)  это h1 в котором спан //OK-->
           <p>Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-          <span class="photo-item__like">Нравится: 215</span>
+          <a class="photo__item-like">Нравится: 215</a> <!-- 5) <span class="photo-item__like">Нравится: 215</span> а это ссылка //OK-->
         </div>
       </article>
-      <article class="photo-item">
-        <div class="photo-item__img">
+      <article class="photo__item">
+        <div class="photo__item-img">
           <img src="http://placehold.it/280x180"  width="280" height="180" alt="">
         </div>
-        <div class="photo-item__descr">
-          <a href="#">Левон</a>
-          </div><span class="photo-item__time">(5 часов назад)</span>
+        <div class="photo__item-descr">
+          <h1>Левон <span class="photo__item_-ime">(5 часов назад)</span></h1>
           <p>Вчера он на луну летал, сегодня в руки к нам попал</p>
-          <span class="photo-item__like">Нравится: 365</span>
+          <a class="photo__item-like">Нравится: 365</a>
         </div>
       </article>
-       <article class="photo-item">
-        <div class="photo-item__img">
+       <article class="photo__item">
+        <div class="photo__item-img">
           <img src="http://placehold.it/280x180"  width="280" height="180" alt="">
         </div>
-        <div class="photo-item__descr">
-          <a href="#">Антон</a>
-          <span class="photo-item__time">(12 часов назад)</span>
+        <div class="photo__item-descr">
+          <h1>Антон <span class="photo__item-time">(12 часов назад)</span></h1>
           <p>Соседи будут рады!</p>
-          <span class="photo-item__like">Нравится: 666</span>
+          <a class="photo__item-like">Нравится: 666</a>
         </div>
       </article>
-       <article class="photo-item">
-        <div class="photo-item__img">
+       <article class="photo__item">
+        <div class="photo__item-img">
           <img src="http://placehold.it/280x180"  width="280" height="180" alt="">
         </div>
-        <div class="photo-item__descr">
-          <a href="#">Борис</a>
-          <span class="photo-item__time">(20 часов назад)</span>
+        <div class="photo__item-descr">
+          <h1>Борис <span class="photo__item-time">(20 часов назад)</span></h1>
           <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <span class="photo-item__like">Нравится: 215</span>
+          <a class="photo__item-like">Нравится: 215</a>
         </div>
       </article>
-       <article class="photo-item">
-        <div class="photo-item__img">
+       <article class="photo__item">
+        <div class="photo__item-img">
           <img src="http://placehold.it/280x180"  width="280" height="180" alt="">
         </div>
-        <div class="photo-item__descr">
-          <a href="#">Сергей</a>
-          <span class="photo-item__time">(25 часов назад)</span>
+        <div class="photo__item-descr">
+          <h1>Сергей <span class="photo__item-time">(25 часов назад)</span></h1>
           <p>Самая кубанская в мире!</p>
-          <span class="photo-item__like">Нравится: 4</span>
+          <a class="photo__item-like">Нравится: 4</a>
         </div>
       </article>
-       <article class="photo-item">
-        <div class="photo-item__img">
+       <article class="photo__item">
+        <div class="photo__item-img">
           <img src="http://placehold.it/280x180"  width="280" height="180" alt="">
         </div>
-        <div class="photo-item__descr">
-          <a href="#">Максим</a>
-          <span class="photo-item__time">(40 часов назад)</span>
+        <div class="photo__item-descr">
+          <h1>Максим <span class="photo__item-time">(40 часов назад)</span></h1>
           <p>Где снег-то?</p>
-          <span class="photo-item__like">Нравится: 150</span>
+          <a class="photo__item-like">Нравится: 150</a>
         </div>
       </article>
-       <article class="photo-item">
-        <div class="photo-item__img">
+       <article class="photo__item">
+        <div class="photo__item-img">
           <img src="http://placehold.it/280x180"  width="280" height="180" alt="">
         </div>
-        <div class="photo-item__descr">
-          <a href="#">Надежда</a>
-          <span class="photo-item__time">(45 часов назад)</span>
+        <div class="photo__item-descr">
+          <h1>Надежда <span class="photo__item-time">(45 часов назад)</span></h1>
           <p>Всем GM и взаимные лайки!</p>
-          <span class="photo-item__like">Нравится: 2560</span>
+          <a class="photo__item-like">Нравится: 2560</a>
         </div>
       </article>
-      <div class="photo-post">
+      <div class="photo__post">
         <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
         <form action="post-photo.php" method="post">
-          <div class="photo-post__img">
+          <div class="photo__post-img">
             <img src="http://placehold.it/280x380" width="280" height="380" alt="">
           </div>
-          <div class="photo-options">
-            <div class="photo-options__type">
-              <div class="photo-options__type-cut"></div>
-              <div class="photo-options__type-fill"></div>
-              <div class="photo-options__type-contrast"></div>
+          <div class="photo__options"> <!-- 6) photo-options photo-range photo-btns зачем столько блоков!? если все элементами можно //OK-->
+            <div class="photo__options-type">
+              <div class="photo__options-type-cut"></div>
+              <div class="photo__options-type-fill"></div>
+              <div class="photo__options-type-contrast"></div>
             </div>
-            <div class="photo-range">
-              <div class="photo-range__bar"></div>
-              <div class="photo-range__toggle"></div>
+            <div class="photo__range">
+              <div class="photo__range-bar"></div>
+              <div class="photo__range-toggle"></div>
             </div>
           </div>
-          <div class="photo-btns">
-            <button class="photo-btns__btn photo-btns__btn--post">Запостить</button>
-            <button class="photo-btns__btn photo-btns__btn--cancel">Отмена</button>
+          <div class="photo__btns">
+            <button class="photo__btns-btn photo__btns__btn--post">Запостить</button>
+            <button class="photo__btns-btn photo__btns__btn--cancel">Отмена</button>
           </div>
         </form>
       </div>
