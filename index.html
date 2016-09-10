@@ -6,7 +6,134 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+  <!-- HEADER -->
+
+    <header class="page-header">
+      <nav class="nav">
+        <div class="nav__item-main"><a href="#">Pink</a></div> <!-- 1) это отдельным дивом вынеси их списка <li class="nav__item"><a href="#">Pink</a></li>  //ОК-->
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#">Главная</a></li>
+          <li class="nav__item"><a href="#">Фотографии</a></li>
+          <li class="nav__item"><a href="#">Конкурс</a></li>
+          <li class="nav__item"><a href="#">HTML ACADEMY</a></li>
+        </ul>
+      </nav>
+      <div class="head-img">
+        <img src="http://placehold.it/320x300" width="300" height="320" alt="PINK">
+      </div>
+      <div class="download-app">
+        <a class="btn">Скачать приложение</a> <!-- 2) на это буду ругаться до потери пулься button только в form //OK-->
+        <div class="download-app__img">
+          <img src="http://placehold.it/70x70" alt="" class="download-app__img-apple" width="70" height="70">
+          <img src="http://placehold.it/70x70" alt="" class="download-app__img-android" width="70" height="70">
+          <img src="http://placehold.it/70x70" alt="" class="download-app__img-win" width="70" height="70">
+        </div>
+        <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p> <!-- 3) это р //OK-->
+      </div>
+    </header>
+
+    <!-- FEATURES -->
+
+    <section class="features">
+      <div class="features__title">
+        <h2 class="features__title-text">Устали от серости мегаполиса?</h2> <!-- 4) это 2 заголовка h2 //OK -->
+        <h2 class="features__title-text">Нам есть, что вам предложить!</h2>
+      </div>
+      <div class="features__items">
+        <div class="features__item">
+          <h1 class="features__item-title">Поднимает настроение</h1> <!-- 5) модификатора не бывает без элемента //OK -->
+          <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </div>
+        <div class="features__item">
+          <h1 class="features__item-title">Меняет мир вокруг</h1>
+          <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </div>
+        <div class="features__item">
+          <h1 class="features__item-title">Заводит новых друзей</h1>
+          <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
+      </div>
+      <div class="features__img">
+        <img src="http://placehold.it/320x300" width="300" height="320" alt="Всем привет!">
+      </div>
+    </section>
+
+          <!-- SLIDERS -->
+
+    <section class="slider">
+      <article class="slider__feedback"> <!-- 6) <div class="slider__feedback"> скорее article //OK-->
+        <h3 class="slider__feedback-title">Николай Петров</h3> <!-- 7) опять модификатор и это скорее h3 //OK-->
+        <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p> <!-- 8) <p class="slider__feedback-text"> пешки и спаны можно вообще без классов делать так то //OK -->
+        <div class="slider-controls">
+          <i class="slider-controls__active"></i> <!-- 10) <i class="slider-controls--active"></i> опять модификатор //OK-->
+          <i></i>
+          <i></i>
+        </div>
+      </article>
+      <article class="slider-price">
+        <div class="slider-price__title">
+          <h2 class="slider-price__title-type">Стандарт</h2> <!-- 9) 2 заголовка или h2 и спан //OK -->
+          <span>3,99 USD</span>
+        </div>
+        <div class="slider-price__options">
+          <ul class="slider-price__options-items">
+            <li class="slider-price__options-item">Розовый фильтр</li>
+            <li class="slider-price__options-item">Смайлики</li>
+            <li class="slider-price__options-item">Комментарии</li>
+          </ul>
+        </div>
+        <div class="slider-controls">
+          <i></i>
+          <i class="slider-controls__active"></i> <!-- 10) <i class="slider-controls--active"></i> опять модификатор //OK-->
+          <i></i>
+        </div>
+      </article>
+    </section>
+
+    <!-- CONTACTS -->
+
+    <section class="contacts">
+      <div class="contacts__items">
+        <h2 class="contacts__items-title">Остались вопросы? Свяжитесь с нами!</h2> <!-- 11) h2 //OK -->
+        <div class="contacts__item-number">
+          <h3 class="contacts__item-title--bold">Звоните:</h3> <!-- 12) Звоните, пишите и Приезжайте в гости это заголовки h3, а что под ними это все ссылки //OK-->
+          <a class="contacts__item-content" href="tel:+78125556666">+7 (812) 555-66-66</a>
+        </div>
+        <div class="contacts__item-mail">
+          <h3 class="contacts__item-title--bold">Пишите:</h3>
+          <a class="contacts__item-content" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div class="contacts__item-adress">
+          <h3 class="contacts__item-title--bold">Приезжайте в гости:</h3>
+          <a class="contacts__item-content" href="#">ул. Большая Конюшенная, 19/8</a>
+        </div>
+      </div>
+      <div class="contacts__map"></div>
+    </section>
 
   </body>
 </html>
+
+<!-- "пешки и спаны можно вообще без классов делать" - Никита Евгеньевич-->
+<!-- ОТДЕЛЬНЫЙ ФАЙЛ ПОД КАЖДЫЙ БЛОК - Никита Евгеньевич-->
+
+<!-- <img src="http://placehold.it/150x100"> IMG CAP -->
+<!-- Documents\GitHub\171780-pink\171780-pink -->
+
+
+<!-- <div class="block">
+  <div class="block__catalog">
+    <div class="block__item">
+
+      <div class="block__heading">
+      </div>
+
+      <div class="block__image">
+      </div>
+
+      <div class="block__desc">
+      </div>
+
+    </div>
+  </div>
+</div> -->

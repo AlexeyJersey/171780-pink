@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+
+  <!-- HEADER -->
+
+    <header class="page-header">
+      <nav class="nav">
+        <div class="nav__item-main"><a href="#">Pink</a></div>
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#">Главная</a></li>
+          <li class="nav__item"><a href="#">Фотографии</a></li>
+          <li class="nav__item"><a href="#">Конкурс</a></li>
+          <li class="nav__item"><a href="#">HTML ACADEMY</a></li>
+        </ul>
+      </nav>
+      <div class="page-name"> <!-- 2) <div class="page-logo"> плохой класс //OK-->
+        <img src="http://placehold.it/320x170" width="320" height="170" alt="Конкурс на самое безбашеное путешествие с Пинк">
+        <h1>Конкурс на самое безбашеное путешествие с Пинк</h1> <!-- 1) <span>Фотографии пользователей</span> скорее h1 //OK-->
+      </div>
+    </header>
+
+  <!-- FORM -->
+
+    <section class="form">
+      <form action="some.php" method="post">
+        <div class="form__user">
+          <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполни</p>
+          <div class="form__user-lastname">
+            <label for="user-lastname">Фамилия:</label>
+            <input type="text" id="user-lastname" placeholder="Укажите фамилию">
+          </div>
+          <div class="form__user-name">
+            <label for="user-name">Имя:</label>
+            <input type="text" id="user-name" placeholder="Введите ваше имя">
+          </div>
+          <div class="form__user-patronymic">
+            <label for="user-patronymic">Отчество:</label>
+            <input type="text" id="user-patronymic" placeholder="Ну и отчество тоже">
+          </div>
+        </div>
+        <div class="form__achievement">
+          <span>Ваши безбашенные достижения в путешествии</span>
+          <ul class="form__achievement-items">
+            <li class="form__achievement-item"><label><input type="checkbox" checked>Сделал селфи с акулой</label></li>
+            <li class="form__achievement-item"><label><input type="checkbox" checked>Обгорел на пляже</label></li>
+            <li class="form__achievement-item"><label><input type="checkbox">Видел Чака Норриса</label></li>
+            <li class="form__achievement-item"><label><input type="checkbox">Накупил сувениров</label></li>
+            <li class="form__achievement-item"><label><input type="checkbox" checked>Удержал башню</label></li>
+            <li class="form__achievement-item"><label><input type="checkbox">Разгромил отель</label></li>
+          </ul>
+        </div>
+        <div class="form__contacts">
+          <div class="form__contacts-phone">
+            <label for="user-phone">Номерок телефончика</label>
+            <input type="tel" id="user-phone" placeholder="Номер, пожалуйста">
+          </div>
+          <div class="form__contacts-mail">
+            <label for="user-mail">Адресок почты</label>
+            <input type="email" id="user-mail" placeholder="Введите почту">
+          </div>
+        </div>
+        <div class="form__radio">
+          <span>С каким приложением путешествовали?</span>
+          <ul class="form__radio-items">
+            <li class="form__radio-item"><label><input type="radio" checked>Pink для iOS</label></li>
+            <li class="formr__radio-item"><label><input type="radio">Pink на Android</label></li>
+            <li class="form__radio-item"><label><input type="radio">Windows Phone</label></li>
+          </ul>
+        </div>
+        <div class="form__send">
+          <span>Опишите свои эмоции</span>
+          <textarea name="emotions" id="user-emotions" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <button class="form__send-btn">Отправить форму</button>
+          <span> * - Обязательные поля</span>
+        </div>
+      </form>
+    </section>
+
+  <!-- FOOTER -->
+
+    <footer class="footer">
+      <div class="footer__logo">
+        <a href="#"><img src="http://placehold.it/280x100" width="280" height="100" alt="PINK"></a>
+      </div>
+      <div class="footer__social">
+        <a class="footer__social-btn footer__social-btn--vk" href="#">Вконтакте</a>
+        <a class="footer__social-btn footer__social-btn--fb" href="#">Фейсбук</a>
+        <a class="footer__social-btn footer__social-btn--inst" href="#">Инстаграм</a>
+      </div>
+      <div class="footer__copyright">
+        <span>Разработано</span>
+        <a href="https://htmlacademy.ru">HTML Academy</a>
+      </div>
+    </footer>
