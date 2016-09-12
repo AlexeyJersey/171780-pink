@@ -13,11 +13,27 @@
   },
   "homepage": "https://github.com/htmlacademy-adaptive/171780-pink",
   "devDependencies": {
-    "lintspaces-cli": "0.4.0"
+    "autoprefixer": "6.4.1",
+    "grunt": "1.0.1",
+    "grunt-browser-sync": "2.2.0",
+    "grunt-contrib-less": "1.4.0",
+    "grunt-contrib-watch": "1.0.0",
+    "grunt-postcss": "0.8.0",
+    "@htmlacademy/editorconfig-cli": "0.0.7"
   },
   "scripts": {
-    "test": "lintspaces -e .editorconfig -i 'js-comments' -i 'html-comments' *.html {less,sass,postcss}/*.* {less,sass,postcss}/**/*.* *.{js,json} js/*.{js,json} js/**/*.{js,json}"
+    "test": "editorconfig-cli",
+    "build": "grunt less && grunt postcss",
+    "start": "npm run build && grunt serve"
   },
+  "editorconfig-cli": [
+    "*.html",
+    "*.json",
+    "*.js",
+    "js/**/*.js",
+    "img/**/*.svg",
+    "less/**/*.less"
+  ],
   "engines": {
     "node": "6.5"
   }
