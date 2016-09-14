@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -10,17 +12,17 @@
 
     <header class="page-header">
       <nav class="nav">
-        <div class="nav__item-main"><a href="#">Pink</a></div>
+        <div class="nav__item-main"><a href="index.html">Pink</a></div>
         <ul class="nav__items">
-          <li class="nav__item"><a href="#">Главная</a></li>
-          <li class="nav__item"><a href="#">Фотографии</a></li>
-          <li class="nav__item"><a href="#">Конкурс</a></li>
-          <li class="nav__item"><a href="#">HTML ACADEMY</a></li>
+          <li class="nav__item"><a href="index.html">Главная</a></li>
+          <li class="nav__item"><a href="photo.html">Фотографии</a></li>
+          <li class="nav__item"><a href="form.html">Конкурс</a></li>
+          <li class="nav__item"><a href="https://htmlacademy.ru">HTML ACADEMY</a></li>
         </ul>
       </nav>
-      <div class="page-name"> <!-- 2) <div class="page-logo"> плохой класс //OK-->
-        <img src="http://placehold.it/320x170" width="320" height="170" alt="Конкурс на самое безбашеное путешествие с Пинк">
-        <h1>Конкурс на самое безбашеное путешествие с Пинк</h1> <!-- 1) <span>Фотографии пользователей</span> скорее h1 //OK-->
+      <div class="page-name">
+        <img src="img/bg-back-mobile@1x.jpg" width="700" height="462" alt="PINK-bg">
+        <h1>Конкурс на самое безбашеное путешествие с Пинк</h1>
       </div>
     </header>
 
@@ -76,7 +78,7 @@
           <span>Опишите свои эмоции</span>
           <textarea name="emotions" id="user-emotions" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           <button class="form__send-btn">Отправить форму</button>
-          <span> * - Обязательные поля</span>
+          <span><b>*</b> - Обязательные поля</span>
         </div>
       </form>
     </section>
@@ -85,7 +87,7 @@
 
     <footer class="footer">
       <div class="footer__logo">
-        <a href="#"><img src="http://placehold.it/280x100" width="280" height="100" alt="PINK"></a>
+        <a href="#"><img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="PINK"></a>
       </div>
       <div class="footer__social">
         <a class="footer__social-btn footer__social-btn--vk" href="#">Вконтакте</a>
