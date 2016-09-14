@@ -1,22 +1,27 @@
 .photo {
   background-color: @white;
+
+  p {
+    .font();
+    .font-regular();
+  }
+
 }
 
-.photo p {
-  .font();
-  .font-regular();
-}
+.photo__item {
 
-.photo__item p {
-  .font(12px, 24px);
-  .font-regular();
-  color: @navy;
-}
+  p {
+    .font(12px, 24px);
+    .font-regular();
+    color: @navy;
+  }
 
-.photo__item h1 {
+  h1 {
   .font(12px, 24px);
   .font-bold();
   color: @navy;
+}
+
 }
 
 .photo__item-time {
@@ -46,5 +51,3 @@
   .font-regular();
   color: @navy;
 }
-
-
