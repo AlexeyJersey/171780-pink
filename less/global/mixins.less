@@ -1,3 +1,5 @@
+// FONTS
+
 .font(@size: 14px; @line: 30px) {
   font-size: @size;
   line-height: @line;
@@ -26,4 +28,15 @@
 
 .underline(@none: none;) {
   text-decoration: @none;
+}
+
+// CLEARFIX
+
+.clearfix() {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
 }
