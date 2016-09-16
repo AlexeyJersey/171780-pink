@@ -1,11 +1,25 @@
 .head-img {
   position: relative;
 
-  img:nth-child(2) {
-    position: absolute;
-    left: 0;
-    bottom: 0;
+  background-color: @navydark;
+  background-image: url('../../img/bg-back-mobile@1x.jpg');
+  background-repeat: no-repeat;
+  background-position: -192px 260px;
 }
 
+.head-img__hand {
+  min-height: 395px;
+
+  img {
+  position: absolute;
+
+  top: 436px;
+  }
+
+}
+
+@media @tablet-w {
+  background-image: url('../../img/bg-back-mobile@1x.jpg');
+  background-repeat: no-repeat;
 }
 
