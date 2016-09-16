@@ -23,6 +23,7 @@
   // background-position: 21px 21px;
 
   .nav-style();
+
 }
 
 .nav__items { // TEMP!!!
@@ -50,4 +51,32 @@
   text-align: center;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   .nav-style();
+}
+
+@media @tablet-w {
+
+  .nav__item-main {
+    padding-left: 40px;
+  }
+
+  .nav__item-main::after {
+    top: 18px;
+    left: 574px;
+  }
+
+}
+
+@media @desktop-w {
+
+  .nav__item-main {
+    border-bottom: none;
+    background-color: transparent;
+  }
+
+  .nav__item {
+    text-align: center;
+    border: none;
+    background-color: transparent;
+  }
+
 }
