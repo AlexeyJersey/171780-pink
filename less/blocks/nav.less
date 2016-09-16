@@ -1,5 +1,6 @@
 .nav {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 
   background-color: @navydark;
@@ -12,22 +13,14 @@
     color: @white;
   }
 
-}
+  .nav__item-main {
+    display: flex;
 
-@media @desktop-w {
+  }
 
-  .nav {
-    flex-direction: row;
-    justify-content: space-around;
-
-    .nav__items {
-      display: flex;
-    }
-
-    .nav__item {
-      display: flex;
-    }
-
+  .nav__items {
+    display: flex;
+    flex-direction: column;
   }
 
 }
