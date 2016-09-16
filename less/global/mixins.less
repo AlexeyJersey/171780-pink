@@ -1,5 +1,3 @@
-// FONTS
-
 .font(@size: 14px; @line: 30px) {
   font-size: @size;
   line-height: @line;
@@ -30,13 +28,24 @@
   text-decoration: @none;
 }
 
-// CLEARFIX
-
 .clearfix() {
   &::after {
     content: "";
 
     display: table;
     clear: both;
+  }
+}
+
+.wrapper {
+  width: 320px;
+  margin: 0 auto;
+
+  @media @tablet-w {
+    width: 620px;
+  }
+
+  @media @desktop-w {
+    width: 940px;
   }
 }
