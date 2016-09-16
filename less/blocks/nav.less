@@ -4,12 +4,50 @@
   a {
     .font(18px, 32px);
     .font-bold();
-    color: @white;
     .uppercase();
+
+    color: @white;
   }
 
 }
 
 .nav__item-main {
+  position: relative;
 
+  padding-top: 21px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+
+  // background-image: url('../../img/logo-pink-white-mobile.svg');
+  // background-repeat: no-repeat;
+  // background-position: 21px 21px;
+
+  .nav-style();
+}
+
+.nav__items { // TEMP!!!
+  margin-bottom: 100px;
+}
+
+.nav__item-main::after {
+  position: absolute;
+  content: '';
+  top: 18px;
+  left: 274px;
+
+  width: 30px;
+  height: 30px;
+
+  background-image: url('../../img/icon-menu-cross.svg');
+  background-repeat: no-repeat;
+  background-position: 3px 3px;
+}
+
+.nav__item {
+  padding-top: 16px;
+  padding-bottom: 14px;
+
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  .nav-style();
 }
