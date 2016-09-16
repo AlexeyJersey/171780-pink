@@ -67,8 +67,6 @@
       .font-light();
       color: @white;
       text-align: center;
-
-      outline: 1px dashed reds;
     }
 
     .btn {
@@ -93,7 +91,57 @@
     }
 
     p {
-      padding-left: 0px;
+      .font(18px, 24px);
+    }
+
+  }
+
+}
+
+@media @desktop-w {
+
+  .download-app {
+    top: 149px;
+    left: 88px;
+
+    padding-left: 20px;
+
+    h2 {
+      display: inline-block;
+      width: 250px;
+      margin-bottom: 50px;
+
+      .font(50px, 60px);
+      .font-light();
+    }
+
+    a {
+      .font(21px, 18px);
+    }
+
+    .btn {
+      padding-left: 30px;
+      padding-right: 27px;
+      margin-bottom: 68px;
+      margin-left: 21px;
+
+    }
+
+        img {
+      margin-bottom: 33px;
+
+      &:nth-child(1) {
+        margin-left: 70px;
+      }
+
+      &:nth-child(2) {
+        opacity: 0.4;
+      }
+
+    }
+
+    p {
+      padding-left: 24px;
       .font(18px, 24px);
     }
 
