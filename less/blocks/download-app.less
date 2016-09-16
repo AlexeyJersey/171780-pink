@@ -2,6 +2,10 @@
   padding-top: 29px;
   padding-left: 20px;
 
+  h2 {
+    display: none;
+  }
+
   a {
     display: inline-block;
     .font(18px, 18px);
@@ -11,7 +15,7 @@
 
   p {
     display: inline-block;
-    padding-right: 14px;
+    padding-left: 26px;
     margin-bottom: 29px;
 
     .font(14px, 24px);
@@ -38,6 +42,59 @@
 
     &:nth-child(1) {
       margin-left: 38px;
+    }
+
+  }
+
+}
+
+@media @tablet-w {
+
+  .download-app {
+    z-index: 10;
+    position: absolute;
+    top: 397px;
+    left: 21px;
+
+    padding-left: 21px;
+
+    h2 {
+      display: inline-block;
+      width: 200px;
+      margin-left: 48px;
+
+      .font(40px, 47px);
+      .font-light();
+      color: @white;
+      text-align: center;
+
+      outline: 1px dashed reds;
+    }
+
+    .btn {
+      padding-left: 44px;
+      padding-right: 48px;
+      margin-bottom: 46px;
+
+    }
+
+    img {
+      margin-left: 31px;
+      margin-bottom: 14px;
+
+      &:nth-child(1) {
+        margin-left: 45px;
+      }
+
+      &:nth-child(2) {
+        opacity: 0.4;
+      }
+
+    }
+
+    p {
+      padding-left: 0px;
+      .font(18px, 24px);
     }
 
   }

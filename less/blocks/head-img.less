@@ -4,22 +4,33 @@
   background-color: @navydark;
   background-image: url('../../img/bg-back-mobile@1x.jpg');
   background-repeat: no-repeat;
-  background-position: -192px 260px;
+  background-position: -191px 258px;
 }
 
 .head-img__hand {
   min-height: 395px;
-
-  img {
-  position: absolute;
-
-  top: 436px;
-  }
+  background-image: url('../../img/iphone-hand-mobile@1x.png');
+  background-repeat: no-repeat;
+  background-position: 0px 110px;
 
 }
 
+
 @media @tablet-w {
-  background-image: url('../../img/bg-back-mobile@1x.jpg');
-  background-repeat: no-repeat;
+  .head-img {
+    z-index: 1;
+    background-image: url('../../img/bg-back-tablet@1x.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 255px;
+    background-size: 700px 729px;
+  }
+
+  .head-img__hand {
+    min-height: 617px;
+    background-image: url('../../img/iphone-hand-tablet@1x.png');
+    background-repeat: no-repeat;
+    background-position: 0px 73px;
+    }
+
 }
 
