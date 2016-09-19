@@ -16,7 +16,6 @@
   .nav__item-main {
     display: flex;
     justify-content: space-between;
-
   }
 
   .nav__items {
@@ -29,6 +28,34 @@
 
 @media @desktop-w {
 
+  .nav {
+    flex-direction: row;
+    justify-content: space-around;
 
+      a {
+        .font(18px, 18px);
+        .font-regular();
+        text-transform: none;
+
+        color: @white;
+      }
+
+
+    .nav__item-main {
+      flex-grow: 1;
+    }
+
+    .nav__items {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      flex-grow: 2;
+    }
+
+    .nav__cross {
+      display: none;
+    }
+
+  }
 
 }
