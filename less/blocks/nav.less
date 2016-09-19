@@ -23,3 +23,36 @@
   }
 
 }
+
+@media @desktop-w {
+  .nav {
+    display: flex;
+
+    .nav__cross {
+      display: none;
+    }
+
+    a {
+      .font(18px, 18px);
+      .font-regular();
+      text-transform: none;
+
+      color: @white;
+    }
+
+    .nav__item-main {
+      display: flex;
+      justify-content: space-between;
+      flex-grow: 1;
+    }
+
+    .nav__items {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-grow: 2;
+    }
+
+  }
+
+}
