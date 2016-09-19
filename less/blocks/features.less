@@ -19,4 +19,56 @@
     color: @navy;
   }
 
+  .features__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+}
+
+@media @tablet-w {
+
+  .features {
+
+    .features__title {
+      width: 100%;
+    }
+
+    .features__items {
+      width: 50%;
+      order: 2;
+    }
+
+    .features__img {
+      width: 50%;
+      order: 1;
+    }
+
+  }
+
+}
+
+@media @desktop-w {
+
+  .features {
+
+    .features__title {
+      width: 100%;
+      order: 1;
+    }
+
+    .features__items {
+      display: flex;
+      width: 100%;
+      order: 3;
+    }
+
+    .features__img {
+      width: 100%;
+      order: 2;
+    }
+
+  }
+
 }
