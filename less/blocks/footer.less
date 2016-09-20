@@ -1,10 +1,37 @@
 .footer {
+  display: none;
   background-color: @white;
 
   span {
     .font(14px, 18px);
     .font-regular();
     color: @navy;
+  }
+
+}
+
+@media @tablet-w {
+
+  .footer {
+    display: block;
+  }
+
+  .footer__container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+}
+
+@media @desktop-w {
+
+  .footer {
+    display: block;
+  }
+
+  .footer__container {
+    display: flex;
+    justify-content: space-around;
   }
 
 }
