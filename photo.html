@@ -36,8 +36,8 @@
     <section class="photo">
       <div class="photo__container">
         <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-        <article class="photo__item">
-          <div class="photo__item-img photo__item-img--pano">
+        <article class="photo__item photo__item--main">
+          <div class="photo__item-img">
             <img src="img/panorama-mobile@1x.jpg"  width="320" height="137" alt="">
             <span>Панорама дня</span>
           </div>
@@ -52,7 +52,7 @@
             <img src="img/photo-1-mobile@1x.jpg"  width="280" height="180" alt="">
           </div>
           <div class="photo__item-descr">
-            <h1>Левон <span class="photo__item_-ime">(5 часов назад)</span></h1>
+            <h1>Левон <span class="photo__item-time">(5 часов назад)</span></h1>
             <p>Вчера он на луну летал, сегодня в руки к нам попал</p>
             <a class="photo__item-like">Нравится: 365</a>
           </div>
@@ -115,18 +115,18 @@
             </div>
             <div class="photo__options">
               <div class="photo__options-type">
-                <div class="photo__options-type-cut"></div>
-                <div class="photo__options-type-fill"></div>
-                <div class="photo__options-type-contrast"></div>
+                <div class="photo__options-type-cut">Cut</div>
+                <div class="photo__options-type-fill">Fill</div>
+                <div class="photo__options-type-contrast">Contrast</div>
               </div>
               <div class="photo__range">
-                <div class="photo__range-bar"></div>
-                <div class="photo__range-toggle"></div>
+                <div class="photo__range-bar">Bar</div>
+                <div class="photo__range-toggle">toggle</div>
               </div>
-            </div>
-            <div class="photo__btns">
-              <button class="photo__btns-btn photo__btns__btn--post">Запостить</button>
-              <button class="photo__btns-btn photo__btns__btn--cancel">Отмена</button>
+              <div class="photo__btns">
+                <button class="photo__btns-btn photo__btns__btn--post">Запостить</button>
+                <button class="photo__btns-btn photo__btns__btn--cancel">Отмена</button>
+              </div>
             </div>
           </form>
         </div>
@@ -135,7 +135,7 @@
 
   <!-- FOOTER -->
 
-    <footer class="footer">
+    <footer class="footer footer--mobile">
       <div class="footer__container">
         <div class="footer__logo">
           <a href="#"><img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="PINK"></a>

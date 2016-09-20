@@ -6,48 +6,141 @@
     .font-regular();
   }
 
+  .photo__item {
+
+    .photo__item-img span {
+      background-color: @pink;
+      .font(12px, 24px);
+      .font-bold();
+      color: @white;
+      .uppercase();
+    }
+
+    h1 {
+      .font(12px, 24px);
+      .font-bold();
+      color: @navy;
+    }
+
+    .photo__item-time {
+      .font(12px, 24px);
+      .font-regular();
+      color: @navy;
+      .uppercase();
+    }
+
+    p {
+      .font(12px, 24px);
+      .font-regular();
+     color: @navy;
+    }
+
+    .photo__item-like {
+      .font(12px, 24px);
+      .font-regular();
+      color: @pink;
+      .uppercase();
+    }
+
+  }
+
 }
 
-.photo__item {
+  .photo__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.photo__post {
+  width: 100%;
 
   p {
-    .font(12px, 24px);
+    .font();
     .font-regular();
     color: @navy;
   }
 
-  h1 {
-  .font(12px, 24px);
-  .font-bold();
-  color: @navy;
-}
+  .photo__btns-btn {
+    width: 100%;
+  }
 
 }
 
-.photo__item-time {
-  .font(12px, 24px);
-  .font-regular();
-  color: @navy;
-  .uppercase();
+@media @tablet-w {
+
+  .photo__container {
+    justify-content: space-between;
+  }
+
+  .photo__item {
+    width: 50%;
+  }
+
+  .photo__item--main {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+
+    .photo__item-descr {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      h1 {
+        order: 1;
+      }
+
+      .photo__item-like {
+        order: 2;
+      }
+
+      p {
+        order: 3;
+      }
+
+    }
+
+  }
+
+  .photo__post {
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+  }
+
 }
 
-.photo__item-img span {
-  background-color: @pink;
-  .font(12px, 24px);
-  .font-bold();
-  color: @white;
-  .uppercase();
-}
+@media @desktop-w {
 
-.photo__item-like {
-  .font(12px, 24px);
-  .font-regular();
-  color: @pink;
-  .uppercase();
-}
+  .photo__item {
+    width: 33%;
+  }
 
-.photo__post p {
-  .font();
-  .font-regular();
-  color: @navy;
+  .photo__item--main {
+    width: 100%;
+  }
+
+  .photo__post {
+
+    form {
+      justify-content: space-around;
+    }
+
+    .photo__options {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .photo__btns-btn {
+      width: auto;
+    }
+
+  }
+
 }

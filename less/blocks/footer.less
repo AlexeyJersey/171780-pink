@@ -1,11 +1,22 @@
 .footer {
-  display: none;
   background-color: @white;
 
   span {
     .font(14px, 18px);
     .font-regular();
     color: @navy;
+  }
+
+}
+
+@media @mobile-w {
+
+  .footer {
+    display: none;
+  }
+
+  .footer--mobile {
+    display: block;
   }
 
 }
