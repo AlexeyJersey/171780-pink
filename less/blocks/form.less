@@ -1,26 +1,74 @@
 .form {
   background-color: @white;
 
-  form {
-    display: flex;
-    flex-wrap: wrap;
+  p {
+    display: inline-block;
+    padding-top: 31px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+    .font(14px, 30px);
+    color: @navy;
+    text-align: center;
   }
 
 }
 
-.form__user {
-
-  p {
-    .font();
-    .font-regular();
-    color: @navy;
-  }
+form {
+  display: flex;
+  flex-wrap: wrap;
 
   label {
     .font();
     .font-regular();
     color: @pink;
     .uppercase();
+  }
+
+  input {
+    .font(18px, 30px);
+    opacity: 1;
+    border: 2px solid @light-grey;
+
+    &::-webkit-input-placeholder {color: @navy;}
+    &::-moz-placeholder          {color: @navy;}/* Firefox 19+ */
+    &:-moz-placeholder           {color: @navy;}/* Firefox 18- */
+    &:-ms-input-placeholder      {color: @navy;}
+  }
+
+  span:not(:nth-child(4)) {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-bottom: 43px;
+
+    .font(14px, 18px);
+    .font-regular();
+    .uppercase();
+    color: @pink;
+    text-align: center;
+  }
+
+}
+
+.form__user {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-bottom: 26px;
+
+  label {
+    padding-left: 23px;
+    padding-bottom: 5px;
+  }
+
+  input {
+    padding-top: 14px;
+    padding-left: 21px;
+    padding-right: 24px;
+    padding-bottom: 13px;
+    margin-bottom: 19px;
   }
 
   .form__user-lastname {
@@ -40,22 +88,39 @@
 
 }
 
-// .form__user input PLACEHOLDER!!!!
-
-
 .form__achievement {
-
-  span {
-    .font(14px, 18px);
-    .font-regular();
-    color: @pink;
-    .uppercase();
-  }
+  padding-top: 37px;
+  padding-left: 19px;
+  background-color: @grey;
 
   label {
+    display: flex;
+    align-content: flex-end;
+    margin-bottom: 43px;
+
     .font-bigger();
     .font-regular();
     color: @navy;
+    text-transform: none;
+  }
+
+  &-item [type="checkbox"] {
+    display: none;
+  }
+
+  &-item [type="checkbox"] + div {
+    margin-right: 32px;
+    width: 35px;
+    height: 35px;
+    background-color: @white;
+    border: 2px solid @light-grey;
+    border-radius: 3px;
+  }
+
+  &-item [type="checkbox"]:checked + div {
+    background-image: url('../img/tick.svg');
+    background-repeat: no-repeat;
+    background-position: 8px 9px;
   }
 
 }
@@ -67,17 +132,7 @@
   .uppercase();
 }
 
-// .form__contacts input  PLACEHOLDER !!!
-
-
 .form__radio {
-
-  span {
-    .font(14px, 18px);
-    .font-regular();
-    color: @pink;
-    .uppercase();
-  }
 
   label {
     .font-bigger();
@@ -90,13 +145,6 @@
 .form__send {
   display: flex;
   flex-wrap: wrap;
-
-  span:nth-child(1) {
-    .font();
-    .font-regular();
-    color: @pink;
-    .uppercase();
-  }
 
   textarea {
     resize: none;
@@ -126,14 +174,17 @@
     order: 1;
 
     .form__user-lastname {
+      width: 100%;
       flex-direction: row;
     }
 
     .form__user-name {
+      width: 100%;
       flex-direction: row;
     }
 
     .form__user-patronymic {
+      width: 100%;
       flex-direction: row;
     }
 
@@ -195,7 +246,7 @@
 
     &-items {
       display: flex;
-      width: 80%;
+      width: 100%;
       flex-wrap: wrap;
       justify-content: space-between;
     }
