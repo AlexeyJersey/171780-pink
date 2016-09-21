@@ -1,5 +1,11 @@
 .form {
   background-color: @white;
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 }
 
 .form__user {
@@ -15,6 +21,21 @@
     .font-regular();
     color: @pink;
     .uppercase();
+  }
+
+  .form__user-lastname {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__user-name {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__user-patronymic {
+    display: flex;
+    flex-direction: column;
   }
 
 }
@@ -67,6 +88,8 @@
 }
 
 .form__send {
+  display: flex;
+  flex-wrap: wrap;
 
   span:nth-child(1) {
     .font();
