@@ -1,9 +1,9 @@
-.slider-price__title {
+.slider-price {
   background-color: @navy;
 
   h2 {
     .font(18px, 30px);
-    .font-bold();
+    .font-regular();
     color: @white;
     .uppercase();
   }
@@ -15,12 +15,48 @@
     .uppercase();
   }
 
+  td:nth-child(1) {
+    .font(14px, 24px);
+    .font-regular();
+    color: @navy;
+  }
+
+  .slider-price__options {
+    .font();
+    .font-regular();
+    color: @navy;
+    .uppercase();
+    background-color: @white;
+  }
+
 }
 
-.slider-price__options {
-  .font();
-  .font-regular();
-  color: @navy;
-  .uppercase();
-}
+@media @tablet-w {
 
+  .slider-price {
+
+
+    table {
+      width: 100%;
+
+      border-collapse:collapse;
+
+      td {
+        padding: 10px;
+
+        border: 2px solid @light-grey;
+      }
+
+      th:nth-child(1) {
+        background-color: @white;
+      }
+
+      tr:not(:nth-child(1)) {
+        background-color: @white;
+      }
+
+    }
+
+  }
+
+}

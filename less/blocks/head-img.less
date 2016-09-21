@@ -1,11 +1,22 @@
 .head-img {
-  position: relative;
-
-  img:nth-child(2) {
-    position: absolute;
-    left: 0;
-    bottom: 0;
+  display: flex;
 }
+
+@media @tablet-w {
+
+  .head-img {
+    width: 50%;
+    order: 2;
+  }
+
+}
+
+@media @desktop-w {
+
+  .head-img {
+    width: 50%;
+    order: 2;
+  }
 
 }
 

@@ -1,4 +1,7 @@
 .download-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
   a {
     .font(18px, 18px);
@@ -6,10 +9,28 @@
     color: @white;
   }
 
-  p {
+  p  {
     .font(14px, 24px);
     .font-light();
     color: @white;
+  }
+
+}
+
+@media @tablet-w {
+
+  .download-app {
+    width: 50%;
+    order: 1;
+  }
+
+}
+
+@media @desktop-w {
+
+  .download-app {
+    width: 50%;
+    order: 1;
   }
 
 }

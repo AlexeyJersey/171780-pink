@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -11,134 +11,143 @@
   <!-- HEADER -->
 
     <header class="page-header">
-      <nav class="nav">
-        <div class="nav__item-main"><a href="index.html">Pink</a></div>
-        <ul class="nav__items">
-          <li class="nav__item"><a href="index.html">Главная</a></li>
-          <li class="nav__item"><a href="photo.html">Фотографии</a></li>
-          <li class="nav__item"><a href="form.html">Конкурс</a></li>
-          <li class="nav__item"><a href="https://htmlacademy.ru">HTML ACADEMY</a></li>
-        </ul>
-      </nav>
-      <div class="page-name">
-        <img src="img/bg-back-mobile@1x.jpg" width="700" height="462" alt="PINK-bg">
-        <h1>Фотографии пользователей</h1>
+      <div class="page-header__container">
+        <nav class="nav">
+          <div class="nav__item-main">
+            <a href="index.html"><img src="img/logo-pink-white-mobile.svg" alt="Pink"></a>
+            <img class="nav__cross" src="img/icon-menu-cross.svg" alt="X">
+          </div>
+          <ul class="nav__items">
+            <li class="nav__item"><a href="index.html">Главная</a></li>
+            <li class="nav__item"><a href="photo.html">Фотографии</a></li>
+            <li class="nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="nav__item"><a href="https://htmlacademy.ru">HTML ACADEMY</a></li>
+          </ul>
+        </nav>
+        <div class="page-name">
+          <img src="img/bg-back-mobile@1x.jpg" width="700" height="462" alt="PINK-bg">
+          <h1>Фотографии пользователей</h1>
+        </div>
       </div>
     </header>
 
   <!-- PHOTO-SECTION -->
 
     <section class="photo">
-      <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-      <article class="photo__item">
-        <div class="photo__item-img photo__item-img--pano">
-          <img src="img/panorama-mobile@1x.jpg"  width="320" height="137" alt="">
-          <span>Панорама дня</span>
-        </div>
-        <div class="photo__item-descr">
-          <h1>Анна <span class="photo__item-time">(5 минут назад)</span></h1>
-          <p>Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-          <a class="photo__item-like">Нравится: 215</a>
-        </div>
-      </article>
-      <article class="photo__item">
-        <div class="photo__item-img">
-          <img src="img/photo-1-mobile@1x.jpg"  width="280" height="180" alt="">
-        </div>
-        <div class="photo__item-descr">
-          <h1>Левон <span class="photo__item_-ime">(5 часов назад)</span></h1>
-          <p>Вчера он на луну летал, сегодня в руки к нам попал</p>
-          <a class="photo__item-like">Нравится: 365</a>
-        </div>
-      </article>
-       <article class="photo__item">
-        <div class="photo__item-img">
-          <img src="img/photo-2-mobile@1x.jpg"  width="280" height="180" alt="">
-        </div>
-        <div class="photo__item-descr">
-          <h1>Антон <span class="photo__item-time">(12 часов назад)</span></h1>
-          <p>Соседи будут рады!</p>
-          <a class="photo__item-like">Нравится: 666</a>
-        </div>
-      </article>
-       <article class="photo__item">
-        <div class="photo__item-img">
-          <img src="img/photo-3-mobile@1x.jpg"  width="280" height="180" alt="">
-        </div>
-        <div class="photo__item-descr">
-          <h1>Борис <span class="photo__item-time">(20 часов назад)</span></h1>
-          <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <a class="photo__item-like">Нравится: 215</a>
-        </div>
-      </article>
-       <article class="photo__item">
-        <div class="photo__item-img">
-          <img src="img/photo-4-mobile@1x.jpg"  width="280" height="180" alt="">
-        </div>
-        <div class="photo__item-descr">
-          <h1>Сергей <span class="photo__item-time">(25 часов назад)</span></h1>
-          <p>Самая кубанская в мире!</p>
-          <a class="photo__item-like">Нравится: 4</a>
-        </div>
-      </article>
-       <article class="photo__item">
-        <div class="photo__item-img">
-          <img src="img/photo-5-mobile@1x.jpg"  width="280" height="180" alt="">
-        </div>
-        <div class="photo__item-descr">
-          <h1>Максим <span class="photo__item-time">(40 часов назад)</span></h1>
-          <p>Где снег-то?</p>
-          <a class="photo__item-like">Нравится: 150</a>
-        </div>
-      </article>
-       <article class="photo__item">
-        <div class="photo__item-img">
-          <img src="img/photo-6-mobile@1x.jpg"  width="280" height="180" alt="">
-        </div>
-        <div class="photo__item-descr">
-          <h1>Надежда <span class="photo__item-time">(45 часов назад)</span></h1>
-          <p>Всем GM и взаимные лайки!</p>
-          <a class="photo__item-like">Нравится: 2560</a>
-        </div>
-      </article>
-      <div class="photo__post">
-        <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-        <form action="post-photo.php" method="post">
-          <div class="photo__post-img">
-            <img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="">
+      <div class="photo__container">
+        <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <article class="photo__item photo__item--main">
+          <div class="photo__item-img">
+            <img src="img/panorama-mobile@1x.jpg"  width="320" height="137" alt="">
+            <span>Панорама дня</span>
           </div>
-          <div class="photo__options">
-            <div class="photo__options-type">
-              <div class="photo__options-type-cut"></div>
-              <div class="photo__options-type-fill"></div>
-              <div class="photo__options-type-contrast"></div>
+          <div class="photo__item-descr">
+            <h1>Анна <span class="photo__item-time">(5 минут назад)</span></h1>
+            <p>Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <a class="photo__item-like">Нравится: 215</a>
+          </div>
+        </article>
+        <article class="photo__item">
+          <div class="photo__item-img">
+            <img src="img/photo-1-mobile@1x.jpg"  width="280" height="180" alt="">
+          </div>
+          <div class="photo__item-descr">
+            <h1>Левон <span class="photo__item-time">(5 часов назад)</span></h1>
+            <p>Вчера он на луну летал, сегодня в руки к нам попал</p>
+            <a class="photo__item-like">Нравится: 365</a>
+          </div>
+        </article>
+         <article class="photo__item">
+          <div class="photo__item-img">
+            <img src="img/photo-2-mobile@1x.jpg"  width="280" height="180" alt="">
+          </div>
+          <div class="photo__item-descr">
+            <h1>Антон <span class="photo__item-time">(12 часов назад)</span></h1>
+            <p>Соседи будут рады!</p>
+            <a class="photo__item-like">Нравится: 666</a>
+          </div>
+        </article>
+         <article class="photo__item">
+          <div class="photo__item-img">
+            <img src="img/photo-3-mobile@1x.jpg"  width="280" height="180" alt="">
+          </div>
+          <div class="photo__item-descr">
+            <h1>Борис <span class="photo__item-time">(20 часов назад)</span></h1>
+            <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <a class="photo__item-like">Нравится: 215</a>
+          </div>
+        </article>
+         <article class="photo__item">
+          <div class="photo__item-img">
+            <img src="img/photo-4-mobile@1x.jpg"  width="280" height="180" alt="">
+          </div>
+          <div class="photo__item-descr">
+            <h1>Сергей <span class="photo__item-time">(25 часов назад)</span></h1>
+            <p>Самая кубанская в мире!</p>
+            <a class="photo__item-like">Нравится: 4</a>
+          </div>
+        </article>
+         <article class="photo__item">
+          <div class="photo__item-img">
+            <img src="img/photo-5-mobile@1x.jpg"  width="280" height="180" alt="">
+          </div>
+          <div class="photo__item-descr">
+            <h1>Максим <span class="photo__item-time">(40 часов назад)</span></h1>
+            <p>Где снег-то?</p>
+            <a class="photo__item-like">Нравится: 150</a>
+          </div>
+        </article>
+         <article class="photo__item">
+          <div class="photo__item-img">
+            <img src="img/photo-6-mobile@1x.jpg"  width="280" height="180" alt="">
+          </div>
+          <div class="photo__item-descr">
+            <h1>Надежда <span class="photo__item-time">(45 часов назад)</span></h1>
+            <p>Всем GM и взаимные лайки!</p>
+            <a class="photo__item-like">Нравится: 2560</a>
+          </div>
+        </article>
+        <div class="photo__post">
+          <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+          <form action="post-photo.php" method="post">
+            <div class="photo__post-img">
+              <img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="">
             </div>
-            <div class="photo__range">
-              <div class="photo__range-bar"></div>
-              <div class="photo__range-toggle"></div>
+            <div class="photo__options">
+              <div class="photo__options-type">
+                <div class="photo__options-type-cut">Cut</div>
+                <div class="photo__options-type-fill">Fill</div>
+                <div class="photo__options-type-contrast">Contrast</div>
+              </div>
+              <div class="photo__range">
+                <div class="photo__range-bar">Bar</div>
+                <div class="photo__range-toggle">toggle</div>
+              </div>
+              <div class="photo__btns">
+                <button class="photo__btns-btn photo__btns__btn--post">Запостить</button>
+                <button class="photo__btns-btn photo__btns__btn--cancel">Отмена</button>
+              </div>
             </div>
-          </div>
-          <div class="photo__btns">
-            <button class="photo__btns-btn photo__btns__btn--post">Запостить</button>
-            <button class="photo__btns-btn photo__btns__btn--cancel">Отмена</button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </section>
 
   <!-- FOOTER -->
 
-    <footer class="footer">
-      <div class="footer__logo">
-        <a href="#"><img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="PINK"></a>
-      </div>
-      <div class="footer__social">
-        <a class="footer__social-btn footer__social-btn--vk" href="#">Вконтакте</a>
-        <a class="footer__social-btn footer__social-btn--fb" href="#">Фейсбук</a>
-        <a class="footer__social-btn footer__social-btn--inst" href="#">Инстаграм</a>
-      </div>
-      <div class="footer__copyright">
-        <span>Разработано</span>
-        <a href="https://htmlacademy.ru">HTML Academy</a>
+    <footer class="footer footer--mobile">
+      <div class="footer__container">
+        <div class="footer__logo">
+          <a href="#"><img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="PINK"></a>
+        </div>
+        <div class="footer__social">
+          <a class="footer__social-btn footer__social-btn--vk" href="#">Вконтакте</a>
+          <a class="footer__social-btn footer__social-btn--fb" href="#">Фейсбук</a>
+          <a class="footer__social-btn footer__social-btn--inst" href="#">Инстаграм</a>
+        </div>
+        <div class="footer__copyright">
+          <span>Разработано</span>
+          <a href="https://htmlacademy.ru">HTML Academy</a>
+        </div>
       </div>
     </footer>

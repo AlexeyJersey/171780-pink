@@ -27,3 +27,27 @@
 .underline(@none: none;) {
   text-decoration: @none;
 }
+
+.clearfix() {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}
+
+.container() {
+
+  width: 320px;
+  margin: 0 auto;
+
+  @media @tablet-w {
+    width: 620px;
+  }
+
+  @media @desktop-w {
+    width: 940px;
+  }
+
+}
