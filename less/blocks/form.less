@@ -117,3 +117,100 @@
   }
 
 }
+
+@media @tablet-w {
+
+  .form__user {
+    width: 100%;
+    order: 1;
+
+    .form__user-lastname {
+      flex-direction: row;
+    }
+
+    .form__user-name {
+      flex-direction: row;
+    }
+
+    .form__user-patronymic {
+      flex-direction: row;
+    }
+
+  }
+
+  .form__achievement {
+    order: 4;
+  }
+
+  .form__contacts {
+    width: 100%;
+    order: 3;
+
+    &-phone {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    &-mail {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+  }
+
+  .form__radio {
+    order: 2;
+  }
+
+  .form__send {
+    order: 5;
+    justify-content: space-between;
+
+    textarea {
+      width: 500px;
+      height: 190px;
+      resize: none;
+    }
+
+  }
+
+}
+
+@media @desktop-w {
+
+  .form__user {
+    width: 50%;
+  }
+
+  .form__radio {
+    width: 50%;
+  }
+
+  .form__contacts {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__achievement {
+
+    &-items {
+      display: flex;
+      width: 80%;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  .form__send {
+
+    span:nth-child(1) {
+      width: 100%;
+    }
+
+    textarea {
+      width: 100%;
+    }
+
+  }
+
+}
