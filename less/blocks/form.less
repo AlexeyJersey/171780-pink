@@ -54,9 +54,13 @@ form {
 
 .form__user {
   display: flex;
+  min-height: 326px;
   flex-wrap: wrap;
+  align-items: center;
+  align-content: space-between;
+
   padding-left: 20px;
-  padding-bottom: 26px;
+  padding-bottom: 45px;
 
   label {
     padding-left: 23px;
@@ -68,7 +72,6 @@ form {
     padding-left: 21px;
     padding-right: 24px;
     padding-bottom: 13px;
-    margin-bottom: 19px;
   }
 
   .form__user-lastname {
@@ -95,8 +98,6 @@ form {
 
   label {
     display: flex;
-    align-content: flex-end;
-    margin-bottom: 43px;
 
     .font-bigger();
     .font-regular();
@@ -108,7 +109,9 @@ form {
     display: none;
   }
 
-  &-item [type="checkbox"] + div {
+  &-item [type="checkbox"] + label::before {
+    content: '';
+    display: block;
     margin-right: 32px;
     width: 35px;
     height: 35px;
@@ -117,7 +120,7 @@ form {
     border-radius: 3px;
   }
 
-  &-item [type="checkbox"]:checked + div {
+  &-item [type="checkbox"]:checked + label::before {
     background-image: url('../img/tick.svg');
     background-repeat: no-repeat;
     background-position: 8px 9px;
