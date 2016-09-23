@@ -165,6 +165,7 @@ form {
   padding-top: 37px;
   padding-bottom: 38px;
   padding-left: 19px;
+  margin-bottom: 30px;
 
   background-color: @grey;
 
@@ -209,16 +210,64 @@ form {
   display: flex;
   flex-wrap: wrap;
 
-  textarea {
-    resize: none;
-    .font();
-    .font-regular();
-    color: @navy;
+  padding-left: 20px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  span:first-child {
+    display: inline-block;
+    padding-left: 48px;
+    padding-bottom: 18px;
   }
 
-  span:nth-child(2) {
+  textarea {
+    width: 236px;
+    height: 154px;
+    padding-top: 13px;
+    padding-bottom: 30px;
+    padding-left: 19px;
+    padding-right: 20px;
+    margin-bottom: 26px; //TEMP!!
+
+
+    resize: none;
+    .font(18px, 30px);
+    .font-regular();
+    color: @navy;
+    border: 2px solid @light-grey;
+
+    &::-webkit-input-placeholder {color: @navy;}
+    &::-moz-placeholder          {color: @navy;}/* Firefox 19+ */
+    &:-moz-placeholder           {color: @navy;}/* Firefox 18- */
+    &:-ms-input-placeholder      {color: @navy;}
+  }
+
+  &-btn {
+    padding-top: 17px;
+    padding-right: 47px;
+    padding-bottom: 17px;
+    padding-left: 47px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .font(18px, 30px);
+    .font-bold();
+    .uppercase();
+    color: @white;
+    border: none;
+    border-radius: 3px;
+    background-color: @green;
+  }
+
+  span:nth-child(4) {
+    // display: inline-block;
+    padding-left: 48px;
+    padding-top: 14px;
+    padding-bottom: 15px;
+
     .font();
     .font-regular();
+    .uppercase();
     color: @navy;
   }
 
