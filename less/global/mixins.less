@@ -28,14 +28,31 @@
   text-decoration: @none;
 }
 
-.clearfix() {
-  &::after {
-    content: "";
-
-    display: table;
-    clear: both;
-  }
+.border-grey() {
+  border: 2px solid @light-grey;
 }
+
+.round-box() {
+  width: 35px;
+  height: 35px;
+  background-color: @white;
+  .border-grey();
+  border-radius: 50%;
+}
+
+.flex() {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+// .clearfix() {
+//   &::after {
+//     content: "";
+
+//     display: table;
+//     clear: both;
+//   }
+// }
 
 .container() {
 
@@ -51,3 +68,4 @@
   }
 
 }
+
