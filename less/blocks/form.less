@@ -49,6 +49,16 @@ form {
     text-align: center;
   }
 
+  fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  legend {
+    display: none;
+  }
+
 }
 
 .form__user {
@@ -166,7 +176,7 @@ form {
 .form__radio {
   .flex();
 
-  padding-top: 37px;
+  padding-top: 38px;
   padding-bottom: 38px;
   padding-left: 19px;
   margin-bottom: 30px;
@@ -175,7 +185,7 @@ form {
 
   label {
     display: flex;
-    margin-top: 16px;
+    margin-top: 15px;
     margin-bottom: 36px;
 
     .font(18px, 30px);
@@ -365,16 +375,33 @@ form {
     form {
 
       span:not(:nth-child(4)) {
-        padding-bottom: 0px;
+        display: none;
       }
 
+    }
+
+    fieldset {
+      display: flex;
+      .border-grey();
+    }
+
+    legend {
+      display: inline-block;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .font(14px, 18px);
+      .font-regular();
+      .uppercase();
+      color: @pink;
+      text-align: center;
     }
 
   .form__user {
     width: 100%;
     height: 312px; //TEMP
     padding-left: 0px;
-    padding-bottom: 47px;
+    padding-bottom: 40px;
     order: 1;
     align-items: center;
     align-content: space-between;
@@ -411,47 +438,59 @@ form {
 
   .form__radio {
     width: 100%;
-    height: 300px; //TEMP
     padding: 0;
-    padding-left: 20px;
-    margin: 0;
-
-    align-items: center;
+    padding-bottom: 30px;
     order: 2;
 
     background: @white;
-    .border-grey();
-    border-top: none;
 
-    span {
+    &-item [type="radio"] + label::before {
+      margin-right: 19px;
+    }
+
+    fieldset {
       width: 100%;
-      padding-bottom: 0px;
-      align-self: flex-start;
+      height: 300px; //TEMP
+      margin: 0;
+      padding: 0;
+      padding-left: 60px;
+
+      align-items: center;
+
+      legend {
+        margin-left: 69px; //TEMP
+      }
+
+      label {
+        margin-top: 0px;
+        padding: 0px;
+      }
+
+      &-items {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      &-item {
+        width: 100%;
+      }
+
     }
 
-    // label {
-    //   margin-top: 0px;
-    //   padding: 0px;
-    // }
-
-    &-items {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    &-item {
-      width: 100%;
-    }
-
-  }
-
-  .form__achievement {
-    order: 4;
   }
 
   .form__contacts {
     width: 100%;
+    padding: 0;
     order: 3;
+
+    fieldset {
+      .flex();
+      height: 305px; //TEMP
+      padding-left: 58px;
+      padding-right: 57px;
+      padding-top: 10px;
+    }
 
     &-phone {
       display: flex;
@@ -463,6 +502,14 @@ form {
       flex-direction: column-reverse;
     }
 
+    div:last-of-type > input{
+      margin-bottom: 0;
+    }
+
+  }
+
+  .form__achievement {
+    order: 4;
   }
 
   .form__send {
@@ -482,37 +529,41 @@ form {
 
 @media @desktop-w {
 
-  .form__user {
-    width: 50%;
-  }
+  .form {
 
-  .form__radio {
-    width: 50%;
-  }
+    .form__user {
+      width: 50%;
+    }
 
-  .form__contacts {
-    display: flex;
-    justify-content: space-between;
-  }
+    .form__radio {
+      width: 50%;
+    }
 
-  .form__achievement {
-
-    &-items {
+    .form__contacts {
       display: flex;
-      width: 100%;
-      flex-wrap: wrap;
       justify-content: space-between;
     }
-  }
 
-  .form__send {
+    .form__achievement {
 
-    span:nth-child(1) {
-      width: 100%;
+      &-items {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
     }
 
-    textarea {
-      width: 100%;
+    .form__send {
+
+      span:nth-child(1) {
+        width: 100%;
+      }
+
+      textarea {
+        width: 100%;
+      }
+
     }
 
   }
