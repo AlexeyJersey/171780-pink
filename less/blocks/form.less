@@ -12,6 +12,18 @@
     color: @navy;
     text-align: center;
   }
+  span:not(:nth-child(4)) {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-bottom: 23px;
+
+    .font(14px, 18px);
+    .font-regular();
+    .uppercase();
+    color: @pink;
+    text-align: center;
+  }
 
 }
 
@@ -36,28 +48,6 @@ form {
     &:-ms-input-placeholder      {color: @navy;}
   }
 
-  span:not(:nth-child(4)) {
-    display: inline-block;
-    padding-left: 20px;
-    padding-right: 40px;
-    padding-bottom: 23px;
-
-    .font(14px, 18px);
-    .font-regular();
-    .uppercase();
-    color: @pink;
-    text-align: center;
-  }
-
-  fieldset {
-    border: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  legend {
-    display: none;
-  }
 
 }
 
@@ -372,36 +362,10 @@ form {
       content: ' Пожалуйста, заполните форму ниже:';
     }
 
-    form {
-
-      span:not(:nth-child(4)) {
-        display: none;
-      }
-
-    }
-
-    fieldset {
-      display: flex;
-      .border-grey();
-    }
-
-    legend {
-      display: inline-block;
-      padding-left: 20px;
-      padding-right: 20px;
-
-      .font(14px, 18px);
-      .font-regular();
-      .uppercase();
-      color: @pink;
-      text-align: center;
-    }
-
   .form__user {
     width: 100%;
-    height: 312px; //TEMP
     padding-left: 0px;
-    padding-bottom: 40px;
+    padding-bottom: 65px;
     order: 1;
     align-items: center;
     align-content: space-between;
@@ -414,6 +378,11 @@ form {
 
     input {
       width: 100%;
+      margin-bottom: 53px;
+    }
+
+    div:last-child input {
+      margin-bottom: 0;
     }
 
     .form__user-lastname {
@@ -437,45 +406,46 @@ form {
   }
 
   .form__radio {
+    position: relative;
+    .flex();
     width: 100%;
     padding: 0;
-    padding-bottom: 30px;
+    padding-top: 55px;
+    padding-left: 59px;
+    padding-bottom: 51px;
     order: 2;
 
+    .border-grey();
     background: @white;
+
+    span {
+      position: absolute;
+      top: -11px;
+      left: 127px;
+      padding-left: 22px;
+      padding-right: 25px;
+
+      background: @white;
+    }
+
+    label {
+      width: 100%;
+      margin-top: 0px;
+      padding: 0px;
+    }
 
     &-item [type="radio"] + label::before {
       margin-right: 19px;
     }
 
-    fieldset {
-      width: 100%;
-      height: 300px; //TEMP
-      margin: 0;
-      padding: 0;
-      padding-left: 60px;
+      // &-items {
+      //   display: flex;
+      //   flex-wrap: wrap;
+      // }
 
-      align-items: center;
-
-      legend {
-        margin-left: 69px; //TEMP
-      }
-
-      label {
-        margin-top: 0px;
-        padding: 0px;
-      }
-
-      &-items {
-        display: flex;
-        flex-wrap: wrap;
-      }
-
-      &-item {
-        width: 100%;
-      }
-
-    }
+      // &-item {
+      //   width: 100%;
+      // }
 
   }
 
