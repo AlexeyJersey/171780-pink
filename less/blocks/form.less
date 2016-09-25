@@ -143,12 +143,13 @@ form {
   padding-bottom: 30px;
   margin-bottom: 22px;
 
-  span {
+  &-title {
     display: none;
   }
 
-  label {
-    padding-left: 23px;
+  &-phone span:last-child,
+  &-mail span:last-child  {
+    display: none;
   }
 
   input {
@@ -394,7 +395,7 @@ form {
 
       .border-grey();
 
-      span {
+      &-title {
         display: inline-block;
         position: absolute;
         top: -11px;
@@ -405,7 +406,18 @@ form {
         background: @white;
       }
 
+      &-phone span:first-child,
+      &-mail span:first-child {
+        display: none;
+      }
+
+      &-phone span:last-child,
+      &-mail span:last-child {
+        display: inline;
+      }
+
       input {
+        position: relative;
         margin-top: 0px;
         margin-bottom: 10px;
       }
@@ -414,20 +426,25 @@ form {
         margin-bottom: 10px;
       }
 
-    // input:after {
-    //   position: absolute;
+      a {
+        position: absolute;
+        content: '';
+        top: 46px;
+        left: 497px;
+        width: 60px;
+        height: 59px;
 
-    //   content: '';
-    //   width: 59px;
-    //   height: 59px;
-    //   background-color: red;
-    //   // background-image: url('../img/phone.svg');
-    //   // background-repeat: no-repeat;
-    //   // background-position: center;
-    // }
+        background-color: @light-grey;
+        background-image: url('../img/phone.svg');
+        background-repeat: no-repeat;
+        background-position: 19px 20px;
+      }
 
-      label {
-        padding-left: 20px;
+      &-mail a {
+        top: 178px;
+
+        background-image: url('../img/mail.svg');
+        background-position: 20px 23px;
       }
 
       &-phone {
