@@ -592,18 +592,92 @@ form {
     }
 
     .form__contacts {
-      display: flex;
+      .flex();
+      flex-wrap: nowrap;
       justify-content: space-between;
+      padding-top: 42px;
+      padding-bottom: 13px;
+
+      &-title {
+        top: -11px;
+        left: 339px;
+
+      }
+
+      &-phone {
+        width: 50%;
+        margin: 0px;
+        margin-right: 70px;
+
+        a {
+          top: 44px;
+          left: 372px;
+        }
+
+      }
+
+      &-mail {
+        width: 50%;
+
+        a {
+          top: 44px;
+          left: 817px;
+        }
+
+      }
+
     }
 
     .form__achievement {
+      // height: 150px;
+      padding-left: 60px;
+      padding-right: 52px;
+
+      span {
+        top: -9px;
+        left: 251px;
+      }
+
+      label {
+        margin-bottom: 0px;
+      }
 
       &-items {
-        display: flex;
+        .flex();
         width: 100%;
-        flex-wrap: wrap;
+        // flex-direction: row-reverse;
+        // flex-wrap: no-wrap;
+        // flex-direction: column;
+        // flex-basis: 150px;
         justify-content: space-between;
+        // justify-content: flex-start;
+
+        &-items:nth-child(1) {
+          order: 1;
+        }
+
+        &-items:nth-child(2) {
+          order: 4;
+        }
+
+        &-items:nth-child(3) {
+          order: 3;
+        }
+
+        &-items:nth-child(4) {
+          order: 2;
+        }
+
+        &-items:nth-child(5) {
+          order: 5;
+        }
+
+        &-items:nth-child(6) {
+          order: 6;
+        }
+
       }
+
     }
 
     .form__send {
