@@ -91,10 +91,6 @@
 
 @media @tablet-w {
 
-  .footer {
-    display: block;
-  }
-
   .footer__container {
     display: flex;
     width: 100%;
@@ -122,13 +118,23 @@
 
 @media @desktop-w {
 
-  .footer {
-    display: block;
-  }
-
   .footer__container {
-    display: flex;
-    justify-content: space-around;
+    padding-bottom: 71px;
+
+    .footer__social {
+      margin-left: 22px;
+
+    }
+
+    .footer__copyright {
+
+      span {
+        .font(18px, 18px);
+        margin-right: 10px;
+      }
+
+    }
+
   }
 
 }
