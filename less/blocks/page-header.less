@@ -1,37 +1,29 @@
-.page-header {
-
-}
-
 .page-header__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 
+  background-color: @navydark;
   background-image: url('../img/bg-back-mobile@1x.jpg');
   background-repeat: no-repeat;
-  // background-size: cover;
   background-position: -191px 256px;
 }
 
+
 @media @tablet-w {
 
-  .page-header {
-    padding-bottom: 65px; //TEMP
+  .page-header__container {
+    background-image: url('../img/bg-back-tablet@1x.jpg');
+    background-position: 0px 255px;
   }
+
 }
 
 @media @desktop-w {
 
-  .page-header {
-    // padding-bottom: 0px; //TEMP
-  }
-
-  .page-name {
-
-    img {
-      height: 243px; //TEMP
-    }
-
+  .page-header__container {
+    background-image: url('../img/bg-back-desktop@1x.jpg');
+    background-position: 0px 0px;
   }
 
 }

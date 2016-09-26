@@ -7,12 +7,12 @@
     color: @navy;
   }
 
-}
-
 .footer__container {
   .flex();
   padding-top: 13px;
   padding-left: 20px;
+
+}
 
   .footer__logo {
     padding-left: 75px;
@@ -91,12 +91,18 @@
 
 @media @tablet-w {
 
+  .footer {
+
   .footer__container {
     display: flex;
-    width: 100%;
+    width: 620px;
     padding: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
     align-items: center;
     justify-content: space-between;
+
+  }
 
     .footer__logo {
       padding: 0px;
@@ -118,8 +124,14 @@
 
 @media @desktop-w {
 
+  .footer {
+
   .footer__container {
+    width: 940px;
     padding-bottom: 71px;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
 
     .footer__social {
       margin-left: 22px;
