@@ -10,23 +10,12 @@
     color: @black;
   }
 
-  h2 {
-    .font(24px, 24px);
-    .font-light();
-    color: @navy;
-  }
-
   h3 {
     .font(30px, 36px);
     .font-bold();
     color: @black;
   }
 
-  p {
-    .font(14px, 24px);
-    .font-light();
-    color: @navy;
-  }
 
   a {
     .font(14px, 24px);
@@ -37,22 +26,40 @@
 
   .features__title {
     padding-top: 21px;
-    padding-bottom: 53px;
+    padding-bottom: 22px;
     text-align: center;
 
     h2 {
       display: inline-block;
-      line-height: 29px;
       margin-bottom: 9px;
+
+      .font(24px, 29px);
+      .font-light();
+      color: @navy;
     }
 
   }
 
   .features__items {
-    .flex();
-    // align-items: center;
-    // justufy-content: center;
+    padding-top: 69px;
+    padding-bottom: 300px; //TEMP
+
+    text-align: center;
     background-color: @grey;
+
+    p {
+      padding-left: 26px;
+      padding-right: 26px;
+
+      .font(14px, 23px);
+      .font-light();
+      color: @navy;
+    }
+
+    .features__item {
+      padding-bottom: 6px;
+    }
+
   }
 
   .features__item-clock {

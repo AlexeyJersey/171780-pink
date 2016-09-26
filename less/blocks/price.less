@@ -1,5 +1,14 @@
-.slider-price {
-  background-color: @navy;
+.price {
+
+  &__container {
+    padding-top: 90px; //TEMP
+    padding-bottom: 133px; //TEMP
+    background-color: @grey;
+  }
+
+  th:not(:nth-child(1)) {
+    background-color: @navy;
+  }
 
   h2 {
     .font(18px, 30px);
@@ -21,19 +30,23 @@
     color: @navy;
   }
 
-  .slider-price__options {
-    .font();
-    .font-regular();
-    color: @navy;
-    .uppercase();
+  td {
     background-color: @white;
   }
+
+  // .price__options {
+  //   .font();
+  //   .font-regular();
+  //   color: @navy;
+  //   .uppercase();
+  //   background-color: @white;
+  // }
 
 }
 
 @media @tablet-w {
 
-  .slider-price {
+  .price {
 
 
     table {
