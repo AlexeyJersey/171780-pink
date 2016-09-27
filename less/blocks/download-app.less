@@ -1,15 +1,19 @@
 .download-app {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .flex();
+  flex-direction: row;
+  // align-items: center;
+  // justify-content: center;
 
-  a {
+  .download-app__btn {
+    width: 100%;
     padding-top: 15px;
     padding-bottom: 16px;
-    padding-left: 36px;
-    padding-right: 36px;
+    padding-left: 35px;
+    padding-right: 35px;
     margin-top: 26px;
-    margin-bottom: 26px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
 
     .font(18px, 18px);
     .font-bold();
@@ -18,13 +22,49 @@
     border-radius: 30px;
   }
 
-  p  {
+  .download-app__icons {
+    .flex();
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-bottom: 8px;
+  }
 
-    margin-bottom: 34px;
+  .downlod-app__icon {
+    display: block;
+    height: 60px;
+    width: 50px;
+
+    font-size: 0px;
+    background-image: url('../img/logo-apple.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &--apple {
+      margin-right: 31px;
+    }
+
+    &--android {
+      margin-right: 29px;
+      background-image: url('../img/logo-android.svg');
+      background-position: 3px 11px;
+    }
+
+    &--win {
+      background-image: url('../img/logo-microsoft.svg');
+      background-position: 3px 15px;
+    }
+
+  }
+
+  p {
+    padding-left: 26px;
+    padding-right: 26px;
+    margin-bottom: 29px;
 
     .font(14px, 24px);
     .font-light();
     color: @white;
+    text-align: center;
   }
 
 }
