@@ -1,5 +1,49 @@
-.page-name h1 {
-  .font(24px, 24px);
-  .font-light();
-  color: @white;
+.page-name {
+  padding-top: 14px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 37px;
+
+  text-align: center;
+
+
+  h1 {
+    .font(24px, 29px);
+    .font-light();
+    color: @white;
+    font-weight: normal;
+  }
+
+}
+
+@media @tablet-w {
+
+  .page-name {
+    padding-top: 35px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 47px;
+
+    h1  {
+      .font(50px, 60px);
+    }
+
+  }
+
+}
+
+@media @desktop-w {
+
+  .page-name {
+    padding-top: 31px;
+    padding-left: 84px;
+    padding-right: 84px;
+    padding-bottom: 70px;
+
+    h1  {
+      .font(50px, 59px);
+    }
+
+  }
+
 }

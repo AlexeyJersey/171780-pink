@@ -28,13 +28,21 @@
   text-decoration: @none;
 }
 
-.clearfix() {
-  &::after {
-    content: "";
+.border-grey() {
+  border: 2px solid @light-grey;
+}
 
-    display: table;
-    clear: both;
-  }
+.round-box() {
+  width: 35px;
+  height: 35px;
+  background-color: @white;
+  .border-grey();
+  border-radius: 50%;
+}
+
+.flex() {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .container() {
@@ -43,11 +51,16 @@
   margin: 0 auto;
 
   @media @tablet-w {
-    width: 620px;
+    width: 700px;
+    // padding-left: 40px;
+    // padding-right: 40px;
   }
 
   @media @desktop-w {
-    width: 940px;
+    width: 1200px;
+    // padding-left: 130px;
+    // padding-right: 130px;
   }
 
 }
+

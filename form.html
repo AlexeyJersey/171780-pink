@@ -15,18 +15,17 @@
         <nav class="nav">
           <div class="nav__item-main">
             <a href="index.html"><img src="img/logo-pink-white-mobile.svg" alt="Pink"></a>
-            <img class="nav__cross" src="img/icon-menu-cross.svg" alt="X">
+            <img class="nav__item-main-cross" src="img/icon-menu-cross.svg" alt="X">
           </div>
           <ul class="nav__items">
             <li class="nav__item"><a href="index.html">Главная</a></li>
             <li class="nav__item"><a href="photo.html">Фотографии</a></li>
             <li class="nav__item"><a href="form.html">Конкурс</a></li>
-            <li class="nav__item"><a href="https://htmlacademy.ru">HTML ACADEMY</a></li>
+            <li class="nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
           </ul>
         </nav>
         <div class="page-name">
-          <img src="img/bg-back-mobile@1x.jpg" width="700" height="462" alt="PINK-bg">
-          <h1>Конкурс на самое безбашеное путешествие с Пинк</h1>
+          <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
         </div>
       </div>
     </header>
@@ -35,7 +34,7 @@
 
     <section class="form">
       <div class="form__container">
-            <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполни</p>
+        <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
         <form action="some.php" method="post">
           <div class="form__user">
             <div class="form__user-lastname">
@@ -54,37 +53,75 @@
           <div class="form__achievement">
             <span>Ваши безбашенные достижения в путешествии</span>
             <ul class="form__achievement-items">
-              <li class="form__achievement-item"><label><input type="checkbox" checked>Сделал селфи с акулой</label></li>
-              <li class="form__achievement-item"><label><input type="checkbox" checked>Обгорел на пляже</label></li>
-              <li class="form__achievement-item"><label><input type="checkbox">Видел Чака Норриса</label></li>
-              <li class="form__achievement-item"><label><input type="checkbox">Накупил сувениров</label></li>
-              <li class="form__achievement-item"><label><input type="checkbox" checked>Удержал башню</label></li>
-              <li class="form__achievement-item"><label><input type="checkbox">Разгромил отель</label></li>
+              <li class="form__achievement-item">
+                <input id="item-check1" type="checkbox" checked>
+                <label for="item-check">Сделал селфи с акулой</label>
+              </li>
+              <li class="form__achievement-item">
+                <input id="item-check2" type="checkbox" checked>
+                <label for="item-check2">Обгорел на пляже</label>
+              </li>
+              <li class="form__achievement-item">
+                <input id="item-check3" type="checkbox">
+                <label for="item-check3">Видел Чака Норриса</label>
+              </li>
+              <li class="form__achievement-item">
+                <input id="item-check4" type="checkbox">
+                <label for="item-check4">Накупил сувениров</label>
+              </li>
+              <li class="form__achievement-item">
+                <input id="item-check5" type="checkbox" checked>
+                <label for="item-check5">Удержал башню</label>
+              </li>
+              <li class="form__achievement-item">
+                <input id="item-check6" type="checkbox">
+                <label for="item-check6">Разгромил отель</label>
+              </li>
             </ul>
           </div>
           <div class="form__contacts">
-            <div class="form__contacts-phone">
-              <label for="user-phone">Номерок телефончика</label>
-              <input type="tel" id="user-phone" placeholder="Номер, пожалуйста">
-            </div>
-            <div class="form__contacts-mail">
-              <label for="user-mail">Адресок почты</label>
-              <input type="email" id="user-mail" placeholder="Введите почту">
-            </div>
+              <span class="form__contacts-title">Контактная информация</span>
+              <div class="form__contacts-phone">
+                <label for="user-phone">
+                  <span>Номерок телефончика</span>
+                  <span>Номер телефона</span>
+                </label>
+                <input type="tel" id="user-phone" placeholder="Номер, пожалуйста">
+                <a href="#"></a>
+              </div>
+              <div class="form__contacts-mail">
+                <label for="user-mail">
+                  <span>Адресок почты</span>
+                  <span>Адрес почты</span>
+                </label>
+                <input type="email" id="user-mail" placeholder="Введите почту">
+                <a href="#"></a>
+              </div>
           </div>
           <div class="form__radio">
             <span>С каким приложением путешествовали?</span>
-            <ul class="form__radio-items">
-              <li class="form__radio-item"><label><input type="radio" checked>Pink для iOS</label></li>
-              <li class="formr__radio-item"><label><input type="radio">Pink на Android</label></li>
-              <li class="form__radio-item"><label><input type="radio">Windows Phone</label></li>
-            </ul>
+              <ul class="form__radio-items">
+                <li class="form__radio-item">
+                  <input id="radio1" name="radio-item" type="radio"checked>
+                  <label for="radio1">Pink для iOS</label>
+                </li>
+                <li class="form__radio-item">
+                  <input id="radio2" name="radio-item" type="radio">
+                  <label for="radio2">Pink на Android</label>
+                </li>
+                <li class="form__radio-item">
+                  <input id="radio3" name="radio-item" type="radio">
+                  <label for="radio3">Windows Phone</label>
+                </li>
+              </ul>
           </div>
-          <div class="form__send">
+          <div class="form__emotion">
             <span>Опишите свои эмоции</span>
             <textarea name="emotions" id="user-emotions" cols="30" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </div>
+          <div class="form__send">
             <button class="form__send-btn">Отправить форму</button>
-            <span><b>*</b> - Обязательные поля</span>
+            <span><b>*</b> — Обязательные <span>для заполнения</span> поля</span>
           </div>
         </form>
       </div>
@@ -98,9 +135,9 @@
           <a href="#"><img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="PINK"></a>
         </div>
         <div class="footer__social">
-          <a class="footer__social-btn footer__social-btn--vk" href="#">Вконтакте</a>
+          <a class="footer__social-btn footer__social-btn--tw" href="#">Вконтакте</a>
           <a class="footer__social-btn footer__social-btn--fb" href="#">Фейсбук</a>
-          <a class="footer__social-btn footer__social-btn--inst" href="#">Инстаграм</a>
+          <a class="footer__social-btn footer__social-btn--yo" href="#">Ютьюб</a>
         </div>
         <div class="footer__copyright">
           <span>Разработано</span>

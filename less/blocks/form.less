@@ -1,26 +1,74 @@
 .form {
   background-color: @white;
 
-  form {
-    display: flex;
-    flex-wrap: wrap;
+
+  p {
+    display: inline-block;
+    padding-top: 31px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+
+    .font(14px, 30px);
+    color: @navy;
+    text-align: center;
+  }
+
+  span {
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-bottom: 23px;
+
+    .font(14px, 18px);
+    .font-regular();
+    .uppercase();
+    color: @pink;
+    text-align: center;
   }
 
 }
 
-.form__user {
-
-  p {
-    .font();
-    .font-regular();
-    color: @navy;
-  }
+form {
+  .flex();
 
   label {
     .font();
     .font-regular();
     color: @pink;
     .uppercase();
+  }
+
+  input {
+    .font(18px, 30px);
+    opacity: 1;
+    .border-grey();
+
+    &::-webkit-input-placeholder {color: @navy;}
+    &::-moz-placeholder          {color: @navy;}/* Firefox 19+ */
+    &:-moz-placeholder           {color: @navy;}/* Firefox 18- */
+    &:-ms-input-placeholder      {color: @navy;}
+  }
+
+}
+
+.form__user {
+  .flex();
+
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+
+  label {
+    padding-left: 23px;
+    padding-bottom: 5px;
+  }
+
+  input {
+    padding-top: 14px;
+    padding-left: 21px;
+    padding-right: 24px;
+    padding-bottom: 15px;
+    margin-bottom: 17px;
   }
 
   .form__user-lastname {
@@ -40,136 +88,478 @@
 
 }
 
-// .form__user input PLACEHOLDER!!!!
-
-
 .form__achievement {
+  .flex();
 
-  span {
-    .font(14px, 18px);
-    .font-regular();
-    color: @pink;
-    .uppercase();
-  }
+  padding-top: 37px;
+  padding-bottom: 37px;
+  padding-left: 19px;
+  margin-top: 16px;
+
+  background-color: @grey;
 
   label {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 43px;
+
     .font-bigger();
     .font-regular();
     color: @navy;
+    text-transform: none;
+  }
+
+  li:last-of-type > label {
+    margin-bottom: 6px;
+  }
+
+  &-item [type="checkbox"] {
+    display: none;
+  }
+
+  &-item [type="checkbox"] + label::before {
+    content: '';
+    display: block;
+    margin-right: 32px;
+    width: 35px;
+    height: 35px;
+    background-color: @white;
+    .border-grey();
+    border-radius: 3px;
+  }
+
+  &-item [type="checkbox"]:checked + label::before {
+    background-image: url('../img/tick.svg');
+    background-repeat: no-repeat;
+    background-position: 8px 9px;
   }
 
 }
 
-.form__contacts label {
-  .font();
-  .font-regular();
-  color: @pink;
-  .uppercase();
+.form__contacts {
+  .flex();
+
+  padding-left: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 22px;
+
+  &-title {
+    display: none;
+  }
+
+  &-phone span:last-child,
+  &-mail span:last-child  {
+    display: none;
+  }
+
+  input {
+    padding-top: 14px;
+    padding-left: 21px;
+    padding-right: 24px;
+    padding-bottom: 15px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+  }
+
+  div:last-of-type > input{
+    margin-bottom: 0;
+  }
+
 }
-
-// .form__contacts input  PLACEHOLDER !!!
-
 
 .form__radio {
+  .flex();
 
-  span {
-    .font(14px, 18px);
-    .font-regular();
-    color: @pink;
-    .uppercase();
-  }
+  padding-top: 38px;
+  padding-bottom: 38px;
+  padding-left: 19px;
+  margin-bottom: 30px;
+
+  background-color: @grey;
 
   label {
-    .font-bigger();
-    .font-regular();
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 36px;
+
+    .font(18px, 30px);
     color: @navy;
+    text-transform: none;
+  }
+
+  li:last-of-type > label {
+    margin-bottom: 0px;
+  }
+
+  &-item [type="radio"] {
+    display: none;
+  }
+
+  &-item [type="radio"] + label::before {
+    content: '';
+    display: block;
+    margin-right: 32px;
+    .round-box();
+  }
+
+  &-item [type="radio"]:checked + label::before {
+    background-image: url('../img/radio-toggle.svg');
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
   }
 
 }
 
-.form__send {
-  display: flex;
-  flex-wrap: wrap;
+.form__emotion {
+  .flex();
 
-  span:nth-child(1) {
-    .font();
-    .font-regular();
-    color: @pink;
-    .uppercase();
+  padding-left: 20px;
+  padding-top: 27px;
+  padding-bottom: 21px;
+
+  span {
+    display: inline-block;
+    padding-left: 48px;
+    padding-bottom: 18px;
   }
 
   textarea {
+    width: 236px;
+    height: 154px;
+    padding-top: 13px;
+    padding-bottom: 30px;
+    padding-left: 19px;
+    padding-right: 20px;
+    margin-bottom: 26px;
+
+
     resize: none;
-    .font();
+    .font(18px, 30px);
     .font-regular();
     color: @navy;
-  }
+    .border-grey();
 
-  span:nth-child(2) {
-    .font();
-    .font-regular();
-    color: @navy;
-  }
-
-  b {
-    .font();
-    .font-regular();
-    color: @pink;
+    &::-webkit-input-placeholder {color: @navy;}
+    &::-moz-placeholder          {color: @navy;}/* Firefox 19+ */
+    &:-moz-placeholder           {color: @navy;}/* Firefox 18- */
+    &:-ms-input-placeholder      {color: @navy;}
   }
 
 }
 
-@media @tablet-w {
-
-  .form__user {
-    width: 100%;
-    order: 1;
-
-    .form__user-lastname {
-      flex-direction: row;
-    }
-
-    .form__user-name {
-      flex-direction: row;
-    }
-
-    .form__user-patronymic {
-      flex-direction: row;
-    }
-
-  }
-
-  .form__achievement {
-    order: 4;
-  }
-
-  .form__contacts {
-    width: 100%;
-    order: 3;
-
-    &-phone {
-      display: flex;
-      flex-direction: column-reverse;
-    }
-
-    &-mail {
-      display: flex;
-      flex-direction: column-reverse;
-    }
-
-  }
-
-  .form__radio {
-    order: 2;
-  }
-
   .form__send {
-    order: 5;
-    justify-content: space-between;
+    .flex();
 
-    textarea {
-      width: 500px;
-      height: 190px;
+    &-btn {
+      padding-top: 16px;
+      padding-right: 47px;
+      padding-bottom: 17px;
+      padding-left: 47px;
+      margin-left: 20px;
+
+      .font(18px, 30px);
+      .font-bold();
+      .uppercase();
+      color: @white;
+      border: none;
+      border-radius: 3px;
+      background-color: @green;
+    }
+
+    span {
+      display: inline-block;
+      margin-top: 34px;
+      margin-left: 48px;
+      margin-bottom: 20px;
+
+      .font();
+      .font-regular();
+      .uppercase();
+      color: @navy;
+
+      span {
+        display: none;
+      }
+
+    }
+
+    b {
+      .font();
+      .font-regular();
+      color: @pink;
+    }
+
+  }
+
+@media @tablet-w {        //    !!! TABLET  !!!
+
+  .form {
+
+    .form__container {
+      width: 620px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    p {
+      padding-top: 73px;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 43px;
+
+      .font(18px,30px);
+    }
+
+    p:after {
+      content: ' Пожалуйста, заполните форму ниже:';
+    }
+
+    .form__user {
+      width: 100%;
+      padding-left: 0px;
+      padding-bottom: 65px;
+      order: 1;
+      align-items: center;
+      align-content: space-between;
+
+
+      label {
+        padding-left: 0px;
+        padding-right: 18px;
+      }
+
+      input {
+        width: 100%;
+        margin-bottom: 53px;
+      }
+
+      div:last-child input {
+        margin-bottom: 0;
+      }
+
+      .form__user-lastname {
+        width: 100%;
+        flex-direction: row;
+        align-items: baseline;
+      }
+
+      .form__user-name {
+        width: 100%;
+        flex-direction: row;
+        align-items: baseline;
+      }
+
+      .form__user-patronymic {
+        width: 100%;
+        flex-direction: row;
+        align-items: baseline;
+      }
+
+    }
+
+    .form__radio {
+      position: relative;
+      .flex();
+      width: 100%;
+      padding: 0;
+      padding-top: 55px;
+      padding-left: 59px;
+      padding-bottom: 51px;
+      margin-bottom: 65px;
+      order: 2;
+
+      .border-grey();
+      background: @white;
+
+      span {
+        position: absolute;
+        top: -11px;
+        left: 119px;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        background: @white;
+      }
+
+      label {
+        width: 100%;
+        margin-top: 0px;
+        padding: 0px;
+      }
+
+      &-item [type="radio"] + label::before {
+        margin-right: 19px;
+      }
+
+    }
+
+    .form__contacts {
+      position: relative;
+      width: 100%;
+      padding-top: 44px;
+      padding-left: 57px;
+      padding-right: 57px;
+      padding-bottom: 26px;
+      margin-bottom: 65px;
+
+      order: 3;
+
+      .border-grey();
+
+      &-title {
+        display: inline-block;
+        position: absolute;
+        top: -11px;
+        left: 179px;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        background: @white;
+      }
+
+      &-phone span:first-child,
+      &-mail span:first-child {
+        display: none;
+      }
+
+      &-phone span:last-child,
+      &-mail span:last-child {
+        display: inline;
+      }
+
+      input {
+        position: relative;
+        margin-top: 0px;
+        margin-bottom: 10px;
+      }
+
+      div:last-of-type > input {
+        margin-bottom: 10px;
+      }
+
+      a {
+        position: absolute;
+        content: '';
+        top: 46px;
+        left: 497px;
+        width: 60px;
+        height: 59px;
+
+        background-color: @light-grey;
+        background-image: url('../img/phone.svg');
+        background-repeat: no-repeat;
+        background-position: 19px 20px;
+      }
+
+      &-mail a {
+        top: 178px;
+
+        background-image: url('../img/mail.svg');
+        background-position: 20px 23px;
+      }
+
+      &-phone {
+        display: flex;
+        width: 100%;
+        margin-bottom: 29px;
+        flex-direction: column-reverse;
+      }
+
+      &-mail {
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+      }
+
+    }
+
+    .form__achievement {
+      position: relative;
+      width: 100%;
+      padding: 0px;
+      padding-top: 36px;
+      padding-left: 58px;
+      padding-bottom: 38px;
+      margin-top: 0px;
+      margin-bottom: 66px;
+      order: 4;
+
+      background-color: @white;
+      .border-grey();
+
+      span {
+        position: absolute;
+        top: -9px;
+        left: 92px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 0px;
+
+        background: @white;
+      }
+
+      &-item [type="checkbox"] + label::before {
+        margin-right: 20px;
+      }
+
+    }
+
+    .form__emotion {
+      position: relative;
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+      padding-top: 45px;
+      padding-left: 58px;
+      padding-bottom: 25px;
+      padding-right: 57px;
+      margin-bottom: 47px;
+
+      order: 5;
+      .border-grey();
+
+      span {
+        position: absolute;
+        top: -11px;
+        left: 186px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 0px;
+
+        background: @white;
+      }
+
+      textarea {
+        width: 100%;
+        height: 146px;
+
+      }
+    }
+
+    .form__send {
+      .flex();
+      width: 100%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-bottom: 54px;
+      justify-content: space-between;
+      align-items: center;
+
+      order: 6;
+
+      &-btn {
+        margin: 0px;
+        padding-left: 58px;
+        padding-right: 57px;
+      }
+
+      span {
+        margin: 0px;
+        padding: 0px;
+        padding-top: 2px;
+      }
+
     }
 
   }
@@ -178,37 +568,174 @@
 
 @media @desktop-w {
 
-  .form__user {
-    width: 50%;
-  }
+  .form {
 
-  .form__radio {
-    width: 50%;
-  }
+    .form__container {
+      width: 940px;
+      padding-left: 140px;
+      padding-right: 140px;
+    }
 
-  .form__contacts {
-    display: flex;
-    justify-content: space-between;
-  }
+    p {
+      padding-left: 90px;
+      padding-right: 90px;
+      margin-bottom: 32px;
+    }
 
-  .form__achievement {
+    .form__user {
+      max-width: 50%;
 
-    &-items {
-      display: flex;
-      width: 80%;
-      flex-wrap: wrap;
+      div {
+        margin-right: 35px;
+      }
+
+    }
+
+    .form__radio {
+      // width: 39%; // SAFARI MAT' EGO
+      width: 365px; // SAFARI MAT' EGO
+      margin-left: 36px;
+      padding-left: 63px;
+      margin-top: 4px;
+
+      span {
+        top: -9px;
+        left: 25px;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      ul {
+        padding-left: 11px;
+      }
+
+    }
+
+    .form__contacts {
+      .flex();
+      flex-wrap: nowrap;
       justify-content: space-between;
+      padding-top: 42px;
+      padding-bottom: 13px;
+
+      &-title {
+        top: -11px;
+        left: 339px;
+
+      }
+
+      &-phone {
+        width: 50%;
+        margin: 0px;
+        margin-right: 70px;
+
+        a {
+          top: 44px;
+          left: 372px;
+        }
+
+      }
+
+      &-mail {
+        width: 50%;
+
+        a {
+          top: 44px;
+          left: 817px;
+        }
+
+      }
+
     }
-  }
 
-  .form__send {
+    .form__achievement {
+      padding-left: 60px;
+      padding-right: 50px;
+      padding-bottom: 27px;
 
-    span:nth-child(1) {
-      width: 100%;
+      span {
+        top: -9px;
+        left: 251px;
+      }
+
+      label {
+        margin-bottom: 23px;
+      }
+
+      &-items {
+        .flex();
+        width: 100%;
+        justify-content: space-between;
+        align-content: center;
+
+        li:nth-child(1) {
+          order: 1;
+        }
+
+        li:nth-child(2) {
+          order: 4;
+          margin-right: 21px;
+        }
+
+        li:nth-child(3) {
+          order: 2;
+        }
+
+        li:nth-child(4) {
+          order: 5;
+        }
+
+        li:nth-child(5) {
+          order: 3;
+          margin-right: 4px;
+          margin-left: 9px;
+        }
+
+        li:nth-child(6) {
+          order: 6;
+        }
+
+      }
+
     }
 
-    textarea {
-      width: 100%;
+    .form__emotion {
+      padding-top: 43px;
+      padding-right: 58px;
+      padding-bottom: 16px;
+      margin-bottom: 45px;
+
+      span {
+        top: -11px;
+        left: 347px;
+      }
+
+      textarea {
+        width: 100%;
+        height: 81px;
+
+      }
+    }
+
+    .form__send {
+      margin-bottom: 39px;
+
+      span:nth-child(1) {
+        width: 100%;
+      }
+
+      textarea {
+        width: 100%;
+      }
+
+      span {
+
+        span {
+          display: inline;
+        }
+
+      }
+
     }
 
   }
