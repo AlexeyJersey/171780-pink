@@ -69,6 +69,10 @@
       color: @navy;
     }
 
+    br {
+      display: none;
+    }
+
     .features__item {
       padding-bottom: 6px;
     }
@@ -116,37 +120,40 @@
       width: 100%;
       flex-wrap: nowrap;
       padding-top: 45px;
+      padding-bottom: 0px;
 
       text-align: left;
       background-size: auto;
+
+
+      .features__item-wrapper {
+        width: 50%;
+        order: 2;
+        padding-top: 58px;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      .features__item {
+        padding: 0px;
+        padding-bottom: 9px;
+      }
 
       p {
         padding: 0px;
         .font-regular();
       }
 
-      .features__item-wrapper {
-        width: 50%;
-        order: 2;
-        padding-top: 58px;
-      }
-
-      .features__item {
-        padding: 0px;
-      }
-
-      .features__item:nth-child(1) {
-        padding-bottom: 9px;
-      }
-
-      .features__item:nth-child(2) {
-        // padding-bottom: 9px;
+      br {
+        display: inline-block;
       }
 
       .features__img {
-        width: 50%;
+        width: 44%;
         order: 1;
         margin: 0px;
+        padding-left: 40px;
+
       }
 
     }
