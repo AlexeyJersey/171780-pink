@@ -15,12 +15,13 @@
     .font(30px, 36px);
     .font-bold();
     color: @black;
+    font-weight: normal;
   }
 
 
   a {
     .font(14px, 24px);
-    .font-light();
+    .font-regular();
     color: @pink;
     text-decoration: underline;
   }
@@ -121,6 +122,7 @@
       flex-wrap: nowrap;
       padding-top: 45px;
       padding-bottom: 0px;
+      margin-bottom: 40px;
 
       text-align: left;
       background-size: auto;
@@ -164,18 +166,39 @@
     }
 
 
-    .features__item-bottom {
+    .features__item-clock {
       display: flex;
       justify-content: space-between;
       flex-wrap: nowrap;
       order: 3;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 18px;
+      padding-top: 18px;
 
       img {
-        width: 40%;
+        width: 239px;
+        padding-right: 61px;
       }
 
-      .features__item-bottom-text {
-        width: 40%;
+      h3 {
+        margin: 0px;
+      }
+
+      p {
+        margin: 0px;
+        margin-top: 11px;
+        margin-bottom: 10px;
+        padding-right: 5px;
+
+        .font(14px, 24px);
+        .font-regular();
+        color: @navy;
+      }
+
+      .features__item-clock-text {
+        width: 50%;
+        padding-top: 36px;
       }
 
     }

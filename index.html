@@ -14,8 +14,8 @@
       <div class="page-header__container">
         <nav class="nav">
           <div class="nav__item-main">
-            <a href="index.html"><img src="img/logo-pink-white-mobile.svg" alt="Pink"></a>
-            <img class="nav__cross" src="img/icon-menu-cross.svg" alt="X">
+            <a href="index.html">Pink</a>
+            <img class="nav__item-main-cross" src="img/icon-menu-cross.svg" alt="X">
           </div>
           <ul class="nav__items">
             <li class="nav__item"><a href="index.html">Главная</a></li>
@@ -25,7 +25,10 @@
           </ul>
         </nav>
         <div class="head-bg">
-          <img src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="PINK-mobile">
+          <picture>
+            <source media="(min-width: 701px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+            <img src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="PINK-mobile">
+          </picture>
         </div>
         <div class="download-app">
           <a class="download-app__btn" href="#">Скачать приложение</a>
@@ -70,15 +73,13 @@
             </picture>
           </div>
         </div>
-
-
         <div class="features__item-clock">
           <img src="img/clock24.svg" alt="24hours">
           <div class="features__item-clock-text">
-            <h3>Эффект на 24 часа!</h3>
+            <h3>Эффект<br> на 24 часа!</h3>
             <p>Британские ученые провели исследования
-              и доказали, что положительный эффект
-              от использования приложения длится
+              и доказали, что положительный эффект<br>
+              от использования приложения длится<br>
               целые сутки!</p>
               <a href="#">Узнать больше об исследовании</a>
           </div>
