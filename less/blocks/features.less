@@ -1,4 +1,8 @@
 .features {
+  background-color: @grey;
+  background-image: url('../img/bg-triangle-white.svg');
+  background-repeat: no-repeat;
+  background-position: center 0px;
 
   .features__container {
     .flex();
@@ -9,38 +13,9 @@
     .font-bold();
     color: @black;
     font-weight: normal;
-  }
 
-  h3 {
-    .font(30px, 36px);
-    .font-bold();
-    color: @black;
-    font-weight: normal;
-  }
-
-
-  a {
-    .font(14px, 24px);
-    .font-regular();
-    color: @pink;
-    text-decoration: underline;
-  }
-
-  .features__title {
-    padding-top: 21px;
-    padding-bottom: 22px;
-    text-align: center;
-
-    h2 {
-      display: inline-block;
-      margin-bottom: 9px;
-
-      .font(24px, 29px);
-      .font-light();
-      color: @navy;
-      font-weight: normal;
-    }
-
+    margin: 0px;
+    margin-top: 7px;
   }
 
   .features__items {
@@ -50,23 +25,19 @@
     justify-content: center;
     // align-items: center;
     // width: 100%;
-    padding-top: 69px;
+    padding-top: 104px;
     padding-bottom: 53px;
 
     text-align: center;
-    background-color: @grey;
-
-    background-image: url('../img/bg-triangle-white.svg');
-    background-repeat: no-repeat;
-    background-position: 0px 0px;
-    background-size: 322px 32px;
+    background-color: transparent;
 
     p {
       padding-left: 26px;
       padding-right: 26px;
+      margin-bottom: 21px;
 
       .font(14px, 23px);
-      .font-light();
+      .font-regular();
       color: @navy;
     }
 
@@ -75,11 +46,18 @@
     }
 
     .features__item {
-      padding-bottom: 6px;
+      padding-bottom: 5px;
     }
 
     .features__item:nth-child(3) {
-      padding-bottom: 27px;
+      padding-bottom: 21px;
+
+      p {
+        margin-top: 12px;
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+
     }
 
     .features__img {
@@ -89,44 +67,22 @@
 
   }
 
-  .features__item-clock {
-    display: none;
-  }
-
 }
 
 @media @tablet-w {
 
   .features {
 
-    .features__title {
-      width: 100%;
-      padding-bottom: 8px;
-
-      h2 {
-        margin: 0px;
-        margin-top: 29px;
-        .font(40px, 47px);
-      }
-
-      h2:nth-child(2) {
-        padding-left: 68px;
-        padding-right: 68px;
-        margin-top: 0px;
-      }
-
-    }
+    margin-bottom: 40px;
 
     .features__items {
       width: 100%;
       flex-wrap: nowrap;
-      padding-top: 45px;
+      padding-top: 25px;
       padding-bottom: 0px;
-      margin-bottom: 40px;
 
       text-align: left;
-      background-size: auto;
-      background-position: -1px 0px;
+      background-color: transparent;
 
 
       .features__item-wrapper {
@@ -140,6 +96,10 @@
       .features__item {
         padding: 0px;
         padding-bottom: 9px;
+      }
+
+      .features__item:nth-child(3) {
+        padding-bottom: 0px;
       }
 
       p {
@@ -165,44 +125,6 @@
 
     }
 
-
-    .features__item-clock {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: nowrap;
-      order: 3;
-      padding-left: 40px;
-      padding-right: 40px;
-      padding-bottom: 18px;
-      padding-top: 18px;
-
-      img {
-        width: 239px;
-        padding-right: 61px;
-      }
-
-      h3 {
-        margin: 0px;
-      }
-
-      p {
-        margin: 0px;
-        margin-top: 11px;
-        margin-bottom: 10px;
-        padding-right: 5px;
-
-        .font(14px, 24px);
-        .font-regular();
-        color: @navy;
-      }
-
-      .features__item-clock-text {
-        width: 50%;
-        padding-top: 36px;
-      }
-
-    }
-
   }
 
 }
@@ -210,11 +132,6 @@
 @media @desktop-w {
 
   .features {
-
-    .features__title {
-      width: 100%;
-      order: 1;
-    }
 
     .features__items {
       display: flex;
@@ -225,26 +142,6 @@
     .features__img {
       width: 100%;
       order: 2;
-    }
-
-    .features__item-bottom {
-      display: block;
-      order: 3;
-    }
-
-    .features__item-bottom {
-      display: flex;
-      justify-content: space-between;
-      order: 3;
-
-      img {
-        width: 25%;
-      }
-
-      .features__item-bottom-text {
-        width: 60%;
-      }
-
     }
 
   }
