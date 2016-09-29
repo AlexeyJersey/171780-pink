@@ -1,9 +1,21 @@
 .contacts {
   background-color: @white;
 
-  .contacts_container {
+  .contacts__container {
+    position: relative;
   }
 
+  .contacts__container::after {
+    position: absolute;
+    content: '';
+    top: 411px;
+    left: 0px;
+    height: 50px;
+    width: 100%;
+    background-image: url('../img/bg-triangle-white-footer.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 
   .contacts__items {
     .flex();
@@ -61,6 +73,12 @@
 @media @tablet-w {
 
   .contacts {
+
+    .contacts__container::after {
+    top: 403px;
+    left: 0px;
+    height: 73px;
+    }
 
     .contacts__items {
       display: flex;
