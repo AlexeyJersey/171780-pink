@@ -11,15 +11,17 @@
  .features-clock__container  {
     display: flex;
     justify-content: space-between;
-    // flex-wrap: nowrap;
-    // padding-left: 40px;
-    // padding-right: 40px;
     padding-bottom: 18px;
     padding-top: 18px;
 
     img {
       width: 239px;
-      padding-left: 40px;
+      margin-left: 40px;
+    }
+
+    .features-clock__text {
+      width: 50%;
+      padding-top: 36px;
     }
 
     h3 {
@@ -49,11 +51,6 @@
       text-decoration: underline;
     }
 
-    .features-clock__text {
-      width: 50%;
-      padding-top: 36px;
-    }
-
   }
 
 }
@@ -64,13 +61,37 @@
     display: flex;
     justify-content: space-between;
     order: 3;
+    padding-bottom: 52px;
 
-    img {
-      width: 25%;
-    }
+    background-color: @grey;
 
     .features-clock__text {
       width: 60%;
+      padding-top: 90px;
+      margin-left: 72px;
+    }
+
+    br {
+      display: none;
+    }
+
+    p {
+      // margin: 0px;
+      margin-top: 21px;
+      margin-bottom: 30px;
+      padding-right: 0px;
+      margin-right: 100px;
+
+      .font(18px, 30px);
+    }
+
+    img {
+      width: 25%;
+      margin-left: 130px;
+    }
+
+    a {
+      .font(18px, 30px);
     }
 
   }
