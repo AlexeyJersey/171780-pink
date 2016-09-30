@@ -4,7 +4,6 @@
   .slider__feedback {
     .flex();
     justify-content: center;
-
     padding-top: 41px;
 
     text-align: center;
@@ -31,6 +30,18 @@
     .font-bold();
     color: @black;
     font-weight: normal;
+  }
+
+  .slider__controls{
+
+    &-left {
+      display: none;
+    }
+
+    &-right {
+      display: none;
+    }
+
   }
 
 
@@ -68,15 +79,16 @@
   .slider {
 
     .slider__feedback {
-      display: flex;
+      // display: flex;
       flex-direction: column;
       align-items: center;
       padding-bottom: 19px;
     }
 
-    .slider__feedback-title {
-      order: 2;
+    .slider__feedback-wrapper {
+      .flex();
     }
+
 
     p {
       order: 1;
@@ -90,12 +102,16 @@
     }
 
     h3 {
+      order: 2;
+      width: 100%;
       margin-bottom: 3px;
 
       .font(20px, 30px);
     }
 
     span {
+      order: 2;
+      width: 100%;
       display: inline;
       order: 3;
       margin-bottom: 34px;
@@ -110,6 +126,105 @@
       padding-top: 0px;
       padding-right: 3px;
       margin: 0px;
+    }
+
+  }
+
+}
+
+@media @desktop-w {
+
+  .slider {
+
+    .slider__container {
+      padding-top: 107px;
+
+      background-image: url('../img/icon-quotes.svg');
+      background-repeat: no-repeat;
+      background-position: 564px 72px;
+    }
+
+    .slider__feedback {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: stretch;
+      // padding-bottom: 19px;
+    }
+
+    .slider__arrow-left {
+      display: block;
+      width: 19.5%;
+      padding-top: 65px;
+      order: 1;
+
+      a {
+        display: inline-block;
+        margin-left: 48px;
+
+        font-size: 0px;
+      }
+
+      a:before {
+        display: block;
+        content: '';
+        width: 25px;
+        height: 43px;
+
+        background-image: url('../img/icon-review-arrow-left.svg');
+        background-repeat: no-repeat;
+        background-position: center 0px;
+      }
+
+    }
+
+    .slider__arrow-right {
+      display: block;
+      width: 19.5%;
+      padding-top: 65px;
+      order: 3;
+
+
+      a {
+        display: inline-block;
+        margin-right: 44px;
+
+        font-size: 0px;
+      }
+
+      a:before {
+        display: block;
+        content: '';
+        width: 25px;
+        height: 43px;
+
+        background-image: url('../img/icon-review-arrow-right.svg');
+        background-repeat: no-repeat;
+        background-position: center 0px;
+      }
+    }
+
+    .slider__feedback-wrapper {
+      width: 61%;
+      order: 2;
+    }
+
+    p {
+      order: 1;
+      padding-top: 39px;
+    }
+
+    h3 {
+      .font(24px, 30px);
+    }
+
+    span {
+      order: 3;
+
+      .font(18px, 30px);
+    }
+
+    .slider__controls {
+      display: none;
     }
 
   }
