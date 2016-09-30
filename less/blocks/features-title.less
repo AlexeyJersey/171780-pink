@@ -15,6 +15,11 @@
 
     h2:nth-child(2) {
       margin-bottom: 0px;
+
+      br {
+        display: none;
+      }
+
     }
 
   }
@@ -23,6 +28,7 @@
 
   .features-title__container {
     width: 100%;
+    padding-top: 22px;
     padding-bottom: 28px;
 
     h2 {
@@ -43,9 +49,23 @@
 
 @media @desktop-w {
 
-  .features__title {
+    .features-title__container {
     width: 100%;
-    order: 1;
+    padding-top: 38px;
+    padding-bottom: 77px;
+
+    h2 {
+      .font(50px, 59px);
+    }
+
+    h2:nth-child(2) {
+
+      br {
+        display: inline-block;
+      }
+
+    }
+
   }
 
 }
