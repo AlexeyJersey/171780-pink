@@ -1,6 +1,11 @@
 .photo {
   background-color: @white;
 
+  .photo__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   p:nth-child(1) {
     padding-top: 31px;
     padding-bottom: 35px;
@@ -13,6 +18,7 @@
   }
 
   .photo__item-main {
+    line-height: 0px;
 
     .photo__item-img {
         position: relative;
@@ -37,14 +43,18 @@
 
     }
 
+    .photo__item-text {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
   }
 
-  .photo__item-text {
-     padding-top: 13px;
-     margin-left: 20px;
-     margin-right: 20px;
+  .photo__item {
+    line-height: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
 
-     background-color: @grey;
   }
 
   h1 {
@@ -57,45 +67,181 @@
 
     span {
       .font(12px, 24px);
-      .font-regular();
+      .font-light();
       color: @navy;
       .uppercase();
     }
 
   }
 
+  .photo__item-text {
+    padding-top: 17px;
+    padding-left: 17px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 
-  p {
-    .font(12px, 24px);
-    .font-regular();
-    color: @navy;
-  }
+    background-color: @grey;
 
-  .photo__item-like {
+    p {
+      margin: 0px;
+      margin-bottom: 10px;
+
+      .font(14px, 24px);
+      .font-regular();
+      color: @navy;
+    }
+
+    a {
+      position: relative;
+      padding-left: 32px;
+
     .font(12px, 24px);
     .font-regular();
     color: @pink;
     .uppercase();
+    }
+
+    a::before {
+      position: absolute;
+      display: block;
+      content: '';
+      top: 2px;
+      left: -1px;
+      width: 15px;
+      height: 15px;
+
+      background-image: url('../img/icon-heart.svg');
+      background-repeat: no-repeat;
+      background-position: center 0;
+    }
+
   }
 
-}
-
-.photo__container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.photo__post {
-  width: 100%;
-
-  p {
-    .font();
-    .font-regular();
-    color: @navy;
+  .photo__item:nth-child(4) {
+    margin-bottom: 2px;
   }
 
-  .photo__btns-btn {
+  .photo__item:nth-child(6) {
+    margin-bottom: 3px;
+  }
+
+
+  .photo__post {
     width: 100%;
+    margin-bottom: 37px;
+
+    p {
+      margin: 0px;
+      padding-left: 0px;
+      padding-top: 21px;
+      padding-bottom: 42px;
+      padding-right: 5px;
+
+      .font();
+      .font-regular();
+      color: @navy;
+    }
+
+    form {
+      padding-top: 20px;
+      // padding-left: 17px;
+      padding-bottom: 20px;
+      background-color: @grey;
+    }
+
+    img {
+      padding-left: 17px;
+    }
+
+    .photo__options {
+      width: 100%;
+      padding-top: 40px;
+    }
+
+    .photo__options-icons {
+      display: flex;
+      margin-bottom: 35px;
+      padding-left: 17px;
+
+      font-size: 0px;
+    }
+
+    .photo__options-icon {
+      width: 50px;
+      height: 50px;
+      margin-left: 35px;
+
+      background-image: url('../img/icon-editor-crop.svg');
+      background-position: center 0;
+      background-repeat: no-repeat;
+
+      &--fill {
+        margin-left: 30px;
+        background-image: url('../img/icon-editor-fill.svg');
+        background-position: center 2px;
+      }
+
+      &--contrast {
+        background-image: url('../img/icon-editor-contrast.svg');
+        background-position: 3px 7px;
+      }
+
+    }
+
+    .photo__range {
+      position: relative;
+      padding-left: 37px;
+      padding-bottom: 34px;
+      border-bottom: 1px solid #dddfe0;
+
+      &-bar {
+        width: 85%;
+        height: 2px;
+        background-color: #000000;
+      }
+
+      &-toggle {
+        position: absolute;
+        top: -6px;
+        left: 230px;
+        width: 10px;
+        height: 10px;
+
+        background-color: @white;
+        border: 2px solid @pink;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+    }
+
+    .photo__btns {
+      padding-top: 38px;
+      padding-bottom: 10px;
+    }
+
+    .photo__btns-btn {
+      width:87%;
+      padding-top: 15px;
+      padding-bottom: 16px;
+      margin-bottom: 12px;
+      margin-left: 17px;
+      margin-right: 20px;
+
+      .font(18px, 18px);
+      .font-bold;
+      font-weight: normal;
+      color: @pink;
+      background: none;
+      border: 3px solid @pink;
+      border-radius: 30px;
+    }
+
+    .photo__btns__btn--notactive {
+      color: #dddfe0;
+      border-color: #dddfe0;
+    }
+
   }
 
 }
