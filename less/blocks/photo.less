@@ -2,8 +2,7 @@
   background-color: @white;
 
   .photo__container {
-    display: flex;
-    flex-wrap: wrap;
+    .flex();
   }
 
   p:nth-child(1) {
@@ -54,7 +53,6 @@
     line-height: 0px;
     margin-left: 20px;
     margin-right: 20px;
-
   }
 
   h1 {
@@ -144,7 +142,6 @@
 
     form {
       padding-top: 20px;
-      // padding-left: 17px;
       padding-bottom: 20px;
       background-color: @grey;
     }
@@ -248,47 +245,183 @@
 
 @media @tablet-w {
 
-  .photo__container {
-    justify-content: space-between;
-  }
+  .photo {
 
-  .photo__item {
-    width: 50%;
-  }
+    p:nth-child(1) {
+      padding-top: 73px;
+      padding-bottom: 58px;
+      padding-left: 65px;
+      padding-right: 65px;
 
-  .photo__item--main {
-    width: 100%;
-
-    img {
-      width: 100%;
+      .font(18px, 30px);
     }
 
-    .photo__item-text {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+    .photo__container {
+    }
 
-      h1 {
-        order: 1;
+    .photo__item-main {
+      width: 100%;
+
+      .photo__item-img {
+
+        img {
+          width: 100%;
+        }
+
+        span {
+          left: 520px;
+          top: 58px;
+        }
+
       }
 
-      .photo__item-like {
-        order: 2;
+      .photo__item-text {
+        .flex();
+        justify-content: space-between;
+        padding-top: 25px;
+        padding-left: 28px;
+        padding-right: 59px;
+        padding-bottom: 14px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 50px;
+
+        h1 {
+          order: 1;
+        }
+
+        .photo__item-like {
+          order: 2;
+        }
+
+        p {
+          order: 3;
+        }
+
+        a::before {
+          top: 5px;
+          left: 138px;
+        }
+
       }
+
+    }
+
+    .photo__item-wrapper {
+      .flex();
+      padding-left: 40px;
+    }
+
+    .photo__item {
+      width: 300px;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-bottom: 20px;
+
+      img {
+        width: 300px;
+        height: 300px;
+      }
+
+      .photo__item-text {
+        padding-top: 24px;
+        padding-left: 27px;
+        padding-right: 10px;
+        padding-bottom: 23px;
+        margin-bottom: 0px;
+
+        p {
+          min-height: 48px;
+          margin-bottom: 12px;
+        }
+
+        a {
+          padding-left: 0px;
+        }
+
+        a::before {
+          top: 2px;
+          left: 227px;
+        }
+
+      }
+
+    }
+
+    .photo__item:nth-child(1n) {
+      margin-right: 20px;
+    }
+
+    .photo__post {
 
       p {
-        order: 3;
+        padding-left: 0px;
+        padding-top: 44px;
+        padding-bottom: 68px;
+        padding-right: 3px;
       }
 
-    }
+      form {
+        width: 100%;
+        .flex();
+        flex-wrap: nowrap;
+        padding-top: 57px;
+        padding-bottom: 20px;
+      }
 
-  }
+      img {
+        width: 300px;
+        height: 400px;
+        padding-left: 40px;
+      }
 
-  .photo__post {
+      picture {
+        width: 50%;
+      }
 
-    form {
-      display: flex;
-      flex-wrap: wrap;
+      .photo__options {
+        width: 50%;
+        padding-top: 0px;
+      }
+
+      .photo__range {
+        display: none;
+      }
+
+      .photo__options-icons {
+        flex-direction: column;
+        // margin-bottom: 35px;
+        padding-top: 9px;
+        padding-left: 36px;
+      }
+
+      .photo__options-icon {
+        width: 25px;
+        height: 25px;
+        margin-left: 0px;
+
+        background-image: url('../img/icon-editor-crop.svg');
+        background-position: center 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        &--fill {
+          width: 26px;
+          height: 26px;
+          margin-left: 0px;
+          background-image: url('../img/icon-editor-fill.svg');
+          background-position: center 2px;
+        }
+
+        &--contrast {
+          width: 18px;
+          height: 18px;
+          background-image: url('../img/icon-editor-contrast.svg');
+          background-position: center 0px;
+        }
+
+      }
+
     }
 
   }

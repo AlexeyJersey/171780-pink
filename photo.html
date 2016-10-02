@@ -37,7 +37,10 @@
         <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <article class="photo__item-main">
           <div class="photo__item-img">
-            <img src="img/panorama-mobile@1x.jpg"  width="320" height="137" alt="panorama">
+            <picture>
+              <source media="(min-width: 700px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="panorama">
+            </picture>
             <span>Панорама дня</span>
           </div>
           <div class="photo__item-text">
@@ -46,58 +49,81 @@
             <a class="photo__item-like" href="#">Нравится: 215</a>
           </div>
         </article>
-        <article class="photo__item">
-          <img src="img/photo-1-mobile@1x.jpg"  width="280" height="180" alt="">
-          <div class="photo__item-text">
-            <h1>Левон <span>(5 часов назад)</span></h1>
-            <p>Вчера он на луну летал, сегодня в руки к нам попал</p>
-            <a class="photo__item-like" href="#">Нравится: 356</a>
-          </div>
-        </article>
-         <article class="photo__item">
-          <img src="img/photo-2-mobile@1x.jpg"  width="280" height="180" alt="">
-          <div class="photo__item-text">
-            <h1>Антон <span>(12 часов назад)</span></h1>
-            <p>Соседи будут рады!</p>
-            <a class="photo__item-like" href="#">Нравится: 666</a>
-          </div>
-        </article>
-         <article class="photo__item">
-          <img src="img/photo-3-mobile@1x.jpg"  width="280" height="180" alt="">
-          <div class="photo__item-text">
-            <h1>Борис <span>(20 часов назад)</span></h1>
-            <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <a class="photo__item-like" href="#">Нравится: 215</a>
-          </div>
-        </article>
-         <article class="photo__item">
-          <img src="img/photo-4-mobile@1x.jpg"  width="280" height="180" alt="">
-          <div class="photo__item-text">
-            <h1>Сергей <span>(25 часов назад)</span></h1>
-            <p>Самая кубанская в мире!</p>
-            <a class="photo__item-like" href="#">Нравится: 4</a>
-          </div>
-        </article>
-         <article class="photo__item">
-          <img src="img/photo-5-mobile@1x.jpg"  width="280" height="180" alt="">
-          <div class="photo__item-text">
-            <h1>Максим <span>(40 часов назад)</span></h1>
-            <p>Где снег-то?</p>
-            <a class="photo__item-like" href="#">Нравится: 150</a>
-          </div>
-        </article>
-         <article class="photo__item">
-          <img src="img/photo-6-mobile@1x.jpg"  width="280" height="180" alt="">
-          <div class="photo__item-text">
-            <h1>Надежда <span>(45 часов назад)</span></h1>
-            <p>Всем GM и взаимные лайки!</p>
-            <a class="photo__item-like" href="#">Нравится: 2560</a>
-          </div>
-        </article>
+        <div class="photo__item-wrapper">
+          <article class="photo__item">
+            <picture>
+              <source media="(min-width: 700px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="280" height="180" alt="">
+            </picture>
+            <div class="photo__item-text">
+              <h1>Левон <span>(5 часов назад)</span></h1>
+              <p>Вчера он на луну летал, сегодня в руки к нам попал</p>
+              <a class="photo__item-like" href="#">Нравится: 356</a>
+            </div>
+          </article>
+          <article class="photo__item">
+            <picture>
+              <source media="(min-width: 700px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+              <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="280" height="180" alt="">
+            </picture>
+            <div class="photo__item-text">
+              <h1>Антон <span>(12 часов назад)</span></h1>
+              <p>Соседи будут рады!</p>
+              <a class="photo__item-like" href="#">Нравится: 666</a>
+            </div>
+          </article>
+          <article class="photo__item">
+            <picture>
+              <source media="(min-width: 700px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+              <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="280" height="180" alt="">
+            </picture>
+            <div class="photo__item-text">
+              <h1>Борис <span>(20 часов назад)</span></h1>
+              <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <a class="photo__item-like" href="#">Нравится: 215</a>
+            </div>
+          </article>
+          <article class="photo__item">
+            <picture>
+              <source media="(min-width: 700px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+              <img src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" width="280" height="180" alt="">
+            </picture>
+            <div class="photo__item-text">
+              <h1>Сергей <span>(25 часов назад)</span></h1>
+              <p>Самая кубанская в мире!</p>
+              <a class="photo__item-like" href="#">Нравится: 4</a>
+            </div>
+          </article>
+          <article class="photo__item">
+            <picture>
+              <source media="(min-width: 700px)" srcset="img/photo-5-tablet@1x.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+              <img src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" width="280" height="180" alt="">
+            </picture>
+            <div class="photo__item-text">
+              <h1>Максим <span>(40 часов назад)</span></h1>
+              <p>Где снег-то?</p>
+              <a class="photo__item-like" href="#">Нравится: 150</a>
+            </div>
+          </article>
+          <article class="photo__item">
+            <picture>
+              <source media="(min-width: 700px)" srcset="img/photo-6-tablet@1x.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+              <img src="img/photo-6-mobile@1x.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" width="280" height="180" alt="">
+            </picture>
+            <div class="photo__item-text">
+              <h1>Надежда <span>(45 часов назад)</span></h1>
+              <p>Всем GM и взаимные лайки!</p>
+              <a class="photo__item-like" href="#">Нравится: 2560</a>
+            </div>
+          </article>
+        </div>
         <div class="photo__post">
           <p>Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
           <form action="post-photo.php" method="post">
-            <img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="">
+            <picture>
+              <source media="(min-width: 700px)" srcset="img/photo-7-tablet@1x.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
+              <img src="img/photo-7-mobile@1x.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" width="280" height="374" alt="">
+            </picture>
             <div class="photo__options">
               <div class="photo__options-icons">
                 <div class="photo__options-icon photo__options-icon--cut">Cut</div>
