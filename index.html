@@ -12,11 +12,11 @@
 
     <header class="page-header">
       <div class="page-header__container">
-        <nav class="nav">
+        <nav class="nav">  <!-- nav--closed nav--opened -->
 
           <div class="nav__item-main">
-            <a href="index.html">Pink</a>
-            <img class="nav__item-main-cross" src="img/icon-menu-cross.svg" alt="X">
+            <a class="nav__item-main-logo" href="index.html">Pink</a>
+            <a class="nav__item-main-cross">X</a>
           </div>
 
           <ul class="nav__items">
@@ -37,6 +37,7 @@
         </nav>
         <div class="download-app">
           <picture>
+            <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
             <source media="(min-width: 700px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
             <img src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="PINK-mobile">
           </picture>

@@ -1,8 +1,8 @@
 .nav {
-  // display: none;
   width: 100%;
 
   background-color: @navydark;
+
 
   a {
     .font(18px, 32px);
@@ -24,12 +24,7 @@
     background-color: @navy;
     border-bottom: 1px solid black;
 
-    img {
-      display: block;
-      margin-bottom: 10px;
-    }
-
-    a {
+    .nav__item-main-logo {
       width: 100px;
       height: 30px;
 
@@ -38,12 +33,20 @@
       background-repeat: no-repeat;
     }
 
+    .nav__item-main-cross {
+      width: 30px;
+      height: 30px;
+
+      font-size: 0px;
+      background-image: url('../img/icon-menu-cross.svg');
+      background-repeat: no-repeat;
+    }
+
   }
 
   .nav__items {
     display: flex;
     flex-direction: column;
-
     background-color: @navy;
 
     .nav__item {
@@ -58,7 +61,41 @@
 
   }
 
+  &--closed {
+
+    .nav__item-main {
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      left: 0px;
+      top: 0px;
+      justify-content: center;
+      margin: 0 auto;
+      padding-left: 0px;
+      padding-right: 0px;
+
+      background-color: rgba(0,0,0,0.3);
+      border-bottom: none;
+
+      .nav__item-main-logo {
+        margin-right: 129px;
+      }
+
+      .nav__item-main-cross {
+        width: 50px;
+        background-image: url('../img/icon-menu-burger.svg');
+      }
+
+    }
+
+    .nav__items {
+      display: none;
+    }
+
+  }
+
 }
+
 
 @media @tablet-w {
 
@@ -67,18 +104,30 @@
     .nav__item-main {
       padding-top: 27px;
       padding-left: 40px;
-      padding-right: 39px;
+      padding-right: 33px;
       padding-bottom: 32px;
 
-      a {
+      .nav__item-main-logo {
         width: 150px;
         height: 50px;
         background-image: url('../img/logo-pink-white-tablet.svg');
       }
 
-      img {
-        margin-bottom: 0px;
-        margin-top: 7px;
+      .nav__item-main-cross {
+        margin-top: 18px;
+      }
+
+    }
+
+    &--closed {
+
+    .nav__item-main {
+      padding-left: 0px;
+
+        .nav__item-main-logo {
+          margin-right: 419px;
+        }
+
       }
 
     }
@@ -115,7 +164,7 @@
       border: none;
       background-color: transparent;
 
-      a {
+      .nav__item-main-logo {
         background-image: url('../img/logo-pink-white-desktop.svg');
         background-repeat: no-repeat;
       }
