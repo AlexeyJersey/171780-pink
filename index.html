@@ -37,7 +37,7 @@
         </nav>
         <div class="download-app">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+<!--             <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x"> -->
             <source media="(min-width: 700px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
             <img src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="PINK-mobile">
           </picture>
@@ -122,7 +122,7 @@
           <div class="slider__feedback-wrapper">
             <h3 class="slider__feedback-title">Николай Петров</h3>
             <span>25 лет, водитель трамвая</span>
-            <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+            <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </div>
           <div class="slider__controls">
             <i class="active"></i>
@@ -143,45 +143,47 @@
 
     <section class="price">
       <div class="price__container">
-        <table>
-          <tr>
-            <th></th>
-            <th>
-              <h2 class="price__title-type">База</h2>
-              <span>1,99 USD</span>
-            </th>
-            <th>
-              <h2 class="price__title-type">Стандарт</h2>
-              <span>3,99 USD</span>
-            </th>
-            <th>
-              <h2 class="price__title-type">Анлим</h2>
-              <span>9,99 USD</span>
-            </th>
-          </tr>
-          <tr>
-            <td>Розовый фильтр</td>
-            <td class="icon-yes"></td>
-            <td class="icon-yes"></td>
-            <td class="icon-yes"></td>
-          </tr>
-          <tr>
-            <td>Смайлики</td>
-            <td class="icon-no"></td>
-            <td class="icon-yes"></td>
-            <td class="icon-yes"></td>
-          </tr>
-          <tr>
-            <td>Комментарии</td>
-            <td class="icon-no"></td>
-            <td class="icon-no"></td>
-            <td class="icon-yes"></td>
-          </tr>
-        </table>
-        <div class="price__slider-controls">
-          <i></i>
-          <i></i>
-          <i></i>
+        <div class="price__overflow">
+          <table>
+            <tr>
+              <th></th>
+              <th>
+                <h2 class="price__title-type">База</h2>
+                <span>1,99 USD</span>
+              </th>
+              <th>
+                <h2 class="price__title-type">Стандарт</h2>
+                <span>3,99 USD</span>
+              </th>
+              <th>
+                <h2 class="price__title-type">Анлим</h2>
+                <span>9,99 USD</span>
+              </th>
+            </tr>
+            <tr>
+              <td>Розовый фильтр</td>
+              <td class="icon-yes"><span>Розовый фильтр</span></td>
+              <td class="icon-yes"><span>Розовый фильтр</span></td>
+              <td class="icon-yes"><span>Розовый фильтр</span></td>
+            </tr>
+            <tr>
+              <td>Смайлики</td>
+              <td class="icon-no"><span>Смайлики</span></td>
+              <td class="icon-yes"><span>Смайлики</span></td>
+              <td class="icon-yes"><span>Смайлики</span></td>
+            </tr>
+            <tr>
+              <td>Комментарии</td>
+              <td class="icon-no"><span>Комментарии</span></td>
+              <td class="icon-no"><span>Комментарии</span></td>
+              <td class="icon-yes"><span>Комментарии</span></td>
+            </tr>
+          </table>
+          <div class="price__controls">
+            <i></i>
+            <i class="active"></i>
+            <i></i>
+          </div>
         </div>
       </div>
     </section>
