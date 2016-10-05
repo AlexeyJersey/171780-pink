@@ -18,12 +18,12 @@
     padding-left: 75px;
 
     a {
-      display: inline-block;
-            width: 150px;
-      height: 50px;
-      font-size: 0;
-      background-image: url('../img/logo-pink-blue-mobile.svg');
-      background-repeat: no-repeat;
+      // display: inline-block;
+      //       width: 150px;
+      // height: 50px;
+      // font-size: 0;
+      // background-image: url('../img/logo-pink-blue-mobile.svg');
+      // background-repeat: no-repeat;
     }
 
   }
@@ -40,7 +40,7 @@
       height: 46px;
       margin-right: 7px;
 
-      border-width: 3px;
+
       font-size: 0;
       background-repeat: no-repeat;
       background-position: center;
@@ -59,6 +59,15 @@
 
     }
 
+    &-btn:hover {
+      border: 3px solid rgba(40, 54, 69, 1);
+    }
+
+    &-btn:active {
+      border: 3px solid rgba(40, 54, 69, 0.6);
+      opacity: 0.3;
+    }
+
   }
 
   .footer__copyright {
@@ -73,14 +82,23 @@
     }
 
     a {
-      display: inline-block;
-      width: 30px;
-      height: 35px;
+      // display: inline-block;
+      // width: 30px;
+      // height: 35px;
 
-      font-size: 0;
-      background-image: url('../img/logo-htmlacademy.svg');
-      background-repeat: no-repeat;
-      background-position: center;
+      // font-size: 0;
+      // background-image: url('../img/logo-htmlacademy.svg');
+      // background-repeat: no-repeat;
+      // background-position: center;
+    }
+
+    .footer__logo-ha:hover {
+      fill: @navy;
+    }
+
+    .footer__logo-ha:active {
+      fill: @navy;
+      opacity: 0.3;
     }
 
   }
@@ -120,10 +138,34 @@
       padding: 0px;
 
       a {
-        margin-top: 10px;
-        width: 150px;
-        height: 60px;
-        background-image: url('../img/logo-pink-blue-mobile.svg');
+        // margin-top: 10px;
+        // width: 150px;
+        // height: 60px;
+        // background-image: url('../img/logo-pink-blue-mobile.svg');
+      }
+
+      a:hover {
+
+        .footer__logo-main {
+          fill: @pink;
+        }
+
+      }
+
+      a:active {
+
+        .footer__logo-main {
+          fill: @navy;
+        }
+
+        .footer__logo-main--glasses {
+          fill: @pink;
+        }
+
+        .footer__logo-main {
+          opacity: 0.3;
+        }
+
       }
 
     }
@@ -159,9 +201,9 @@
       padding: 0px;
 
       a {
-        width: 150px;
-        height: 60px;
-        background-image: url('../img/logo-pink-blue-desktop.svg');
+        // width: 150px;
+        // height: 60px;
+        // background-image: url('../img/logo-pink-blue-desktop.svg');
       }
 
     }

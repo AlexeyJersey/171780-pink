@@ -59,15 +59,25 @@
       width:6px;
       height:6px;
 
-      background-color: @slider;
+      background-color: @navy;
+      opacity: 0.3;
       vertical-align:top;
       border-radius:50%;
       cursor:pointer;
     }
 
-    .active {
+    i:hover {
+      opacity: 0.6;
+    }
+
+    i:active {
+      opacity: 0.1;
+    }
+
+    .slider__controls-active {
       border:3px solid @navy;
       background-color: @white;
+      opacity: 1;
     }
 
   }

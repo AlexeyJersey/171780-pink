@@ -31,15 +31,27 @@
       font-size: 0px;
       background-image: url('../img/logo-pink-white-mobile.svg');
       background-repeat: no-repeat;
+
+      svg {
+        display: none;
+      }
+
     }
 
     .nav__item-main-cross {
-      width: 30px;
-      height: 30px;
 
-      font-size: 0px;
-      background-image: url('../img/icon-menu-cross.svg');
-      background-repeat: no-repeat;
+      svg:nth-child(2) {
+        display: none;
+      }
+
+    }
+
+    .nav__item-close:hover {
+      fill: @pink;
+    }
+
+    .nav__item-close:active {
+      opacity: 0.3;
     }
 
   }
@@ -57,6 +69,15 @@
       text-align: center;
       border-bottom: 1px solid black;
       border-top: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    a:hover {
+      color: @pink;
+    }
+
+    a:active {
+      color: @pink;
+      opacity: 0.3;
     }
 
   }
@@ -83,8 +104,23 @@
       }
 
       .nav__item-main-cross {
-        width: 50px;
-        background-image: url('../img/icon-menu-burger.svg');
+
+        svg:nth-child(1) {
+          display: none;
+        }
+
+        svg:nth-child(2) {
+          display: block;
+        }
+
+      }
+
+      .nav__item-burger:hover {
+        fill: @pink;
+      }
+
+      .nav__item-burger:active {
+        opacity: 0.3;
       }
 
     }
@@ -182,8 +218,30 @@
       background-color: transparent;
 
       .nav__item-main-logo {
-        background-image: url('../img/logo-pink-white-desktop.svg');
-        background-repeat: no-repeat;
+        background-image: none;
+        font-size: 0px;
+
+        svg {
+          display: block;
+        }
+
+      }
+
+      .nav__item-main-logo:hover {
+
+        .nav__logo {
+          fill: @pink;
+        }
+
+      }
+
+      .nav__item-main-logo:active {
+
+        .nav__logo {
+          fill: @white;
+          opacity: 0.3;
+        }
+
       }
 
       .nav__item-main-cross {
@@ -205,6 +263,32 @@
         padding-left: 16px;
 
         border: none;
+
+        .nav__item-active {
+          position: relative;
+        }
+
+        .nav__item-active:after {
+          content: '';
+          position: absolute;
+          height: 2px;
+          top: 31px;
+          left: 0px;
+          right: -2px;
+
+          cursor: default;
+          background-color: @white;
+        }
+
+        .nav__item-active:after + a:hover {
+          background-color: @pink;
+        }
+
+      }
+
+      a:active {
+        color: @white;
+        opacity: 0.3;
       }
 
     }
