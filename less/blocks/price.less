@@ -199,6 +199,7 @@
 
       th:nth-child(1) {
         background-color: transparent;
+        border: none;
       }
 
       th:nth-child(2) {
@@ -231,9 +232,9 @@
       }
 
       td {
-        padding-right: 22px;
+        padding-right: 23px;
         padding-left: 15px;
-        padding-top: 11px;
+        padding-top: 10px;
         padding-bottom: 10px;
 
         span {
@@ -247,7 +248,13 @@
         border-right: none;
       }
 
+      tr:nth-child(2) {
 
+        td:nth-child(1) {
+          border-top: 2px solid @light-grey;
+        }
+
+      }
 
       .icon-yes {
         background-position: center 12px;
@@ -286,10 +293,6 @@
       .font(24px, 30px);
     }
 
-    td:nth-child(1) {
-      .font(18px, 30px);
-    }
-
     table {
 
       td {
@@ -297,6 +300,10 @@
         padding-left: 23px;
         padding-top: 14px;
         padding-bottom: 15px;
+      }
+
+      td:nth-child(1) {
+        .font(18px, 30px);
       }
 
       th {
@@ -313,6 +320,7 @@
 
       th:nth-child(4) {
         padding-left: 68px;
+        padding-right: 67px;
       }
 
       th:nth-child(3)::before {
@@ -327,7 +335,7 @@
       }
 
       .icon-yes {
-        background-position: center 19px;
+        background-position: center 23px;
       }
 
       .icon-no {
