@@ -211,6 +211,10 @@
         cursor: pointer;
       }
 
+      &-toggle:active {
+        background-color: @pink;
+      }
+
     }
 
     .photo__range--cut {
@@ -249,11 +253,34 @@
       background: none;
       border: 3px solid @pink;
       border-radius: 30px;
+
+      &:hover {
+        background-color: @pink;
+        color: @white;
+      }
+
+      &:active {
+        color: rgba(255, 255, 255, 0.3)
+      }
+
     }
 
-    .photo__btns__btn--notactive {
-      color: #dddfe0;
-      border-color: #dddfe0;
+    .photo__btns__btn--cancel {
+      color: @navy;
+      border-color: @navy;
+      opacity: 0.1;
+
+      &:hover {
+        background-color: transparent;
+        color: @navy;
+        opacity: 0.3;
+      }
+
+      &:active {
+        background-color: @navy;
+        color: @white;
+      }
+
     }
 
   }
