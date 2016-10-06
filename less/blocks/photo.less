@@ -153,7 +153,6 @@
       flex-wrap: wrap;
       width: 100%;
       padding-top: 40px;
-      padding-left: 17px;
       padding-bottom: 35px;
 
       font-size: 0px;
@@ -163,28 +162,43 @@
     .photo__options-icon {
       width: 50px;
       height: 50px;
-      margin-left: 35px;
-      margin-bottom: 36px;
+      margin-left: 38px;
+      margin-bottom: 28px;
 
-      background-image: url('../img/icon-editor-crop.svg');
-      background-position: center 0;
       background-repeat: no-repeat;
+
+      .photo__icon {
+        opacity: 0.3;
+
+        &--contrast {
+          opacity: 1;
+        }
+
+        &:hover {
+          opacity: 0.5;
+        }
+
+        &:active {
+          fill: @pink;
+          opacity: 1;
+        }
+
+      }
 
       &--cut {
         order: 1;
+        margin-left: 55px;
       }
 
       &--fill {
         order: 2;
         margin-left: 30px;
-        background-image: url('../img/icon-editor-fill.svg');
-        background-position: center 2px;
       }
 
       &--contrast {
         order: 3;
-        background-image: url('../img/icon-editor-contrast.svg');
-        background-position: 5px 9px;
+        margin-top: 7px;
+
       }
 
     }
@@ -193,7 +207,7 @@
       width: 100%;
       position: relative;
       height: 2px;
-      margin-left: 20px;
+      margin-left: 38px;
       margin-right: 42px;
 
       background-color: #000000;
@@ -441,18 +455,30 @@
         height: 25px;
         margin: 0px;
         margin-left: 36px;
-        margin-top: 9px;
         margin-bottom: 38px;
 
         background-size: contain;
 
         &--cut {
           order: 1;
+
+          svg {
+            margin-top: 7px;
+            height: 25px;
+            width: 25px;
+          }
+
         }
 
         &--fill {
           order: 3;
           margin-bottom: 40px;
+
+          svg {
+            margin-top: 20px;
+            height: 25px;
+            width: 30px;
+          }
         }
 
         &--contrast {
@@ -463,13 +489,20 @@
           order: 5;
 
           background-position: center 0px;
+
+          svg {
+            margin-top: 25px;
+            height: 20px;
+            width: 17px;
+          }
+
         }
 
       }
 
       .photo__range {
         width: 58%;
-        margin-top: 20px;
+        margin-top: 19px;
         margin-left: 30px;
         margin-right: 0px;
 
@@ -498,26 +531,28 @@
       .photo__range--fill {
         display: block;
         order: 4;
+        margin-top: 29px;
+        margin-left: 29px;
 
         .photo__range-toggle {
-          left: 23px;
+          left: 25px;
         }
 
       }
 
       .photo__range--contrast {
         display: block;
-        margin-top: 17px;
+        margin-top: 33px;
         order: 6;
 
         .photo__range-toggle {
-          left: 97px;
+          left: 96px;
         }
 
       }
 
       .photo__btns {
-        padding-top: 45px;
+        padding-top: 53px;
       }
 
       .photo__btns-btn {
@@ -649,6 +684,12 @@
         margin-left: 74px;
         margin-bottom: 26px;
         margin-right: 16px;
+
+        svg {
+          margin-top: 0px;
+          height: auto;
+          width: auto;
+        }
 
         &--fill {
           margin-bottom: 30px;

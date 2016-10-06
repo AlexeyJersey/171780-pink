@@ -171,54 +171,40 @@
 
     .slider__arrow-left {
       display: block;
-      width: 19.5%;
+      width: 15.5%;
       padding-top: 65px;
+      margin-left: 44px;
       order: 1;
 
-      a {
-        display: inline-block;
-        margin-left: 48px;
+      opacity: 0.3;
 
-        font-size: 0px;
+      &:hover {
+        opacity: 0.6;
       }
 
-      a:before {
-        display: block;
-        content: '';
-        width: 25px;
-        height: 43px;
-
-        background-image: url('../img/icon-review-arrow-left.svg');
-        background-repeat: no-repeat;
-        background-position: center 0px;
+      &:active {
+        opacity: 0.1;
       }
 
     }
 
     .slider__arrow-right {
       display: block;
-      width: 19.5%;
+      width: 15.5%;
       padding-top: 65px;
+      margin-right: 45px;
       order: 3;
 
+      opacity: 0.3;
 
-      a {
-        display: inline-block;
-        margin-right: 44px;
-
-        font-size: 0px;
+      &:hover {
+        opacity: 0.6;
       }
 
-      a:before {
-        display: block;
-        content: '';
-        width: 25px;
-        height: 43px;
-
-        background-image: url('../img/icon-review-arrow-right.svg');
-        background-repeat: no-repeat;
-        background-position: center 0px;
+      &:active {
+        opacity: 0.1;
       }
+
     }
 
     .slider__feedback-wrapper {
@@ -229,6 +215,11 @@
     p {
       order: 1;
       padding-top: 39px;
+
+      span {
+        display: none;
+      }
+
     }
 
     h3 {

@@ -40,13 +40,22 @@ form {
 
   input {
     .font(18px, 30px);
-    opacity: 1;
+    // opacity: 1;
     .border-grey();
 
     &::-webkit-input-placeholder {color: @navy;}
     &::-moz-placeholder          {color: @navy;}/* Firefox 19+ */
     &:-moz-placeholder           {color: @navy;}/* Firefox 18- */
     &:-ms-input-placeholder      {color: @navy;}
+
+    &:hover {
+      border-color: @navy;
+    }
+
+    &:focus {
+      border-color: @pink;
+    }
+
   }
 
 }
@@ -265,6 +274,28 @@ form {
       border: none;
       border-radius: 3px;
       background-color: @green;
+
+      &:hover {
+        background-color: @green-hvr;
+      }
+
+      &:active {
+        color: rgba(255, 255, 255, 0.3);
+      }
+
+      &--disabled {
+        background-color: @light-grey;
+
+        &:hover {
+          background-color: @light-grey;
+        }
+
+        &:active {
+          color: @white;
+        }
+
+      }
+
     }
 
     span {
