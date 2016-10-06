@@ -137,6 +137,14 @@ form {
     border-radius: 3px;
   }
 
+  &-item [type="checkbox"]:hover + label::before {
+    border-color: @navy;
+  }
+
+  &-item [type="checkbox"]:active + label::before {
+    border-color: @pink;
+  }
+
   &-item [type="checkbox"]:checked + label::before {
     background-image: url('../img/tick.svg');
     background-repeat: no-repeat;
@@ -210,6 +218,14 @@ form {
     display: block;
     margin-right: 32px;
     .round-box();
+  }
+
+  &-item [type="radio"]:hover + label::before {
+    border-color: @navy;
+  }
+
+  &-item [type="radio"]:active + label::before {
+    border-color: @pink;
   }
 
   &-item [type="radio"]:checked + label::before {
@@ -472,10 +488,10 @@ form {
       a {
         position: absolute;
         content: '';
-        top: 46px;
+        top: 45px;
         left: 497px;
         width: 60px;
-        height: 59px;
+        height: 65px;
 
         background-color: @light-grey;
         background-image: url('../img/phone.svg');
@@ -623,8 +639,8 @@ form {
     }
 
     .form__radio {
-      // width: 39%; // SAFARI MAT' EGO
-      width: 365px; // SAFARI MAT' EGO
+      // width: 39%; // SAFARI
+      width: 365px; // SAFARI
       margin-left: 36px;
       padding-left: 63px;
       margin-top: 4px;
@@ -661,7 +677,7 @@ form {
         margin-right: 70px;
 
         a {
-          top: 44px;
+          top: 42px;
           left: 372px;
         }
 
@@ -671,7 +687,7 @@ form {
         width: 50%;
 
         a {
-          top: 44px;
+          top: 42px;
           left: 817px;
         }
 
