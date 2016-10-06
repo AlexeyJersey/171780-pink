@@ -1,6 +1,5 @@
   .features-title__container {
     padding-top: 21px;
-    // padding-bottom: 22px;
     text-align: center;
 
     h2 {
@@ -49,19 +48,20 @@
 
 @media @desktop-w {
 
-    .features-title__container {
+  .features-title {
     width: 100%;
-    padding-top: 38px;
-    padding-bottom: 77px;
 
-    h2 {
-      .font(50px, 59px);
-    }
+    .features-title__container {
+      padding-top: 38px;
+      padding-bottom: 77px;
 
-    h2:nth-child(2) {
+      h2 {
+        .font(50px, 59px);
+      }
 
-      br {
-        display: inline-block;
+      h2:nth-child(2) {
+        padding-left: 250px;
+        padding-right: 250px;
       }
 
     }

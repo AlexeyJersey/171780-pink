@@ -71,6 +71,14 @@
       border-top: 1px solid rgba(255, 255, 255, 0.15);
     }
 
+    .nav__item:nth-child(4) {
+
+      a {
+        .uppercase();
+      }
+
+    }
+
     a:hover {
       color: @pink;
     }
@@ -266,7 +274,6 @@
         border: none;
 
         .nav__item-active {
-          // position: relative;
           padding-bottom: 5px;
           border-bottom: 2px solid @white;
 
@@ -280,21 +287,14 @@
 
         }
 
-        // .nav__item-active:after {
-        //   content: '';
-        //   position: absolute;
-        //   height: 2px;
-        //   top: 31px;
-        //   left: 0px;
-        //   right: -2px;
+      }
 
-        //   cursor: default;
-        //   background-color: @white;
-        // }
+      .nav__item:nth-child(4) {
 
-        // .nav__item-active:after + a:hover {
-        //   background-color: @pink;
-        // }
+        a {
+          padding-left: 22px;
+          text-transform: none;
+        }
 
       }
 
