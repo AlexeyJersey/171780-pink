@@ -188,7 +188,7 @@ form {
     margin-bottom: 15px;
   }
 
-  div:last-of-type > input{
+  input:last-of-type {
     margin-bottom: 0;
   }
 
@@ -349,7 +349,7 @@ form {
 
   }
 
-@media @tablet-w {        //    !!! TABLET  !!!
+@media @tablet-w {
 
   .form {
 
@@ -363,7 +363,7 @@ form {
       padding-top: 73px;
       padding-left: 40px;
       padding-right: 40px;
-      padding-bottom: 43px;
+      padding-bottom: 42px;
 
       .font(18px,30px);
     }
@@ -375,7 +375,7 @@ form {
     .form__user {
       width: 100%;
       padding-left: 0px;
-      padding-bottom: 65px;
+      padding-bottom: 64px;
       order: 1;
       align-items: center;
       align-content: space-between;
@@ -388,11 +388,7 @@ form {
 
       input {
         width: 100%;
-        margin-bottom: 53px;
-      }
-
-      div:last-child input {
-        margin-bottom: 0;
+        margin-bottom: 51px;
       }
 
       .form__user-lastname {
@@ -405,12 +401,22 @@ form {
         width: 100%;
         flex-direction: row;
         align-items: baseline;
+
+        input {
+          margin-bottom: 50px;
+        }
+
       }
 
       .form__user-patronymic {
         width: 100%;
         flex-direction: row;
         align-items: baseline;
+
+        input {
+          margin-bottom: 0;
+        }
+
       }
 
     }
@@ -420,9 +426,9 @@ form {
       .flex();
       width: 100%;
       padding: 0;
-      padding-top: 55px;
-      padding-left: 59px;
-      padding-bottom: 51px;
+      padding-top: 49px;
+      padding-left: 56px;
+      padding-bottom: 53px;
       margin-bottom: 65px;
       order: 2;
 
@@ -433,8 +439,8 @@ form {
         position: absolute;
         top: -11px;
         left: 119px;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 29px;
+        padding-right: 31px;
 
         background: @white;
       }
@@ -446,7 +452,7 @@ form {
       }
 
       &-item [type="radio"] + label::before {
-        margin-right: 19px;
+        margin-right: 20px;
       }
 
     }
@@ -458,7 +464,7 @@ form {
       padding-left: 57px;
       padding-right: 57px;
       padding-bottom: 26px;
-      margin-bottom: 65px;
+      margin-bottom: 62px;
 
       order: 3;
 
@@ -487,33 +493,35 @@ form {
 
       input {
         position: relative;
+        padding-top: 13px;
+        padding-left: 18px;
         margin-top: 0px;
         margin-bottom: 10px;
       }
 
-      div:last-of-type > input {
+      input:last-of-type {
         margin-bottom: 10px;
       }
 
       a {
         position: absolute;
         content: '';
-        top: 45px;
+        top: 44px;
         left: 497px;
         width: 60px;
-        height: 65px;
+        height: 63px;
 
         background-color: @light-grey;
         background-image: url('../img/phone.svg');
         background-repeat: no-repeat;
-        background-position: 19px 20px;
+        background-position: 19px 21px;
       }
 
       &-mail a {
-        top: 178px;
+        top: 176px;
 
         background-image: url('../img/mail.svg');
-        background-position: 20px 23px;
+        background-position: 20px 24px;
       }
 
       &-phone {
@@ -557,7 +565,7 @@ form {
       }
 
       &-item [type="checkbox"] + label::before {
-        margin-right: 20px;
+        margin-right: 19px;
       }
 
     }
@@ -569,9 +577,9 @@ form {
       margin: 0px;
       padding-top: 45px;
       padding-left: 58px;
-      padding-bottom: 25px;
+      padding-bottom: 23px;
       padding-right: 57px;
-      margin-bottom: 47px;
+      margin-bottom: 48px;
 
       order: 5;
       .border-grey();
@@ -589,7 +597,7 @@ form {
 
       textarea {
         width: 100%;
-        height: 146px;
+        height: 144px;
 
       }
     }
@@ -599,7 +607,7 @@ form {
       width: 100%;
       padding-top: 20px;
       padding-bottom: 20px;
-      margin-bottom: 40px;
+      margin-bottom: 46px;
       justify-content: space-between;
       align-items: center;
 
