@@ -40,13 +40,13 @@ form {
 
   input {
     .font(18px, 30px);
-    // opacity: 1;
+    opacity: 1;
     .border-grey();
 
-    &::-webkit-input-placeholder {color: @navy;}
-    &::-moz-placeholder          {color: @navy;}/* Firefox 19+ */
-    &:-moz-placeholder           {color: @navy;}/* Firefox 18- */
-    &:-ms-input-placeholder      {color: @navy;}
+    &::-webkit-input-placeholder {color: @navy; opacity: 1;}
+    &::-moz-placeholder          {color: @navy; opacity: 1;}/* Firefox 19+ */
+    &:-moz-placeholder           {color: @navy; opacity: 1;}/* Firefox 18- */
+    &:-ms-input-placeholder      {color: @navy; opacity: 1;}
 
     &:hover {
       border-color: @navy;

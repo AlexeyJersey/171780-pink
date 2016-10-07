@@ -15,11 +15,6 @@
     .font();
     .font-regular();
     text-align: center;
-
-    br {
-      display: none;
-    }
-
   }
 
   .photo__item-main {
@@ -127,10 +122,10 @@
 
     p {
       margin: 0px;
-      padding-left: 0px;
       padding-top: 21px;
       padding-bottom: 40px;
-      padding-right: 5px;
+      padding-left: 49px;
+      padding-right: 49px;
 
       .font();
       .font-regular();
@@ -152,8 +147,8 @@
       display: flex;
       flex-wrap: wrap;
       width: 100%;
-      padding-top: 40px;
-      padding-bottom: 35px;
+      padding-top: 42px;
+      padding-bottom: 33px;
 
       font-size: 0px;
       border-bottom: 1px solid @border-grey;
@@ -306,7 +301,7 @@
   .photo {
 
     .photo__container {
-      margin-bottom: 15px;
+      margin-bottom: 17px;
     }
 
     p:nth-child(1) {
@@ -414,10 +409,10 @@
     .photo__post {
 
       p {
-        padding-left: 0px;
+        padding-left: 206px;
         padding-top: 44px;
         padding-bottom: 68px;
-        padding-right: 3px;
+        padding-right: 206px;
       }
 
       form {
@@ -458,6 +453,22 @@
         margin-bottom: 38px;
 
         background-size: contain;
+
+        .photo__icon {
+          fill: @pink;
+          opacity: 1;
+
+          &:hover {
+            fill: @navy;
+            opacity: 0.6;
+          }
+
+          &:active {
+            fill: @navy;
+            opacity: 0.3;
+          }
+
+        }
 
         &--cut {
           order: 1;
@@ -582,12 +593,10 @@
 
     p:nth-child(1) {
       width: 100%;
+      padding-top: 75px;
       padding-bottom: 71px;
-
-      br {
-        display: block;
-      }
-
+      padding-left: 305px;
+      padding-right: 305px;
     }
 
     .photo__item-main {
@@ -651,8 +660,11 @@
       padding-right: 130px;
 
       p {
+        width: auto;
         padding-top: 58px;
         padding-bottom: 67px;
+        padding-left: 321px;
+        padding-right: 321px;
       }
 
       form {
