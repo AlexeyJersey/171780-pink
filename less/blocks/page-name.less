@@ -11,6 +11,10 @@
   background-position: center -72px;
   background-size: 221%;
 
+  @media @retina {
+    background-image: url('../img/bg-back-mobile@2x.jpg');
+  }
+
   h1 {
     .font(24px, 29px);
     .font-light();
@@ -34,6 +38,10 @@
     background-image: url('../img/bg-back-tablet@1x.jpg');
     background-position: center -111px;
     background-size: 172%;
+
+    @media @retina {
+      background-image: url('../img/bg-back-tablet@2x.jpg');
+    }
 
     h1  {
       .font(50px, 60px);
