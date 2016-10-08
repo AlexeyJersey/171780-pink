@@ -1,4 +1,4 @@
-.nav {
+.nav, nav--opened {
   width: 100%;
 
   background-color: @navydark;
@@ -139,8 +139,8 @@
 
   }
 
-  &--closed + .download-app {
-    padding-top: 66px;
+  &--closed + .page-name {
+    padding-top: 103px;
     background-position: center -4px;
   }
 
@@ -192,6 +192,11 @@
         left: 0px;
       }
 
+    }
+
+    &--closed + .page-name {
+      padding-top: 111px;
+      background-position: center 0;
     }
 
   }
