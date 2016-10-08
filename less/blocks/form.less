@@ -352,7 +352,8 @@ form {
   display: none;
   position: fixed;
   top: 30%;
-  left: 41.58%;
+  left:50%;
+  transform:translateX(-50%);
   width: 320px;
   height: 289px;
   z-index: 50;
@@ -723,6 +724,20 @@ form {
 
   }
 
+  .form__modal {
+
+    p {
+      padding: 0px;
+
+      .font(14px, 24px);
+    }
+
+    p::after {
+      display: none;
+    }
+
+  }
+
 }
 
 @media @desktop-w {
@@ -903,7 +918,6 @@ form {
   }
 
   .form__modal {
-  left: 37.78%;
   width: 462px;
   height: 363px;
 
@@ -943,7 +957,6 @@ form {
   }
 
   &-sent {
-    left: 29.38%;
     width: 780px;
     height: 377px;
 
