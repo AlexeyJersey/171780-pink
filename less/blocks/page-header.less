@@ -2,6 +2,7 @@
   position: relative;
   z-index: 1;
   background-color: @navydark;
+  background-image: none;
 }
 
 .page-header__container {
@@ -10,8 +11,20 @@
   justify-content: center;
 }
 
+@media @retina {
+  background-image: none;
+}
+
 
 @media @tablet-w {
+
+  .page-header {
+    background-image: none;
+  }
+
+  @media @retina {
+    background-image: none;
+  }
 
 }
 
