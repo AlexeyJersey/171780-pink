@@ -53,6 +53,7 @@ form {
 
     &:focus {
       border-color: @pink;
+      outline: none;
     }
 
   }
@@ -149,7 +150,7 @@ form {
   }
 
   &-item [type="checkbox"]:checked + label::before {
-    background-image: url('../img/tick.svg');
+    background-image: url('../img/icon-yes2.svg');
     background-repeat: no-repeat;
     background-position: 8px 9px;
   }
@@ -277,6 +278,16 @@ form {
     &::-moz-placeholder          {color: @navy; opacity: 1;}/* Firefox 19+ */
     &:-moz-placeholder           {color: @navy; opacity: 1;}/* Firefox 18- */
     &:-ms-input-placeholder      {color: @navy; opacity: 1;}
+
+    &:hover {
+      border-color: @navy;
+    }
+
+    &:focus {
+      border-color: @pink;
+      outline: none;
+    }
+
   }
 
 }
@@ -607,7 +618,7 @@ form {
         height: 63px;
 
         background-color: @light-grey;
-        background-image: url('../img/phone.svg');
+        background-image: url('../img/icon-phone.svg');
         background-repeat: no-repeat;
         background-position: 19px 21px;
       }
@@ -615,7 +626,7 @@ form {
       &-mail a {
         top: 176px;
 
-        background-image: url('../img/mail.svg');
+        background-image: url('../img/icon-mail.svg');
         background-position: 20px 24px;
       }
 
