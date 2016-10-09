@@ -1,61 +1,70 @@
 .photo {
   background-color: @white;
+}
 
-  .photo__container {
-    .flex();
-    margin-bottom: 40px;
-  }
+.photo__container {
+  .flex();
+  margin-bottom: 40px;
+}
 
-  p:nth-child(1) {
-    padding-top: 31px;
-    padding-bottom: 35px;
-    padding-left: 34px;
-    padding-right: 34px;
+.photo__title {
+  padding-top: 31px;
+  padding-bottom: 35px;
+  padding-left: 34px;
+  padding-right: 34px;
 
-    .font();
-    .font-regular();
-    text-align: center;
-  }
+  .font();
+  .font-regular();
+  text-align: center;
+}
 
-  .photo__item-main {
-    line-height: 0px;
+.photo__item-main {
+  line-height: 0px;
 
-    .photo__item-img {
-        position: relative;
-
-      span {
-        position: absolute;
-        z-index: 10;
-        left: 159px;
-        top: 0;
-        padding-top: 5px;
-        padding-left: 20px;
-        padding-right: 19px;
-        padding-bottom: 7px;
-
-
-        .font(12px, 24px);
-        .font-bold();
-        .uppercase();
-        color: @white;
-        background-color: @pink;
-      }
-
-    }
-
-    .photo__item-text {
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-
-  }
-
-  .photo__item {
-    line-height: 0px;
+  .photo__item-text {
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 21px;
   }
+
+  .photo__item-img {
+    position: relative;
+
+    span {
+      position: absolute;
+      z-index: 10;
+      left: 159px;
+      top: 0;
+      padding-top: 5px;
+      padding-left: 20px;
+      padding-right: 19px;
+      padding-bottom: 7px;
+
+
+      .font(12px, 24px);
+      .font-bold();
+      .uppercase();
+      color: @white;
+      background-color: @pink;
+    }
+
+  }
+
+}
+
+.photo__item {
+  line-height: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 21px;
+}
+
+.photo__item-text {
+  padding-top: 17px;
+  padding-left: 17px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+
+  background-color: @grey;
 
   h1 {
     margin: 0px;
@@ -64,234 +73,225 @@
     .font-bold();
     font-weight: normal;
     color: @navy;
-
-    span {
-      .font(12px, 24px);
-      .font-light();
-      color: @navy;
-      .uppercase();
-    }
-
   }
 
-  .photo__item-text {
-    padding-top: 17px;
-    padding-left: 17px;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+  span {
+    .font(12px, 24px);
+    .font-light();
+    color: @navy;
+    .uppercase();
+  }
 
-    background-color: @grey;
+  p {
+    margin: 0px;
+    margin-bottom: 10px;
 
-    p {
-      margin: 0px;
-      margin-bottom: 10px;
+    .font(14px, 24px);
+    .font-regular();
+    color: @navy;
+  }
 
-      .font(14px, 24px);
-      .font-regular();
-      color: @navy;
-    }
-
-    a {
-      position: relative;
-      padding-left: 32px;
+  a {
+    position: relative;
+    padding-left: 32px;
 
     .font(12px, 24px);
     .font-regular();
     color: @pink;
     .uppercase();
+  }
+
+  a::before {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 2px;
+    left: -1px;
+    width: 15px;
+    height: 15px;
+
+    background-image: url('../img/icon-heart.svg');
+    background-repeat: no-repeat;
+    background-position: center 0;
+  }
+
+}
+
+.photo__post {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.photo__post-title {
+  margin: 0px;
+  padding-top: 20px;
+  padding-bottom: 42px;
+  padding-left: 61px;
+  padding-right: 64px;
+
+  .font();
+  .font-regular();
+  color: @navy;
+  text-align: center;
+}
+
+form {
+  line-height: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: @grey;
+
+  img {
+    padding-left: 17px;
+  }
+
+}
+
+.photo__options {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 42px;
+  padding-bottom: 33px;
+
+  font-size: 0px;
+  border-bottom: 1px solid @border-grey;
+}
+
+.photo__options-icon {
+  width: 50px;
+  height: 50px;
+  margin-left: 38px;
+  margin-bottom: 28px;
+
+  background-repeat: no-repeat;
+
+  .photo__icon {
+    opacity: 0.3;
+
+    &--contrast {
+      opacity: 1;
     }
 
-    a::before {
-      position: absolute;
-      display: block;
-      content: '';
-      top: 2px;
-      left: -1px;
-      width: 15px;
-      height: 15px;
+    &:hover {
+      opacity: 0.5;
+    }
 
-      background-image: url('../img/icon-heart.svg');
-      background-repeat: no-repeat;
-      background-position: center 0;
+    &:active {
+      fill: @pink;
+      opacity: 1;
     }
 
   }
 
-  .photo__post {
-    width: 100%;
+  &--cut {
+    order: 1;
+    margin-left: 55px;
+  }
 
-    p {
-      margin: 0px;
-      padding-top: 21px;
-      padding-bottom: 40px;
-      padding-left: 49px;
-      padding-right: 49px;
+  &--fill {
+    order: 2;
+    margin-left: 30px;
+  }
 
-      .font();
-      .font-regular();
-      color: @navy;
-    }
+  &--contrast {
+    order: 3;
+    margin-top: 7px;
 
-    form {
-      line-height: 0px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      background-color: @grey;
-    }
+  }
 
-    img {
-      padding-left: 17px;
-    }
+}
 
-    .photo__options {
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-      padding-top: 42px;
-      padding-bottom: 33px;
+.photo__range {
+  width: 100%;
+  position: relative;
+  height: 2px;
+  margin-left: 38px;
+  margin-right: 42px;
 
-      font-size: 0px;
-      border-bottom: 1px solid @border-grey;
-    }
+  background-color: #000000;
 
-    .photo__options-icon {
-      width: 50px;
-      height: 50px;
-      margin-left: 38px;
-      margin-bottom: 28px;
+  &-toggle {
+    position: absolute;
+    top: -6px;
+    left: 194px;
+    width: 10px;
+    height: 10px;
 
-      background-repeat: no-repeat;
+    background-color: @white;
+    border: 2px solid @pink;
+    border-radius: 50%;
+    cursor: pointer;
+  }
 
-      .photo__icon {
-        opacity: 0.3;
+  &-toggle:active {
+    background-color: @pink;
+  }
 
-        &--contrast {
-          opacity: 1;
-        }
+}
 
-        &:hover {
-          opacity: 0.5;
-        }
+.photo__range--cut {
+  display: block;
+  order: 4;
+}
 
-        &:active {
-          fill: @pink;
-          opacity: 1;
-        }
+.photo__range--fill {
+  display: none;
+  order: 4;
+}
 
-      }
+.photo__range--contrast {
+  display: none;
+  order: 4;
+}
 
-      &--cut {
-        order: 1;
-        margin-left: 55px;
-      }
+.photo__btns {
+  width: 100%;
+  padding-top: 38px;
+  padding-bottom: 10px;
+}
 
-      &--fill {
-        order: 2;
-        margin-left: 30px;
-      }
+.photo__btns-btn {
+  width: 88%;
+  padding-top: 14px;
+  padding-bottom: 16px;
+  margin-bottom: 12px;
+  margin-left: 17px;
+  margin-right: 18px;
 
-      &--contrast {
-        order: 3;
-        margin-top: 7px;
+  .font(18px, 18px);
+  .font-bold;
+  font-weight: normal;
+  color: @pink;
+  background: none;
+  border: 3px solid @pink;
+  border-radius: 30px;
 
-      }
+  &:hover {
+    background-color: @pink;
+    color: @white;
+  }
 
-    }
+  &:active {
+    color: rgba(255, 255, 255, 0.3)
+  }
 
-    .photo__range {
-      width: 100%;
-      position: relative;
-      height: 2px;
-      margin-left: 38px;
-      margin-right: 42px;
+}
 
-      background-color: #000000;
+.photo__btns__btn--cancel {
+  color: @navy;
+  border-color: @navy;
+  opacity: 0.1;
 
-      &-toggle {
-        position: absolute;
-        top: -6px;
-        left: 194px;
-        width: 10px;
-        height: 10px;
+  &:hover {
+    background-color: transparent;
+    color: @navy;
+    opacity: 0.3;
+  }
 
-        background-color: @white;
-        border: 2px solid @pink;
-        border-radius: 50%;
-        cursor: pointer;
-      }
-
-      &-toggle:active {
-        background-color: @pink;
-      }
-
-    }
-
-    .photo__range--cut {
-      display: block;
-      order: 4;
-    }
-
-    .photo__range--fill {
-      display: none;
-      order: 4;
-    }
-
-    .photo__range--contrast {
-      display: none;
-      order: 4;
-    }
-
-    .photo__btns {
-      width: 100%;
-      padding-top: 38px;
-      padding-bottom: 10px;
-    }
-
-    .photo__btns-btn {
-      width: 88%;
-      padding-top: 14px;
-      padding-bottom: 16px;
-      margin-bottom: 12px;
-      margin-left: 17px;
-      margin-right: 18px;
-
-      .font(18px, 18px);
-      .font-bold;
-      font-weight: normal;
-      color: @pink;
-      background: none;
-      border: 3px solid @pink;
-      border-radius: 30px;
-
-      &:hover {
-        background-color: @pink;
-        color: @white;
-      }
-
-      &:active {
-        color: rgba(255, 255, 255, 0.3)
-      }
-
-    }
-
-    .photo__btns__btn--cancel {
-      color: @navy;
-      border-color: @navy;
-      opacity: 0.1;
-
-      &:hover {
-        background-color: transparent;
-        color: @navy;
-        opacity: 0.3;
-      }
-
-      &:active {
-        background-color: @navy;
-        color: @white;
-      }
-
-    }
-
+  &:active {
+    background-color: @navy;
+    color: @white;
   }
 
 }

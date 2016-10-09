@@ -14,10 +14,10 @@
 
     <header class="page-header">
       <div class="page-header__container">
-        <nav class="nav">  <!-- nav--closed nav--opened -->
+<nav class="nav">  <!-- nav--closed nav--opened -->
           <div class="nav__item-main">
             <a class="nav__item-main-logo" href="index.html">
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+              <svg class="nav__logo-desktop" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
                 <g>
                   <path class="nav__logo" fill="#FFFFFF" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.064 c0,4.861-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.288-1.288,1.288c-0.676,0-1.256-0.58-1.256-1.288V18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917H79.988L79.988,29.641z"/>
                   <path class="nav__logo" fill="#FFFFFF" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
@@ -47,10 +47,10 @@
               </svg>
             </a>
             <a class="nav__item-main-cross">
-              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+              <svg  class="nav__cross" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
                 <path class="nav__item-close" fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
               </svg>
-              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
+              <svg class="nav__burger" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
                 <g id="miu">
                   <g id="editor_list_view_hambuger_menu_glyph">
                     <g>
@@ -63,10 +63,10 @@
           </div>
           <ul class="nav__items">
             <li class="nav__item">
-              <a href="index.html">Главная</a>
+              <a class="nav__item-active" href="index.html">Главная</a>
             </li>
             <li class="nav__item">
-              <a class="nav__item-active"  href="photo.html">Фотографии</a>
+              <a href="photo.html">Фотографии</a>
             </li>
             <li class="nav__item">
               <a href="form.html">Конкурс</a>
@@ -86,11 +86,11 @@
 
     <section class="photo">
       <div class="photo__container">
-        <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <p class="photo__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <article class="photo__item-main">
           <div class="photo__item-img">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+<!--               <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x"> -->
               <source media="(min-width: 700px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
               <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="panorama">
             </picture>
@@ -105,7 +105,7 @@
         <div class="photo__item-wrapper">
           <article class="photo__item">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+<!--               <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x"> -->
               <source media="(min-width: 700px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
               <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="280" height="180" alt="">
             </picture>
@@ -117,7 +117,7 @@
           </article>
           <article class="photo__item">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+<!--               <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x"> -->
               <source media="(min-width: 700px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
               <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="280" height="180" alt="">
             </picture>
@@ -129,7 +129,7 @@
           </article>
           <article class="photo__item">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+<!--               <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x"> -->
               <source media="(min-width: 700px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
               <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="280" height="180" alt="">
             </picture>
@@ -141,7 +141,7 @@
           </article>
           <article class="photo__item">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+<!--               <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x"> -->
               <source media="(min-width: 700px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
               <img src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" width="280" height="180" alt="">
             </picture>
@@ -153,7 +153,7 @@
           </article>
           <article class="photo__item">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-5-desktop@1x.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+<!--               <source media="(min-width: 1200px)" srcset="img/photo-5-desktop@1x.jpg 1x, img/photo-5-desktop@2x.jpg 2x"> -->
               <source media="(min-width: 700px)" srcset="img/photo-5-tablet@1x.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
               <img src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" width="280" height="180" alt="">
             </picture>
@@ -165,7 +165,7 @@
           </article>
           <article class="photo__item">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-6-desktop@1x.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+<!--               <source media="(min-width: 1200px)" srcset="img/photo-6-desktop@1x.jpg 1x, img/photo-6-desktop@2x.jpg 2x"> -->
               <source media="(min-width: 700px)" srcset="img/photo-6-tablet@1x.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
               <img src="img/photo-6-mobile@1x.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" width="280" height="180" alt="">
             </picture>
@@ -177,10 +177,10 @@
           </article>
         </div>
         <div class="photo__post">
-          <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+          <p class="photo__post-title" >Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
           <form action="post-photo.php" method="post">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-7-desktop@1x.jpg 1x, img/photo-7-desktop@2x.jpg 2x">
+<!--               <source media="(min-width: 1200px)" srcset="img/photo-7-desktop@1x.jpg 1x, img/photo-7-desktop@2x.jpg 2x"> -->
               <source media="(min-width: 700px)" srcset="img/photo-7-tablet@1x.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
                 <img src="img/photo-7-mobile@1x.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" width="280" height="374" alt="">
               </picture>
