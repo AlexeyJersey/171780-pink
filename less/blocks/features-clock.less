@@ -4,10 +4,45 @@
 
   @media @tablet-w {
 
-  .features-clock {
-    display: block;
-    margin-bottom: 37px;
-  }
+    .features-clock {
+      display: block;
+      margin-bottom: 37px;
+
+      img {
+        width: 239px;
+        height: 276px;
+        margin-left: 40px;
+      }
+
+      h3 {
+        margin: 0px;
+        padding-right: 173px;
+
+        .font(30px, 36px);
+        .font-bold();
+        color: @black;
+        font-weight: normal;
+      }
+
+      p {
+        margin: 0px;
+        margin-top: 10px;
+        margin-bottom: 9px;
+        padding-right: 42px;
+
+        .font(14px, 24px);
+        .font-regular();
+        color: @navy;
+      }
+
+      a {
+        .font(14px, 24px);
+        .font-regular();
+        color: @pink;
+        text-decoration: underline;
+      }
+
+    }
 
  .features-clock__container  {
     display: flex;
@@ -16,43 +51,9 @@
     padding-top: 18px;
   }
 
-  img {
-    width: 239px;
-    height: 276px;
-    margin-left: 40px;
-  }
-
   .features-clock__text {
     width: 50%;
     padding-top: 36px;
-  }
-
-  h3 {
-    margin: 0px;
-    padding-right: 173px;
-
-    .font(30px, 36px);
-    .font-bold();
-    color: @black;
-    font-weight: normal;
-  }
-
-  p {
-    margin: 0px;
-    margin-top: 10px;
-    margin-bottom: 9px;
-    padding-right: 42px;
-
-    .font(14px, 24px);
-    .font-regular();
-    color: @navy;
-  }
-
-  a {
-    .font(14px, 24px);
-    .font-regular();
-    color: @pink;
-    text-decoration: underline;
   }
 
 }
@@ -66,6 +67,27 @@
     padding-bottom: 50px;
 
     background-color: @grey;
+
+    p {
+      margin-top: 21px;
+      margin-bottom: 30px;
+      padding-right: 0px;
+      margin-right: 100px;
+
+      .font(18px, 30px);
+    }
+
+    img {
+      width: 306px;
+      height: 345px;
+      margin-right: 0px;
+      margin-left: 130px;
+    }
+
+    a {
+      .font(18px, 30px);
+    }
+
   }
 
   .features-clock__container  {
@@ -76,26 +98,6 @@
     width: 60%;
     padding-top: 91px;
     margin-left: 67px;
-  }
-
-  p {
-    margin-top: 21px;
-    margin-bottom: 30px;
-    padding-right: 0px;
-    margin-right: 100px;
-
-    .font(18px, 30px);
-  }
-
-  img {
-    width: 306px;
-    height: 345px;
-    margin-right: 0px;
-    margin-left: 130px;
-  }
-
-  a {
-    .font(18px, 30px);
   }
 
 }

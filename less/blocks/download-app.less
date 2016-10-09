@@ -11,73 +11,13 @@
     margin-bottom: -4px;
   }
 
-  .download-app__wrapper {
-    .flex();
-  }
+}
+
+.download-app__wrapper {
+  .flex();
 
   h1 {
     display: none;
-  }
-
-  .download-app__btn {
-    padding-top: 15px;
-    padding-bottom: 16px;
-    padding-left: 35px;
-    padding-right: 36px;
-    margin-top: 26px;
-    margin-bottom: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
-
-    .font(18px, 18px);
-    .font-bold();
-    color: @white;
-    border: 3px solid @white;
-    border-radius: 30px;
-  }
-
-  .download-app__btn:hover {
-    background-color: @white;
-    color: @pink;
-  }
-
-  .download-app__btn:active {
-    background-color: @white;
-    color: rgba(210, 40, 86, 0.3);
-  }
-
-  .download-app__icons {
-    .flex();
-    padding-left: 55px;
-    padding-right: 55px;
-    margin-bottom: 6px;
-  }
-
-  .downlod-app__icon {
-    display: block;
-    height: 60px;
-    width: 50px;
-
-    font-size: 0px;
-    background-image: url('../img/logo-apple.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-
-    &--apple {
-      margin-right: 31px;
-    }
-
-    &--android {
-      margin-right: 29px;
-      background-image: url('../img/logo-android.svg');
-      background-position: 3px 11px;
-    }
-
-    &--win {
-      background-image: url('../img/logo-microsoft.svg');
-      background-position: 3px 15px;
-    }
-
   }
 
   p {
@@ -92,6 +32,68 @@
   }
 
 }
+
+.download-app__btn {
+  padding-top: 15px;
+  padding-bottom: 16px;
+  padding-left: 35px;
+  padding-right: 36px;
+  margin-top: 26px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  .font(18px, 18px);
+  .font-bold();
+  color: @white;
+  border: 3px solid @white;
+  border-radius: 30px;
+}
+
+.download-app__btn:hover {
+  background-color: @white;
+  color: @pink;
+}
+
+.download-app__btn:active {
+  background-color: @white;
+  color: rgba(210, 40, 86, 0.3);
+}
+
+.download-app__icons {
+  .flex();
+  padding-left: 55px;
+  padding-right: 55px;
+  margin-bottom: 6px;
+}
+
+.downlod-app__icon {
+  display: block;
+  height: 60px;
+  width: 50px;
+
+  font-size: 0px;
+  background-image: url('../img/logo-apple.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--apple {
+    margin-right: 31px;
+  }
+
+  &--android {
+    margin-right: 29px;
+    background-image: url('../img/logo-android.svg');
+    background-position: 3px 11px;
+  }
+
+  &--win {
+    background-image: url('../img/logo-microsoft.svg');
+    background-position: 3px 15px;
+  }
+
+}
+
 
 @media @tablet-w {
 
@@ -112,14 +114,15 @@
       z-index: 9;
     }
 
-    .download-app__wrapper {
-      display: flex;
-      flex-direction: column;
-      width: 50%;
-      padding-top: 92px;
-      padding-bottom: 92px;
-      z-index: 10;
-    }
+  }
+
+  .download-app__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-top: 92px;
+    padding-bottom: 92px;
+    z-index: 10;
 
     h1 {
       display: block;
@@ -134,32 +137,6 @@
       text-align: center;
     }
 
-    .download-app__btn {
-      padding-left: 48px;
-      padding-right: 0px;
-      margin-top: 30px;
-      margin-bottom: 44px;
-      margin-left: 38px;
-      margin-right: 10px;
-    }
-
-    .download-app__icons {
-      .flex();
-      padding-left: 83px;
-      padding-right: 0px;
-      margin-bottom: 17px;
-    }
-
-    .downlod-app__icon--apple {
-      margin-right: 33px;
-    }
-
-    .downlod-app__icon--android {
-      margin-right: 26px;
-      background-position: 3px 9px;
-      opacity: 0.4;
-    }
-
     p {
       padding-top: 18px;
       padding-bottom: 18px;
@@ -170,6 +147,32 @@
       .font(18px, 24px);
     }
 
+  }
+
+  .download-app__btn {
+    padding-left: 48px;
+    padding-right: 0px;
+    margin-top: 30px;
+    margin-bottom: 44px;
+    margin-left: 38px;
+    margin-right: 10px;
+  }
+
+  .download-app__icons {
+    .flex();
+    padding-left: 83px;
+    padding-right: 0px;
+    margin-bottom: 17px;
+  }
+
+  .downlod-app__icon--apple {
+    margin-right: 33px;
+  }
+
+  .downlod-app__icon--android {
+    margin-right: 26px;
+    background-position: 3px 9px;
+    opacity: 0.4;
   }
 
 }
