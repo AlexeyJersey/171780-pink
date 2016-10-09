@@ -1,12 +1,13 @@
 .form {
   background-color: @white;
+  margin-bottom: 41px;
 
   p {
     display: inline-block;
     padding-top: 31px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 9px;
 
     .font(14px, 30px);
     color: @navy;
@@ -30,6 +31,9 @@
 
 form {
   .flex();
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: transparent;
 
   label {
     .font();
@@ -174,6 +178,10 @@ form {
     display: none;
   }
 
+  &-phone {
+    margin-bottom: 15px;
+  }
+
   &-phone span:first-child,
   &-mail span:first-child  {
     margin-left: 2px;
@@ -295,7 +303,7 @@ form {
 
 .form__send {
   .flex();
-  margin-bottom: 18px;
+  margin-bottom: 0px;
 
   &-btn {
     padding-top: 16px;
@@ -340,6 +348,7 @@ form {
     margin-top: 34px;
     margin-left: 48px;
     margin-bottom: 14px;
+    padding-bottom: 0px;
     vertical-align: baseline;
 
     .font();
