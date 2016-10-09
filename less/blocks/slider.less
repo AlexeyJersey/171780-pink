@@ -1,13 +1,13 @@
 .slider {
   background-color: @white;
+}
 
-  .slider__feedback {
-    .flex();
-    justify-content: center;
-    padding-top: 41px;
+.slider__feedback {
+  .flex();
+  justify-content: center;
+  padding-top: 41px;
 
-    text-align: center;
-  }
+  text-align: center;
 
   span {
     display: none;
@@ -27,7 +27,6 @@
 
   }
 
-
   h3 {
     margin: 0px;
 
@@ -37,80 +36,77 @@
     font-weight: normal;
   }
 
-  .slider__controls{
+}
 
-    &-left {
-      display: none;
-    }
+.slider__controls{
 
-    &-right {
-      display: none;
-    }
-
-  }
-
-
-  .slider__controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 60px;
-    padding-top: 19px;
-    padding-right: 3px;
-    margin-bottom: 40px;
-
-    i {
-      display:inline-block;
-      width:6px;
-      height:6px;
-
-      background-color: @navy;
-      opacity: 0.3;
-      vertical-align:top;
-      border-radius:50%;
-      cursor:pointer;
-    }
-
-    i:hover {
-      opacity: 0.6;
-    }
-
-    i:active {
-      opacity: 0.1;
-    }
-
-    .slider__controls-active {
-      border:3px solid @navy;
-      background-color: @white;
-      opacity: 1;
-    }
-
-  }
-
-  .slider__arrow-left {
+  &-left {
     display: none;
   }
 
-  .slider__arrow-right {
+  &-right {
     display: none;
   }
 
 }
 
+
+.slider__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60px;
+  padding-top: 19px;
+  padding-right: 3px;
+  margin-bottom: 40px;
+
+  i {
+    display:inline-block;
+    width:6px;
+    height:6px;
+
+    background-color: @navy;
+    opacity: 0.3;
+    vertical-align:top;
+    border-radius:50%;
+    cursor:pointer;
+  }
+
+  i:hover {
+    opacity: 0.6;
+  }
+
+  i:active {
+    opacity: 0.1;
+  }
+
+  .slider__controls-active {
+    border:3px solid @navy;
+    background-color: @white;
+    opacity: 1;
+  }
+
+}
+
+.slider__arrow-left {
+  display: none;
+}
+
+.slider__arrow-right {
+  display: none;
+}
+
+
 @media @tablet-w {
 
-  .slider {
-
-    .slider__feedback {
-      flex-direction: column;
-      align-items: center;
-      padding-bottom: 19px;
-    }
+  .slider__feedback {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 19px;
 
     .slider__feedback-wrapper {
       .flex();
     }
-
 
     p {
       order: 1;
@@ -142,78 +138,32 @@
       color: @navy;
     }
 
-    .slider__controls {
-      order: 4;
-      padding-top: 0px;
-      padding-right: 3px;
-      margin: 0px;
-    }
+  }
 
+  .slider__controls {
+    order: 4;
+    padding-top: 0px;
+    padding-right: 3px;
+    margin: 0px;
   }
 
 }
 
 @media @desktop-w {
 
-  .slider {
+  .slider__container {
+    padding-top: 67px;
 
-    .slider__container {
-      padding-top: 67px;
+    background-image: url('../img/icon-quotes.svg');
+    background-repeat: no-repeat;
+    background-position: 564px 35px;
+  }
 
-      background-image: url('../img/icon-quotes.svg');
-      background-repeat: no-repeat;
-      background-position: 564px 35px;
-    }
-
-    .slider__feedback {
-      flex-direction: row;
-      flex-wrap: nowrap;
-      align-items: stretch;
-      padding-bottom: 5px;
-    }
-
-    .slider__arrow-left {
-      display: block;
-      width: 15.5%;
-      padding-top: 65px;
-      margin-left: 44px;
-      order: 1;
-
-      opacity: 0.3;
-
-      &:hover {
-        opacity: 0.6;
-      }
-
-      &:active {
-        opacity: 0.1;
-      }
-
-    }
-
-    .slider__arrow-right {
-      display: block;
-      width: 15.5%;
-      padding-top: 65px;
-      margin-right: 45px;
-      order: 3;
-
-      opacity: 0.3;
-
-      &:hover {
-        opacity: 0.6;
-      }
-
-      &:active {
-        opacity: 0.1;
-      }
-
-    }
-
-    .slider__feedback-wrapper {
-      width: 61%;
-      order: 2;
-    }
+  .slider__feedback {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    padding-bottom: 5px;
 
     p {
       order: 1;
@@ -236,10 +186,53 @@
       .font(18px, 30px);
     }
 
-    .slider__controls {
-      display: none;
+  }
+
+  .slider__arrow-left {
+    display: block;
+    width: 15.5%;
+    padding-top: 65px;
+    margin-left: 44px;
+    order: 1;
+
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 0.6;
     }
 
+    &:active {
+      opacity: 0.1;
+    }
+
+  }
+
+  .slider__arrow-right {
+    display: block;
+    width: 15.5%;
+    padding-top: 65px;
+    margin-right: 45px;
+    order: 3;
+
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+
+  }
+
+  .slider__feedback-wrapper {
+    width: 61%;
+    order: 2;
+  }
+
+  .slider__controls {
+    display: none;
   }
 
 }
