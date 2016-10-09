@@ -816,26 +816,26 @@ form {
         left: 339px;
       }
 
-      &-phone {
-        width: 50%;
-        margin: 0px;
-        margin-right: 70px;
+    }
 
-        a {
-          top: 41px;
-          left: 372px;
-        }
+    .form__contacts-mail {
+      width: 50%;
 
+      a {
+        top: 41px;
+        left: 817px;
       }
 
-      &-mail {
-        width: 50%;
+    }
 
-        a {
-          top: 41px;
-          left: 817px;
-        }
+    .form__contacts-phone {
+      width: 50%;
+      margin: 0px;
+      margin-right: 70px;
 
+      a {
+        top: 41px;
+        left: 372px;
       }
 
     }
@@ -854,39 +854,39 @@ form {
         margin-bottom: 25px;
       }
 
-      &-items {
-        .flex();
-        width: 100%;
-        justify-content: space-between;
-        align-content: center;
+    }
 
-        li:nth-child(1) {
-          order: 1;
-        }
+    .form__achievement-items {
+      .flex();
+      width: 100%;
+      justify-content: space-between;
+      align-content: center;
 
-        li:nth-child(2) {
-          order: 4;
-          margin-right: 21px;
-        }
+      li:nth-child(1) {
+        order: 1;
+      }
 
-        li:nth-child(3) {
-          order: 2;
-        }
+      li:nth-child(2) {
+        order: 4;
+        margin-right: 21px;
+      }
 
-        li:nth-child(4) {
-          order: 5;
-        }
+      li:nth-child(3) {
+        order: 2;
+      }
 
-        li:nth-child(5) {
-          order: 3;
-          margin-right: 4px;
-          margin-left: 9px;
-        }
+      li:nth-child(4) {
+        order: 5;
+      }
 
-        li:nth-child(6) {
-          order: 6;
-        }
+      li:nth-child(5) {
+        order: 3;
+        margin-right: 4px;
+        margin-left: 9px;
+      }
 
+      li:nth-child(6) {
+        order: 6;
       }
 
     }
@@ -907,6 +907,7 @@ form {
         height: 79px;
 
       }
+
     }
 
     .form__send {
@@ -921,85 +922,85 @@ form {
         width: 100%;
       }
 
-      span {
+    }
 
-        span {
-          display: inline;
-        }
+    .form__send {
 
+      span:nth-child(2) {
+        display: inline;
+      }
+
+    }
+
+    .form__modal {
+      width: 462px;
+      height: 363px;
+
+      border-radius: 5px;
+
+      h4 {
+        padding-top: 35px;
+        padding-left: 123px;
+        padding-right: 123px;
+        padding-bottom: 23px;
+        text-align: center;
+
+        .font(30px, 40px);
+        .font-bold;
+        font-weight: normal;
+        color: @black;
+      }
+
+      p {
+        margin: 0px;
+        padding: 0px;
+        padding-left: 71px;
+        padding-right: 71px;
+        margin-bottom: 38px;
+
+        .font(18px, 24px);
+      }
+
+      p:after {
+        display: none;
+      }
+
+      .form__modal-btn {
+        padding-right: 137px;
+        padding-left: 138px;
+        margin-left: 80px;
+      }
+
+    }
+
+    .form__modal-sent {
+      width: 780px;
+      height: 377px;
+
+      h4 {
+        padding-top: 40px;
+        padding-left: 120px;
+      }
+
+      p {
+        padding-left: 161px;
+        padding-right: 161px;
+        margin-bottom: 38px;
+      }
+
+      .form__modal-btn {
+        padding-left: 155px;
+        padding-right: 158px;
+        margin-left: 161px;
+      }
+
+      .form__modal-btn-wrapper {
+        padding-top: 49px;
+        padding-bottom: 51px;
       }
 
     }
 
   }
-
-  .form__modal {
-  width: 462px;
-  height: 363px;
-
-  border-radius: 5px;
-
-  h4 {
-    padding-top: 35px;
-    padding-left: 123px;
-    padding-right: 123px;
-    padding-bottom: 23px;
-    text-align: center;
-
-    .font(30px, 40px);
-    .font-bold;
-    font-weight: normal;
-    color: @black;
-  }
-
-  p {
-    margin: 0px;
-    padding: 0px;
-    padding-left: 71px;
-    padding-right: 71px;
-    margin-bottom: 38px;
-
-    .font(18px, 24px);
-  }
-
-  p:after {
-    display: none;
-  }
-
-  .form__modal-btn {
-    padding-right: 137px;
-    padding-left: 138px;
-    margin-left: 80px;
-  }
-
-  &-sent {
-    width: 780px;
-    height: 377px;
-
-    h4 {
-      padding-top: 40px;
-      padding-left: 120px;
-    }
-
-    p {
-      padding-left: 161px;
-      padding-right: 161px;
-      margin-bottom: 38px;
-    }
-
-    .form__modal-btn {
-      padding-left: 155px;
-      padding-right: 158px;
-      margin-left: 161px;
-    }
-
-    .form__modal-btn-wrapper {
-      padding-top: 49px;
-      padding-bottom: 51px;
-    }
-
-  }
-
-}
 
 }
