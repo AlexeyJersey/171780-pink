@@ -1,10 +1,7 @@
 "use strict";
 
 module.exports = function(grunt) {
-  grunt.loadNpmTasks("grunt-contrib-less");
-  grunt.loadNpmTasks("grunt-browser-sync");
-  grunt.loadNpmTasks("grunt-contrib-watch");
-  grunt.loadNpmTasks("grunt-postcss");
+  require("load-grunt-tasks")(grunt);
 
   grunt.initConfig({
     less: {
@@ -25,10 +22,58 @@ module.exports = function(grunt) {
               "last 2 Firefox versions",
               "last 2 Opera versions",
               "last 2 Edge versions"
-            ]})
+            ]}),
+            require("css-mqpacker")({
+              sort: true
+            })
           ]
         },
         src: "css/*.css"
+      }
+    },
+
+    csso: {
+      style: {
+        options: {
+          report: "gzip"
+        },
+        files: {
+          "css/style.min.css": ["css/style.css"]
+        }
+      }
+    },
+
+    svgstore: {
+      options: {
+        svg: {
+          style: "display: none"
+        }
+      },
+      symbols: {
+        files: {
+          "img/symbols.svg": ["img/icons/*.svg"]
+        }
+      }
+    },
+
+    svgmin: {
+      symbols: {
+        files: [{
+          expand: true,
+          src: ["img/sv"]
+        }]
+      }
+    },
+
+    imagemin: {
+      images: {
+        options: {
+          optimizationLevel: 3
+        },
+        files: [{
+          expand: true,
+          src: ["img/**/*.{png, jpg, gif}"]
+        }]
       }
     },
 
@@ -36,8 +81,8 @@ module.exports = function(grunt) {
       server: {
         bsFiles: {
           src: [
-            "*.html",
-            "css/*.css"
+          "*.html",
+          "css/*.css"
           ]
         },
         options: {
@@ -58,8 +103,38 @@ module.exports = function(grunt) {
           spawn: false
         }
       }
+    },
+
+    copy: {
+      build: {
+        files: [{
+          expand: true,
+          src: [
+            "fonts/**/*.{woff,woff2}",
+            "img/**",
+            "js/**",
+            "*.html"
+          ],
+          dest: "build"
+        }]
+      }
+    },
+
+    clean: {
+      build: ["build"]
     }
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
+  grunt.registerTask("symbols", ["svgmin", "svgstore"]);
+
+  grunt.registerTask("build", [
+    "clean",
+    "copy",
+    "less",
+    "postcss",
+    "csso",
+    "symbols",
+    "imagemin"
+  ])
 };
