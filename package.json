@@ -23,6 +23,7 @@
     "grunt-contrib-imagemin": "^1.0.1",
     "grunt-contrib-less": "1.4.0",
     "grunt-contrib-watch": "1.0.0",
+    "grunt-cssnano": "^2.1.0",
     "grunt-csso": "^2.0.1",
     "grunt-postcss": "0.8.0",
     "grunt-svgmin": "^4.0.0",

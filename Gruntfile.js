@@ -32,13 +32,24 @@ module.exports = function(grunt) {
       }
     },
 
-    csso: {
-      style: {
-        options: {
-          report: "gzip"
+    // csso: {
+    //   style: {
+    //     options: {
+    //       report: "gzip"
+    //     },
+    //     files: {
+    //       "build/css/style.min.css": ["build/css/style.css"]
+    //     }
+    //   }
+    // },
+
+    cssnano: {
+      options: {
+          sourcemap: true
         },
+      dist: {
         files: {
-          "build/css/style.min.css": ["build/css/style.css"]
+          "build/css/style.min.css": "build/css/style.css"
         }
       }
     },
@@ -133,7 +144,8 @@ module.exports = function(grunt) {
     "copy",
     "less",
     "postcss",
-    "csso",
+    // "csso",
+    "cssnano",
     "symbols",
     "imagemin"
   ])
