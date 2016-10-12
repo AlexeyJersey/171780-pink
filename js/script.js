@@ -26,20 +26,6 @@ var close = document.querySelector(".form__modal-btn");
 
     });
 
-    // button.addEventListener("click", function(event) {
-
-    //     if  (popup.classList.contains("form__modal--opened")) {
-    //         event.preventDefault();
-    //         popup.classList.remove("form__modal--opened");
-    //     }
-
-    //     else {
-    //         event.preventDefault();
-    //         popup.classList.add("form__modal--opened");
-    //     }
-
-    // });
-
 // MODAL-CONTENT
 
 button.addEventListener("click", function(event) {
@@ -51,4 +37,3 @@ close.addEventListener("click", function(event) {
   event.preventDefault();
   popup.classList.remove("form__modal--opened");
 });
-
