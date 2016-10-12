@@ -6,6 +6,14 @@
 
   text-align: center;
 
+  background-image: url('../img/bg-back-mobile@1x.jpg');
+  background-repeat: no-repeat;
+  background-position: center -72px;
+  background-size: 221%;
+
+  @media @retina {
+    background-image: url('../img/bg-back-mobile@2x.jpg');
+  }
 
   h1 {
     .font(24px, 29px);
@@ -16,13 +24,24 @@
 
 }
 
+.page-name--photo {
+  padding-bottom: 66px;
+}
+
 @media @tablet-w {
 
   .page-name {
     padding-top: 35px;
     padding-left: 55px;
     padding-right: 55px;
-    padding-bottom: 47px;
+
+    background-image: url('../img/bg-back-tablet@1x.jpg');
+    background-position: center -111px;
+    background-size: 172%;
+
+    @media @retina {
+      background-image: url('../img/bg-back-tablet@2x.jpg');
+    }
 
     h1  {
       .font(50px, 60px);
@@ -30,18 +49,44 @@
 
   }
 
+  .page-name--photo {
+    padding-bottom: 107px;
+  }
+
+  .page-name--form {
+    padding-bottom: 48px;
+  }
+
 }
 
 @media @desktop-w {
 
   .page-name {
-    padding-top: 31px;
+    padding-top: 65px;
     padding-left: 84px;
     padding-right: 84px;
-    padding-bottom: 70px;
+    padding-bottom: 102px;
+
+    background-image: none;
 
     h1  {
+      margin: 0px;
+      padding-left: 232px;
+      padding-right: 232px;
+
       .font(50px, 59px);
+    }
+
+  }
+
+  .page-name--form {
+    padding-top: 64px;
+    padding-left: 132px;
+    padding-right: 130px;
+    padding-bottom: 103px;
+
+    h1 {
+      padding: 0px;
     }
 
   }

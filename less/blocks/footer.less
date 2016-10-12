@@ -1,81 +1,115 @@
 .footer {
   background-color: @white;
+}
+
+.footer__container {
+  .flex();
+  padding-left: 20px;
+}
+
+.footer__logo-desktop {
+  display: none;
+}
+
+.footer__logo {
+  padding-left: 75px;
+
+  a:hover {
+
+    .footer__logo-main {
+      fill: @pink;
+    }
+
+  }
+
+  a:active {
+
+    .footer__logo-main {
+      fill: @navy;
+    }
+
+    .footer__logo-main--glasses {
+      fill: @pink;
+    }
+
+    .footer__logo-main {
+      opacity: 0.3;
+    }
+
+  }
+
+}
+
+.footer__social {
+  padding-top: 21px;
+  padding-left: 62px;
+  padding-bottom: 20px;
+}
+
+.footer__social-btn {
+  display: inline-block;
+  .round-box();
+  width: 46px;
+  height: 46px;
+  margin-right: 7px;
+
+  vertical-align: baseline;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--tw {
+    background-image: url('../img/svg/icon-twitter.svg');
+  }
+
+  &--fb {
+    background-image: url('../img/svg/icon-facebook.svg');
+    background-position: center 11px;
+  }
+
+  &--yo {
+    background-image: url('../img/svg/icon-youtube.svg');
+    margin-right: 0px;
+    background-position: center 14px;
+  }
+
+}
+
+.footer__social-btn:hover {
+  border: 3px solid rgba(40, 54, 69, 1);
+}
+
+.footer__social-btn:active {
+  border: 3px solid rgba(40, 54, 69, 0.6);
+  opacity: 0.3;
+}
+
+.footer__copyright {
+  .flex();
+  padding-top: 18px;
+  padding-left: 85px;
+  margin-right: 15px;
 
   span {
+    padding-top: 6px;
+    margin-right: 13px;
+
     .font(14px, 18px);
     .font-regular();
     color: @navy;
   }
 
-.footer__container {
-  .flex();
-  padding-top: 13px;
-  padding-left: 20px;
-
-}
-
-  .footer__logo {
-    padding-left: 75px;
+  .footer__logo-ha:hover {
+    fill: @navy;
   }
 
-  .footer__social {
-    padding-top: 20px;
-    padding-left: 62px;
-    padding-bottom: 20px;
-
-    &-btn {
-      display: inline-block;
-      .round-box();
-      width: 46px;
-      height: 46px;
-      margin-right: 7px;
-
-      border-width: 3px;
-      font-size: 0;
-      background-repeat: no-repeat;
-      background-position: center;
-
-      &--tw {
-        background-image: url('../img/icon-twitter.svg');
-      }
-
-      &--fb {
-        background-image: url('../img/icon-facebook.svg');
-      }
-
-      &--yo {
-        background-image: url('../img/icon-youtube.svg');
-      }
-
-    }
-
-  }
-
-  .footer__copyright {
-    .flex();
-    padding-top: 18px;
-    padding-left: 85px;
-    margin-right: 15px;
-
-    span {
-      padding-top: 6px;
-      margin-right: 13px;
-    }
-
-    a {
-      display: inline-block;
-      width: 30px;
-      height: 35px;
-
-      font-size: 0;
-      background-image: url('../img/logo-htmlacademy.svg');
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
+  .footer__logo-ha:active {
+    fill: @navy;
+    opacity: 0.3;
   }
 
 }
+
 
 @media @mobile-w {
 
@@ -92,59 +126,69 @@
 @media @tablet-w {
 
   .footer {
+    display: block;
+  }
 
   .footer__container {
     display: flex;
     width: 620px;
-    padding: 0px;
     padding-left: 40px;
     padding-right: 40px;
-    align-items: center;
-    justify-content: space-between;
-
+    padding-top: 8px;
+    padding-bottom: 40px;
+    justify-content: space-around;
   }
 
-    .footer__logo {
-      padding: 0px;
-    }
+  .footer__logo {
+    padding: 0px;
+    margin-top: 11px;
+  }
 
-    .footer__social {
-      padding: 0px;
-    }
+  .footer__social {
+    padding: 0px;
+    margin-right: 13px;
+  }
 
-    .footer__copyright {
-      padding: 0px;
-      padding-top: 17px;
-      margin: 0px;
-    }
-
+  .footer__copyright {
+    padding: 0px;
+    padding-top: 26px;
+    margin: 0px;
   }
 
 }
 
 @media @desktop-w {
 
-  .footer {
-
   .footer__container {
     width: 940px;
-    padding-bottom: 71px;
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-bottom: 70px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 57px;
   }
 
-    .footer__social {
-      margin-left: 22px;
+  .footer__logo {
+    padding: 0px;
+    margin-left: 14px;
+  }
+  .footer__logo-mobile {
+    display: none;
+  }
 
-    }
+  .footer__logo-desktop {
+    display: block;
+  }
 
-    .footer__copyright {
+  .footer__social {
+    margin-right: 0px;
+  }
 
-      span {
-        .font(18px, 18px);
-        margin-right: 10px;
-      }
-
+  .footer__copyright {
+    margin-right: 14px;
+    span {
+      .font(18px, 18px);
+      padding-top: 5;
+      margin-right: 13px;
     }
 
   }

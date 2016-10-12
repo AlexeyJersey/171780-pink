@@ -1,39 +1,178 @@
 .download-app {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .flex();
 
-  a {
-    padding-top: 15px;
-    padding-bottom: 16px;
-    padding-left: 36px;
-    padding-right: 36px;
-    margin-top: 26px;
-    margin-bottom: 26px;
+  background-image: url('../img/bg-back-mobile@1x.jpg');
+  background-repeat: no-repeat;
+  background-position: center -71px;
+  background-size: 221%;
 
-    .font(18px, 18px);
-    .font-bold();
-    color: @white;
-    border: 3px solid @white;
-    border-radius: 30px;
-  }
-
-  p  {
-
-    margin-bottom: 34px;
-
-    .font(14px, 24px);
-    .font-light();
-    color: @white;
+  img {
+    padding-top: 110px;
+    margin-bottom: -4px;
   }
 
 }
 
+.download-app__wrapper {
+  .flex();
+
+  h1 {
+    display: none;
+  }
+
+  p {
+    padding-left: 26px;
+    padding-right: 26px;
+    margin-bottom: 30px;
+
+    .font(14px, 24px);
+    .font-light();
+    color: @white;
+    text-align: center;
+  }
+
+}
+
+.download-app__btn {
+  padding-top: 15px;
+  padding-bottom: 16px;
+  padding-left: 35px;
+  padding-right: 36px;
+  margin-top: 26px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  .font(18px, 18px);
+  .font-bold();
+  color: @white;
+  border: 3px solid @white;
+  border-radius: 30px;
+}
+
+.download-app__btn:hover {
+  background-color: @white;
+  color: @pink;
+}
+
+.download-app__btn:active {
+  background-color: @white;
+  color: rgba(210, 40, 86, 0.3);
+}
+
+.download-app__icons {
+  .flex();
+  padding-left: 55px;
+  padding-right: 55px;
+  margin-bottom: 6px;
+}
+
+.downlod-app__icon {
+  display: block;
+  height: 60px;
+  width: 50px;
+
+  font-size: 0px;
+  background-image: url('../img/svg/logo-apple.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--apple {
+    margin-right: 31px;
+  }
+
+  &--android {
+    margin-right: 29px;
+    background-image: url('../img/svg/logo-android.svg');
+    background-position: 3px 11px;
+  }
+
+  &--win {
+    background-image: url('../img/svg/logo-microsoft.svg');
+    background-position: 3px 15px;
+  }
+
+}
+
+
 @media @tablet-w {
 
   .download-app {
+    position: relative;
+    width: 100%;
+
+    background-image: url('../img/bg-back-tablet@1x.jpg');
+    background-repeat: no-repeat;
+    background-position: center -110px;
+    background-size: auto;
+
+    img {
+      padding: 0px;
+      position: absolute;
+      top: 73px;
+      left: 0px;
+      z-index: 9;
+    }
+
+  }
+
+  .download-app__wrapper {
+    display: flex;
+    flex-direction: column;
     width: 50%;
-    order: 1;
+    padding-top: 92px;
+    padding-bottom: 92px;
+    z-index: 10;
+
+    h1 {
+      display: block;
+      padding-left: 90px;
+      padding-right: 60px;
+      margin: 0px;
+
+      .font(40px, 48px);
+      .font-light();
+      font-weight: normal;
+      color: @white;
+      text-align: center;
+    }
+
+    p {
+      padding-top: 18px;
+      padding-bottom: 18px;
+      padding-left: 30px;
+      padding-right: 0px;
+      margin: 0px;
+
+      .font(18px, 24px);
+    }
+
+  }
+
+  .download-app__btn {
+    padding-left: 48px;
+    padding-right: 0px;
+    margin-top: 30px;
+    margin-bottom: 44px;
+    margin-left: 38px;
+    margin-right: 10px;
+  }
+
+  .download-app__icons {
+    .flex();
+    padding-left: 83px;
+    padding-right: 0px;
+    margin-bottom: 17px;
+  }
+
+  .downlod-app__icon--apple {
+    margin-right: 33px;
+  }
+
+  .downlod-app__icon--android {
+    margin-right: 26px;
+    background-position: 3px 9px;
+    opacity: 0.4;
   }
 
 }
@@ -41,8 +180,57 @@
 @media @desktop-w {
 
   .download-app {
-    width: 50%;
-    order: 1;
+    width: 100%;
+    background-image: none;
+
+    .download-app__wrapper {
+      padding-top: 109px;
+    }
+
+    img {
+      padding: 0px;
+      position: absolute;
+      top: 100px;
+      left: 146px;
+      z-index: 9;
+    }
+
+    h1 {
+      padding-left: 132px;
+      padding-right: 170px;
+
+      .font(50px, 60px);
+    }
+
+    .download-app__btn {
+      padding-left: 27px;
+      padding-right: 29px;
+      margin-top: 51px;
+      margin-bottom: 65px;
+      margin-left: 130px;
+      margin-right: 169px;
+
+      .font(21px, 18px);
+    }
+
+    .download-app__icons {
+      padding-left: 176px;
+      margin-bottom: 54px;
+      padding-right: 40px;
+    }
+
+    .downlod-app__icon--android {
+      background-position: 0px 11px;
+      opacity: 1;
+    }
+
+    p {
+      padding-top: 0px;
+      padding-bottom: 31px;
+      padding-left: 100px;
+      padding-right: 140px;
+    }
+
   }
 
 }
