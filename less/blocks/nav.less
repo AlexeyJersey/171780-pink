@@ -164,6 +164,7 @@
 
     .nav__item-main {
       padding-left: 0px;
+      padding-bottom: 33px;
     }
 
     .nav__item-main-logo {
@@ -291,6 +292,42 @@
     a:active {
       color: @white;
       opacity: 0.3;
+    }
+
+  }
+
+  .nav--closed {
+
+    .nav__item-main {
+      position: static;
+      width: 28%;
+      padding: 0px;
+      border: none;
+      background-color: transparent;
+
+      background-color: transparent;
+    }
+
+    .nav__item-main-logo {
+      margin-right: 120px;
+    }
+
+    .nav__items {
+      display: flex;
+    }
+
+    .nav__item:nth-child(1) {
+      padding-left: 13px;
+    }
+
+  }
+
+  .nav--closed + .download-app {
+    padding-top: 0px;
+
+    img {
+      top: 100px;
+      left: 143px;
     }
 
   }
