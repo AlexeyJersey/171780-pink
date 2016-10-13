@@ -22,6 +22,7 @@
   line-height: 0px;
 
   .photo__item-text {
+    display: flex;
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -59,6 +60,8 @@
 }
 
 .photo__item-text {
+  display: flex;
+  flex-wrap: wrap;
   padding-top: 17px;
   padding-left: 17px;
   padding-bottom: 20px;
@@ -83,6 +86,7 @@
   }
 
   p {
+    width: 100%;
     margin: 0px;
     margin-bottom: 10px;
 
@@ -105,7 +109,7 @@
     position: absolute;
     display: block;
     content: '';
-    top: 2px;
+    top: 7px;
     left: -1px;
     width: 15px;
     height: 15px;
@@ -351,6 +355,11 @@
       order: 3;
     }
 
+    a::before {
+      top: 5px;
+      left: 138px;
+    }
+
   }
 
   .photo__item-wrapper {
@@ -376,11 +385,6 @@
       padding-bottom: 23px;
       margin-bottom: 0px;
 
-      a::before {
-        top: 5px;
-        left: 138px;
-      }
-
       p {
         min-height: 48px;
         margin-bottom: 12px;
@@ -391,7 +395,6 @@
       }
 
       a::before {
-        top: 2px;
         left: 227px;
       }
 
