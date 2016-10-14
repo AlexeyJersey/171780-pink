@@ -11,10 +11,6 @@
   background-position: center -72px;
   background-size: 221%;
 
-  @media @retina {
-    background-image: url('../img/bg-back-mobile@2x.jpg');
-  }
-
   h1 {
     .font(24px, 29px);
     .font-light();
@@ -28,6 +24,18 @@
   padding-bottom: 66px;
 }
 
+@media @mobile-w {
+
+  .page-name {
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url('../img/bg-back-mobile@2x.jpg');
+    }
+
+  }
+
+}
+
 @media @tablet-w {
 
   .page-name {
@@ -39,7 +47,7 @@
     background-position: center -111px;
     background-size: 172%;
 
-    @media @retina {
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url('../img/bg-back-tablet@2x.jpg');
     }
 
