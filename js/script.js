@@ -1,3 +1,6 @@
+window.onload = function() {
+  document.getElementsByClassName('menu').className = '"nav--closed';
+};
 
 //menu
 
@@ -10,21 +13,21 @@ var button = document.querySelector(".form__send-btn");
 var popup = document.querySelector(".form__modal-sent");
 var close = document.querySelector(".form__modal-btn");
 
+//menu
 
+link.addEventListener("click", function(event) {
 
-    link.addEventListener("click", function(event) {
+  if  (menu.classList.contains("nav--closed")) {
+    event.preventDefault();
+    menu.classList.remove("nav--closed");
+  }
 
-        if  (menu.classList.contains("nav--closed")) {
-            event.preventDefault();
-            menu.classList.remove("nav--closed");
-        }
+  else {
+    event.preventDefault();
+    menu.classList.add("nav--closed");
+  }
 
-        else {
-            event.preventDefault();
-            menu.classList.add("nav--closed");
-        }
-
-    });
+});
 
 // MODAL-CONTENT
 
