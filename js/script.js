@@ -1,42 +1,17 @@
+var link = document.querySelector(".nav__item-main-cross"),
+menu = document.querySelector(".nav"),
+button = document.querySelector(".form__send-btn"),
+popup = document.querySelector(".form__modal-sent"),
+close = document.querySelector(".form__modal-btn");
+
 window.onload = function() {
-  document.getElementsByClassName('menu').className = '"nav--closed';
+menu.className = 'nav nav--closed';
 };
 
-//menu
-
-var link = document.querySelector(".nav__item-main-cross");
-var menu = document.querySelector(".nav");
-
-//modal form
-
-var button = document.querySelector(".form__send-btn");
-var popup = document.querySelector(".form__modal-sent");
-var close = document.querySelector(".form__modal-btn");
-
-//menu
-
-link.addEventListener("click", function(event) {
-
-  if  (menu.classList.contains("nav--closed")) {
-    event.preventDefault();
-    menu.classList.remove("nav--closed");
-  }
-
-  else {
-    event.preventDefault();
-    menu.classList.add("nav--closed");
-  }
-
-});
-
-// MODAL-CONTENT
-
-button.addEventListener("click", function(event) {
-  event.preventDefault();
-  popup.classList.add("form__modal--opened");
-});
-
-close.addEventListener("click", function(event) {
-  event.preventDefault();
-  popup.classList.remove("form__modal--opened");
+link.addEventListener("click", function(e) {
+menu.classList.contains("nav--closed") ? (e.preventDefault(), menu.classList.remove("nav--closed")) : (e.preventDefault(), menu.classList.add("nav--closed"))
+}), button.addEventListener("click", function(e) {
+e.preventDefault(), popup.classList.add("form__modal--opened")
+}), close.addEventListener("click", function(e) {
+e.preventDefault(), popup.classList.remove("form__modal--opened")
 });
